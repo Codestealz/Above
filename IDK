@@ -14683,3 +14683,337 @@ end
 
 return u74
 
+
+
+11:01:11 -- [ABOVE DEBUG]	========== DIAGNOSTIC START ==========
+11:01:11 -- [ABOVE DEBUG]	========== HOTBAR CONTROLLER ==========
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	slotOf	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	setLeftDockVisible	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	TotalSlots	TYPE:	number
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	dockAboveLeft	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	selected	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	setBarVisible	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	SlotCorner	TYPE:	UDim
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	dockLeft	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	suggest	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	SlotTransparency	TYPE:	number
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	isOnBar	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	isSlotShown	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	FirstFreeSlot	TYPE:	number
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	count	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	selectLoose	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	assign	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	isPlaceable	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	showCooldown	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	setDropProgress	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	itemAt	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	onChanged	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	toggle	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	select	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	carried	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	hideFor	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	pending	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	setPending	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	dockRight	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	SlotSize	TYPE:	number
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	pickBlock	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	start	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	render	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	firstFreeSlot	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	EXPORT:	slotFrameOf	TYPE:	function
+11:01:11 -- [ABOVE DEBUG]	========== HOTBAR SLOTS ==========
+11:01:11 -- [ABOVE DEBUG]	SLOT:	1	ITEM:	WoodSword
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	0
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	2	ITEM:	WoodPickaxe
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	0
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	3	ITEM:	WoodAxe
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	0
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	4	ITEM:	GrassBlock
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	15
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	5	ITEM:	WheatSeeds
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	18
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	6	ITEM:	Plow
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	1
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	7	ITEM:	Stone
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	4
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	8	ITEM:	Wheat
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	25
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	9	ITEM:	CarrotSeeds
+11:01:11 -- [ABOVE DEBUG]	COUNT(item):	true	2
+11:01:11 -- [ABOVE DEBUG]	COUNT(slot):	true	0
+11:01:11 -- [ABOVE DEBUG]	SLOT:	10	ITEM:	nil
+11:01:11 -- [ABOVE DEBUG]	SLOT:	11	ITEM:	nil
+11:01:11 -- [ABOVE DEBUG]	SLOT:	12	ITEM:	nil
+11:01:11 -- [ABOVE DEBUG]	========== SELECTED ITEM ==========
+11:01:11 -- [ABOVE DEBUG]	SELECTED:	index	5	number
+11:01:11 -- [ABOVE DEBUG]	SELECTED:	stack	WheatSeeds	string
+11:01:11 -- [ABOVE DEBUG]	SELECTED:	placeable	true	boolean
+11:01:11 -- [ABOVE DEBUG]	SELECTED:	count	18	number
+11:01:11 -- [ABOVE DEBUG]	SELECTED:	kind	Item	string
+11:01:11 -- [ABOVE DEBUG]	SELECTED:	assignedItemId	WheatSeeds	string
+11:01:11 -- [ABOVE DEBUG]	SELECTED:	itemId	WheatSeeds	string
+11:01:11 -- [ABOVE DEBUG]	========== CONTAINER:	Players.LutherDexz	==========
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerScripts.Client.Controllers.HotbarController	CLASS:	ModuleScript
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerScripts.Client.Controllers.ItemIcon	CLASS:	ModuleScript
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerScripts.Client.Controllers.ItemTooltip	CLASS:	ModuleScript
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.HumanoidRootPart.RootRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.3499999940395355, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.HumanoidRootPart.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 2, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.HumanoidRootPart.RootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftHand.LeftWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.00047898292541503906, 0.12504540383815765, 5.960464477539063e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftHand.LeftGripAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.14995451271533966, -1.4630612099608697e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftHand.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.30010032653808594, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightHand.RightWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	3.5762786865234375e-07, 0.12504540383815765, 5.960464477539063e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightHand.RightGripAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.14995451271533966, -1.4630612099608697e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightHand.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.30010032653808594, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004786252975463867, 0.25868821144104004, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftLowerArm.LeftWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004786252975463867, -0.5009286999702454, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftLowerArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.0518989562988281, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightLowerArm.RightElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	1.1920928955078125e-07, 0.2585794925689697, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightLowerArm.RightWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	1.1920928955078125e-07, -0.5009286999702454, -6.862447526056303e-18
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightLowerArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.0518989562988281, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperArm.LeftShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.5000003576278687, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperArm.LeftShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.5000003576278687, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperArm.LeftElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004792213439941406, -0.33405637741088867, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperArm.LeftShoulderAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.384185791015625e-07, 0.5843266248703003, -2.7096831445305725e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1686992645263672, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperArm.RightShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000007152557373, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperArm.RightShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000007152557373, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperArm.RightElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539062e-07, -0.334165096282959, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperArm.RightShoulderAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-8.344650268554688e-07, 0.5843266248703003, -2.7096831445305725e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1686992645263672, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftFoot.LeftAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.7881393432617188e-07, 0.10193967819213867, -0.0000017222776023118058
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftFoot.LeftFootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.01827743649482727, -0.15346026420593262, -0.05026386305689812
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftFoot.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.2999992370605469, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftLowerLeg.LeftKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.9802322387695312e-08, 0.3790184259414673, -1.6086059417830256e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftLowerLeg.LeftAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, -0.5471571683883667, -0.0000022140159217087785
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftLowerLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1930999755859375, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.WaistRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.7999857068061829, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.NeckRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, 0.8000171184539795, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.LeftShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.LeftShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.RightShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.RightShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.BodyFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.19998568296432495, -0.49999988079071045
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.BodyBackAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.19998568296432495, 0.5
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.LeftCollarAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.9999998807907104, 0.8000169992446899, -7.273973778865184e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.NeckAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.058594965134944e-08, 0.8000171184539795, 7.111724187325308e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.RightCollarAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.8000167608261108, 4.612959969563235e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.UpperTorso.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 1.6000003814697266, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperLeg.LeftHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	5.960464477539063e-08, 0.4207821488380432, -1.6391277313232422e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperLeg.LeftKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	8.940696716308594e-08, -0.40110236406326294, -4.290814956675604e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LeftUpperLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.2166004180908203, 0.9998989105224609
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightFoot.RightAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.10193955898284912, 0.00007644779543625191
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightFoot.RightFootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.01827743649482727, -0.15346026420593262, -0.05026386305689812
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightFoot.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.2999992370605469, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightLowerLeg.RightKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.37917429208755493, 0.000025553606974426657
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightLowerLeg.RightAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, -0.5471571683883667, 0.00007626898150192574
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightLowerLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1930999755859375, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.RootRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, -0.1999722570180893, -0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.WaistRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, 0.20002491772174835, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.LeftHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000001192092896, -0.1999722570180893, -0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.RightHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.49999988079071045, -0.1999722570180893, -0.00001912085645017214
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.WaistBackAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.4641321399722074e-07, -0.1999722570180893, 0.5000000596046448
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.WaistCenterAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-4.220008804622921e-07, -0.1999722570180893, -1.6543612251060553e-24
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.WaistFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.3221986705502786e-07, -0.1999722570180893, -0.5000000596046448
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.LowerTorso.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 0.4001007080078125, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperLeg.RightHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.42078226804733276, -0.0000667300628265366
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperLeg.RightKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, -0.4009464979171753, -0.000021876789105590433
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.RightUpperLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.2166004180908203, 0.9998989105224609
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Humanoid.BodyTypeScale	CLASS:	NumberValue	VALUE:	0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Humanoid.BodyProportionScale	CLASS:	NumberValue	VALUE:	0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Humanoid.BodyWidthScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Humanoid.BodyHeightScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Humanoid.BodyDepthScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Humanoid.HeadScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Head.FaceCenterAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.09399999678134918, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Head.FaceFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0, -0.6000000238418579
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Head.HairAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0.6000000238418579, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Head.HatAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0.6000000238418579, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Head.NeckRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.5860000252723694, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Head.OriginalSize	CLASS:	Vector3Value	VALUE:	1.196195125579834, 1.2029438018798828, 1.1979091167449951
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Pal Hair.Handle.HairAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	8.657480066176504e-09, 0.34999990463256836, 0.2497277557849884
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.144.Pal Hair.Handle.OriginalSize	CLASS:	Vector3Value	VALUE:	1.7598299980163574, 1.324947714805603, 1.9481749534606934
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.HumanoidRootPart.RootRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.3499999940395355, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.HumanoidRootPart.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 2, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.HumanoidRootPart.RootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftHand.LeftWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.00047898292541503906, 0.12504540383815765, 5.960464477539063e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftHand.LeftGripAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.14995451271533966, -1.4630612099608697e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftHand.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.30010032653808594, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightHand.RightWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	3.5762786865234375e-07, 0.12504540383815765, 5.960464477539063e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightHand.RightGripAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.14995451271533966, -1.4630612099608697e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightHand.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.30010032653808594, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004786252975463867, 0.25868821144104004, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftLowerArm.LeftWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004786252975463867, -0.5009286999702454, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftLowerArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.0518989562988281, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightLowerArm.RightElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	1.1920928955078125e-07, 0.2585794925689697, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightLowerArm.RightWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	1.1920928955078125e-07, -0.5009286999702454, -6.862447526056303e-18
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightLowerArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.0518989562988281, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperArm.LeftShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.5000003576278687, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperArm.LeftShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.5000003576278687, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperArm.LeftElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004792213439941406, -0.33405637741088867, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperArm.LeftShoulderAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.384185791015625e-07, 0.5843266248703003, -2.7096831445305725e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1686992645263672, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperArm.RightShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000007152557373, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperArm.RightShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000007152557373, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperArm.RightElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539062e-07, -0.334165096282959, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperArm.RightShoulderAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-8.344650268554688e-07, 0.5843266248703003, -2.7096831445305725e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1686992645263672, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftFoot.LeftAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.7881393432617188e-07, 0.10193967819213867, -0.0000017222776023118058
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftFoot.LeftFootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.01827743649482727, -0.15346026420593262, -0.05026386305689812
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftFoot.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.2999992370605469, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftLowerLeg.LeftKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.9802322387695312e-08, 0.3790184259414673, -1.6086059417830256e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftLowerLeg.LeftAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, -0.5471571683883667, -0.0000022140159217087785
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftLowerLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1930999755859375, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.WaistRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.7999857068061829, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.NeckRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, 0.8000171184539795, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.LeftShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.LeftShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.RightShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.RightShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.BodyFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.19998568296432495, -0.49999988079071045
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.BodyBackAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.19998568296432495, 0.5
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.LeftCollarAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.9999998807907104, 0.8000169992446899, -7.273973778865184e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.NeckAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.058594965134944e-08, 0.8000171184539795, 7.111724187325308e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.RightCollarAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.8000167608261108, 4.612959969563235e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.UpperTorso.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 1.6000003814697266, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperLeg.LeftHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	5.960464477539063e-08, 0.4207821488380432, -1.6391277313232422e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperLeg.LeftKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	8.940696716308594e-08, -0.40110236406326294, -4.290814956675604e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LeftUpperLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.2166004180908203, 0.9998989105224609
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightFoot.RightAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.10193955898284912, 0.00007644779543625191
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightFoot.RightFootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.01827743649482727, -0.15346026420593262, -0.05026386305689812
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightFoot.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.2999992370605469, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightLowerLeg.RightKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.37917429208755493, 0.000025553606974426657
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightLowerLeg.RightAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, -0.5471571683883667, 0.00007626898150192574
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightLowerLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1930999755859375, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.RootRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, -0.1999722570180893, -0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.WaistRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, 0.20002491772174835, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.LeftHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000001192092896, -0.1999722570180893, -0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.RightHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.49999988079071045, -0.1999722570180893, -0.00001912085645017214
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.WaistBackAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.4641321399722074e-07, -0.1999722570180893, 0.5000000596046448
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.WaistCenterAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-4.220008804622921e-07, -0.1999722570180893, -1.6543612251060553e-24
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.WaistFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.3221986705502786e-07, -0.1999722570180893, -0.5000000596046448
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.LowerTorso.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 0.4001007080078125, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperLeg.RightHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.42078226804733276, -0.0000667300628265366
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperLeg.RightKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, -0.4009464979171753, -0.000021876789105590433
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.RightUpperLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.2166004180908203, 0.9998989105224609
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Humanoid.BodyTypeScale	CLASS:	NumberValue	VALUE:	0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Humanoid.BodyProportionScale	CLASS:	NumberValue	VALUE:	0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Humanoid.BodyWidthScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Humanoid.BodyHeightScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Humanoid.BodyDepthScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Humanoid.HeadScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Head.FaceCenterAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.09399999678134918, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Head.FaceFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0, -0.6000000238418579
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Head.HairAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0.6000000238418579, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Head.HatAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0.6000000238418579, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Head.NeckRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.5860000252723694, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.142.Head.OriginalSize	CLASS:	Vector3Value	VALUE:	1.196195125579834, 1.2029438018798828, 1.1979091167449951
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.HumanoidRootPart.RootRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.3499999940395355, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.HumanoidRootPart.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 2, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.HumanoidRootPart.RootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, 0, 0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftHand.LeftWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.00047898292541503906, 0.12504540383815765, 5.960464477539063e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftHand.LeftGripAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.14995451271533966, -1.4630612099608697e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftHand.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.30010032653808594, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightHand.RightWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	3.5762786865234375e-07, 0.12504540383815765, 5.960464477539063e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightHand.RightGripAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0, -0.14995451271533966, -1.4630612099608697e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightHand.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.30010032653808594, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004786252975463867, 0.25868821144104004, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftLowerArm.LeftWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004786252975463867, -0.5009286999702454, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftLowerArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.0518989562988281, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightLowerArm.RightElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	1.1920928955078125e-07, 0.2585794925689697, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightLowerArm.RightWristRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	1.1920928955078125e-07, -0.5009286999702454, -6.862447526056303e-18
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightLowerArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.0518989562988281, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperArm.LeftShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.5000003576278687, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperArm.LeftShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.5000003576278687, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperArm.LeftElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.0004792213439941406, -0.33405637741088867, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperArm.LeftShoulderAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.384185791015625e-07, 0.5843266248703003, -2.7096831445305725e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1686992645263672, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperArm.RightShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000007152557373, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperArm.RightShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000007152557373, 0.39432668685913086, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperArm.RightElbowRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539062e-07, -0.334165096282959, 8.940696716308594e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperArm.RightShoulderAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-8.344650268554688e-07, 0.5843266248703003, -2.7096831445305725e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperArm.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1686992645263672, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftFoot.LeftAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.7881393432617188e-07, 0.10193967819213867, -0.0000017222776023118058
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftFoot.LeftFootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.01827743649482727, -0.15346026420593262, -0.05026386305689812
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftFoot.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.2999992370605469, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftLowerLeg.LeftKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.9802322387695312e-08, 0.3790184259414673, -1.6086059417830256e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftLowerLeg.LeftAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, -0.5471571683883667, -0.0000022140159217087785
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftLowerLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1930999755859375, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.WaistRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.7999857068061829, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.NeckRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, 0.8000171184539795, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.LeftShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.LeftShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.RightShoulderRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.RightShoulderRigAttachment.JointRotation.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.5630171298980713, 1.1920928955078125e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.BodyFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.19998568296432495, -0.49999988079071045
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.BodyBackAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.960464477539063e-08, -0.19998568296432495, 0.5
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.LeftCollarAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.9999998807907104, 0.8000169992446899, -7.273973778865184e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.NeckAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-5.058594965134944e-08, 0.8000171184539795, 7.111724187325308e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.RightCollarAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.9999999403953552, 0.8000167608261108, 4.612959969563235e-08
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.UpperTorso.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 1.6000003814697266, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperLeg.LeftHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	5.960464477539063e-08, 0.4207821488380432, -1.6391277313232422e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperLeg.LeftKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	8.940696716308594e-08, -0.40110236406326294, -4.290814956675604e-07
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LeftUpperLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.2166004180908203, 0.9998989105224609
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightFoot.RightAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.10193955898284912, 0.00007644779543625191
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightFoot.RightFootAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.01827743649482727, -0.15346026420593262, -0.05026386305689812
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightFoot.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 0.2999992370605469, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightLowerLeg.RightKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.37917429208755493, 0.000025553606974426657
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightLowerLeg.RightAnkleRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, -0.5471571683883667, 0.00007626898150192574
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightLowerLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.1930999755859375, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.RootRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, -0.1999722570180893, -0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.WaistRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.1920928955078125e-07, 0.20002491772174835, 7.644625506630354e-20
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.LeftHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0.5000001192092896, -0.1999722570180893, -0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.RightHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	0.49999988079071045, -0.1999722570180893, -0.00001912085645017214
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.WaistBackAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.4641321399722074e-07, -0.1999722570180893, 0.5000000596046448
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.WaistCenterAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-4.220008804622921e-07, -0.1999722570180893, -1.6543612251060553e-24
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.WaistFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-1.3221986705502786e-07, -0.1999722570180893, -0.5000000596046448
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.LowerTorso.OriginalSize	CLASS:	Vector3Value	VALUE:	2, 0.4001007080078125, 1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperLeg.RightHipRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, 0.42078226804733276, -0.0000667300628265366
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperLeg.RightKneeRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	-0, -0.4009464979171753, -0.000021876789105590433
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.RightUpperLeg.OriginalSize	CLASS:	Vector3Value	VALUE:	1, 1.2166004180908203, 0.9998989105224609
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Humanoid.BodyTypeScale	CLASS:	NumberValue	VALUE:	0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Humanoid.BodyProportionScale	CLASS:	NumberValue	VALUE:	0
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Humanoid.BodyWidthScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Humanoid.BodyHeightScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Humanoid.BodyDepthScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Humanoid.HeadScale	CLASS:	NumberValue	VALUE:	1
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Head.FaceFrontAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	3.089527793517235e-16, -0.014311075210571289, -0.5935900211334229
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Head.HatAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	3.8502382896278694e-16, 0.606856107711792, 0.0010698437690734863
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Head.HairAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	3.8502382896278694e-16, 0.606856107711792, 0.0010698437690734863
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Head.FaceCenterAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.992158973950189e-16, -0.09381890296936035, 0.0010698437690734863
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Head.NeckRigAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	2.3896427333489317e-16, -0.5858105421066284, 0.0010698437690734863
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Head.AvatarPartScaleType	CLASS:	StringValue	VALUE:	Classic
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Head.OriginalSize	CLASS:	Vector3Value	VALUE:	1.1978399753570557, 1.2024002075195312, 1.1994956731796265
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Pal Hair.Handle.HairAttachment.OriginalPosition	CLASS:	Vector3Value	VALUE:	8.657480066176504e-09, 0.34999990463256836, 0.2497277557849884
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.PlayerGui.AboveCustomers.143.Pal Hair.Handle.OriginalSize	CLASS:	Vector3Value	VALUE:	1.7598299980163574, 1.324947714805603, 1.9481749534606934
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Categories.Items	CLASS:	TextButton
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Hotbar	CLASS:	Frame
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Hotbar.Content.Shelf5.Content.Picture.Icon.WheatSeeds	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Hotbar.Content.Shelf7.Content.Picture.Icon.StoneItem	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Hotbar.Content.Shelf9.Content.Picture.Icon.CarrotSeeds	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveHotbar	CLASS:	ScreenGui
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveHotbar.Hotbar	CLASS:	Frame
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveHotbar.Hotbar.Slot5.IconHolder.Icon.WheatSeeds	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveHotbar.Hotbar.Slot7.IconHolder.Icon.StoneItem	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveHotbar.Hotbar.Slot9.IconHolder.Icon.CarrotSeeds	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveCrafting.Frame.Strip.Coal.Slot.Icon.CoalItem	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.AboveCrafting.Frame.Strip.ArcaneCoal.Slot.Icon.ArcaneCoalItem	CLASS:	Model
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.VendingGui.Frame.Frame.Title.UIFlexItem	CLASS:	UIFlexItem
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.PremiumShop.Frame.Frame.Items	CLASS:	TextButton
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.ABOVE_IslandScanner.Main.Content.Tabs.Hotbar	CLASS:	TextButton
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerGui.ABOVE_IslandScanner.Main.Content.Tabs.Inventory	CLASS:	TextButton
+11:01:11 -- [ABOVE DEBUG]	VALUE:	Players.LutherDexz.leaderstats.Coins	CLASS:	NumberValue	VALUE:	260
+11:01:11 -- [ABOVE DEBUG]	========== CONTAINER:	Players.LutherDexz.Backpack	==========
+11:01:11 -- [ABOVE DEBUG]	========== CONTAINER:	Players.LutherDexz.PlayerScripts	==========
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerScripts.Client.Controllers.HotbarController	CLASS:	ModuleScript
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerScripts.Client.Controllers.ItemIcon	CLASS:	ModuleScript
+11:01:11 -- [ABOVE DEBUG]	MATCH:	Players.LutherDexz.PlayerScripts.Client.Controllers.ItemTooltip	CLASS:	ModuleScript
+11:01:11 -- [ABOVE DEBUG]	========== DIAGNOSTIC END ==========
