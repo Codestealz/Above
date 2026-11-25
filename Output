@@ -8505,3 +8505,653 @@ Captured errors: | 0
 
 ========== END OF ABOVE DIAGNOSTIC ==========
 11:05:06 -- [ABOVE-DIAG]	DIAGNOSTIC END
+
+11:07:25 -- [ABOVE-ACTION-DIAG]	START
+11:07:25 -- [ABOVE-ACTION-DIAG]	LINES	638
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	1	LINES	1	-	90
+11:07:25 -- 
+==================================================
+01. ENVIRONMENT
+==================================================
+PlaceId | 124357835578554
+GameId | 10769787444
+Player | LutherDexz
+UserId | 11991912831
+Platform | Windows
+TouchEnabled | false
+KeyboardEnabled | true
+Character | Workspace.LutherDexz
+Health | 100
+WalkSpeed | 16
+Position | -2111.25, 205.50, -2121.48
+Camera | -2111.17, 215.99, -2124.83
+
+==================================================
+02. CLIENT CONTROLLERS
+==================================================
+AVAILABLE | HotbarController
+EXPORT | HotbarController | FirstFreeSlot | number
+EXPORT | HotbarController | SlotCorner | UDim
+EXPORT | HotbarController | SlotSize | number
+EXPORT | HotbarController | SlotTransparency | number
+EXPORT | HotbarController | TotalSlots | number
+EXPORT | HotbarController | assign | function
+EXPORT | HotbarController | carried | function
+EXPORT | HotbarController | count | function
+EXPORT | HotbarController | dockAboveLeft | function
+EXPORT | HotbarController | dockLeft | function
+EXPORT | HotbarController | dockRight | function
+EXPORT | HotbarController | firstFreeSlot | function
+EXPORT | HotbarController | hideFor | function
+EXPORT | HotbarController | isOnBar | function
+EXPORT | HotbarController | isPlaceable | function
+EXPORT | HotbarController | isSlotShown | function
+EXPORT | HotbarController | itemAt | function
+EXPORT | HotbarController | onChanged | function
+EXPORT | HotbarController | pending | function
+EXPORT | HotbarController | pickBlock | function
+EXPORT | HotbarController | render | function
+EXPORT | HotbarController | select | function
+EXPORT | HotbarController | selectLoose | function
+EXPORT | HotbarController | selected | function
+EXPORT | HotbarController | setBarVisible | function
+EXPORT | HotbarController | setDropProgress | function
+EXPORT | HotbarController | setLeftDockVisible | function
+EXPORT | HotbarController | setPending | function
+EXPORT | HotbarController | showCooldown | function
+EXPORT | HotbarController | slotFrameOf | function
+EXPORT | HotbarController | slotOf | function
+EXPORT | HotbarController | start | function
+EXPORT | HotbarController | suggest | function
+EXPORT | HotbarController | toggle | function
+AVAILABLE | BackpackController
+EXPORT | BackpackController | close | function
+EXPORT | BackpackController | isOpen | function
+EXPORT | BackpackController | onVisibleChanged | function
+EXPORT | BackpackController | start | function
+EXPORT | BackpackController | toggle | function
+AVAILABLE | TargetController
+EXPORT | TargetController | flowerTarget | function
+EXPORT | TargetController | harvestTarget | function
+EXPORT | TargetController | hasPickupTarget | function
+EXPORT | TargetController | hasToolTarget | function
+EXPORT | TargetController | pickupEntityId | function
+EXPORT | TargetController | pickupUnderAim | function
+EXPORT | TargetController | pointedPrompt | function
+EXPORT | TargetController | predictPollen | function
+EXPORT | TargetController | start | function
+AVAILABLE | BuildController
+EXPORT | BuildController | aimReport | function
+EXPORT | BuildController | aimedBlockCell | function
+EXPORT | BuildController | aimedBlockCellThroughCrops | function
+EXPORT | BuildController | aimedBlockId | function
+EXPORT | BuildController | aimedBlockPart | function
+EXPORT | BuildController | aimedBlockPartThroughCrops | function
+EXPORT | BuildController | aimedInstance | function
+EXPORT | BuildController | aimedWaterPoint | function
+EXPORT | BuildController | canFlip | function
+EXPORT | BuildController | canRotate | function
+EXPORT | BuildController | closeIfOpen | function
+EXPORT | BuildController | closeOpen | function
+EXPORT | BuildController | flip | function
+EXPORT | BuildController | ghostAt | function
+EXPORT | BuildController | ghostModel | function
+EXPORT | BuildController | isPanelOpen | function
+EXPORT | BuildController | isUiOpen | function
+EXPORT | BuildController | islandOrigin | function
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	2	LINES	91	-	180
+11:07:25 -- EXPORT | BuildController | onUiOpenChanged | function
+EXPORT | BuildController | registerClose | function
+EXPORT | BuildController | registerMenu | function
+EXPORT | BuildController | rotate | function
+EXPORT | BuildController | setBuildMode | function
+EXPORT | BuildController | setSelectedBlock | function
+EXPORT | BuildController | setUiOpen | function
+EXPORT | BuildController | start | function
+EXPORT | BuildController | tilt | function
+EXPORT | BuildController | tryPlace | function
+AVAILABLE | InputController
+EXPORT | InputController | actOnce | function
+EXPORT | InputController | handEmpty | function
+EXPORT | InputController | pickupOnce | function
+EXPORT | InputController | setActionHeld | function
+EXPORT | InputController | setDropHeld | function
+EXPORT | InputController | setPickupHeld | function
+EXPORT | InputController | setSprintInput | function
+EXPORT | InputController | sprinting | boolean
+EXPORT | InputController | start | function
+EXPORT | InputController | toggleSprintButton | function
+AVAILABLE | Aim
+EXPORT | Aim | fingerLive | function
+EXPORT | Aim | handRay | function
+EXPORT | Aim | isCentre | function
+EXPORT | Aim | isCentred | function
+EXPORT | Aim | isFingerDown | function
+EXPORT | Aim | isTouch | function
+EXPORT | Aim | isVR | function
+EXPORT | Aim | ray | function
+EXPORT | Aim | setCentred | function
+EXPORT | Aim | setFingerDown | function
+EXPORT | Aim | setTouchPoint | function
+EXPORT | Aim | sinceTap | function
+EXPORT | Aim | touchPoint | function
+AVAILABLE | DeviceMode
+EXPORT | DeviceMode | Hybrid | boolean
+EXPORT | DeviceMode | mode | function
+EXPORT | DeviceMode | resolve | function
+EXPORT | DeviceMode | touchOnly | function
+
+==================================================
+03. CONFIGURATION
+==================================================
+CONFIG LOADED
+Config.Crop.Crops | <table>
+Config.Crop.Crops.Carrot | <table>
+Config.Crop.Crops.Carrot.growthSeconds | 180
+Config.Crop.Crops.Carrot.id | Carrot
+Config.Crop.Crops.Carrot.rareChance | 0.0015
+Config.Crop.Crops.Carrot.rareItemId | HeirloomCarrot
+Config.Crop.Crops.Carrot.seed | CarrotSeeds
+Config.Crop.Crops.Carrot.seedChance | 0.35
+Config.Crop.Crops.Carrot.yieldMax | 3
+Config.Crop.Crops.Carrot.yieldMin | 1
+Config.Crop.Crops.Onion | <table>
+Config.Crop.Crops.Onion.growthSeconds | 260
+Config.Crop.Crops.Onion.id | Onion
+Config.Crop.Crops.Onion.rareChance | 0.0015
+Config.Crop.Crops.Onion.rareItemId | PearlOnion
+Config.Crop.Crops.Onion.seed | OnionSeeds
+Config.Crop.Crops.Onion.seedChance | 0.05
+Config.Crop.Crops.Onion.yieldMax | 3
+Config.Crop.Crops.Onion.yieldMin | 1
+Config.Crop.Crops.Tomato | <table>
+Config.Crop.Crops.Tomato.growthSeconds | 215
+Config.Crop.Crops.Tomato.id | Tomato
+Config.Crop.Crops.Tomato.rareChance | 0.0015
+Config.Crop.Crops.Tomato.rareItemId | SunRipenedTomato
+Config.Crop.Crops.Tomato.seed | TomatoSeeds
+Config.Crop.Crops.Tomato.seedChance | 0.2
+Config.Crop.Crops.Tomato.yieldMax | 3
+Config.Crop.Crops.Tomato.yieldMin | 1
+Config.Crop.Crops.Wheat | <table>
+Config.Crop.Crops.Wheat.growthSeconds | 90
+Config.Crop.Crops.Wheat.id | Wheat
+Config.Crop.Crops.Wheat.rareChance | 0.0015
+Config.Crop.Crops.Wheat.rareItemId | GoldenWheatSheaf
+Config.Crop.Crops.Wheat.seed | WheatSeeds
+Config.Crop.Crops.Wheat.seedChance | 0.45
+Config.Crop.Crops.Wheat.yieldMax | 3
+Config.Crop.Crops.Wheat.yieldMin | 2
+Config.Crop.DebugWaterLog | false
+Config.Crop.Harvester | <table>
+Config.Crop.Harvester.ActionSeconds | 20
+Config.Crop.Harvester.CropBuffer | 24
+Config.Crop.Harvester.RadiusCells | 4
+Config.Crop.Harvester.ReplantReserveSeconds | 60
+Config.Crop.Harvester.SeedsPerReap | 1
+Config.Crop.Harvester.StopHarvestingAt | 20
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	3	LINES	181	-	270
+11:07:25 -- Config.Crop.RequiredGround | FarmSoil
+Config.Crop.SpareStageModels | 64
+Config.Crop.TickSeconds | 3
+Config.Crop.cropForHarvester | <function>
+Config.Crop.cropForSeed | <function>
+Config.Crop.harvesterFor | <function>
+Config.Crop.isSeed | <function>
+Config.Crop.itemIds | <function>
+Config.Bush.Bushes | <table>
+Config.Bush.Bushes.BerryBush | <table>
+Config.Bush.Bushes.BerryBush.growSeconds | 270
+Config.Bush.Bushes.BerryBush.id | BerryBush
+Config.Bush.Bushes.BerryBush.produce | Berries
+Config.Bush.Bushes.BerryBush.rareChance | 0.001
+Config.Bush.Bushes.BerryBush.rareItemId | JumboBerry
+Config.Bush.Bushes.BerryBush.regrowMaxSeconds | 280
+Config.Bush.Bushes.BerryBush.regrowMinSeconds | 250
+Config.Bush.Bushes.BerryBush.seed | BerryBushSeed
+Config.Bush.Bushes.BerryBush.seedChance | 0.011111111111111112
+Config.Bush.Bushes.BerryBush.yieldMax | 3
+Config.Bush.Bushes.BerryBush.yieldMin | 2
+Config.Bush.GroundBlocks | <table>
+Config.Bush.GroundBlocks.DirtBlock | true
+Config.Bush.GroundBlocks.FarmSoil | true
+Config.Bush.GroundBlocks.GrassBlock | true
+Config.Bush.GrowthVisualStages | 6
+Config.Bush.HarvesterActionSeconds | 40
+Config.Bush.Harvesters | <table>
+Config.Bush.Harvesters.BerryHarvester | BerryBush
+Config.Bush.RipeArtName | Berries
+Config.Bush.bushForHarvester | <function>
+Config.Bush.bushForSeed | <function>
+Config.Bush.isSeed | <function>
+Config.Bush.itemIds | <function>
+Config.Build.Plantables.PineTreeSapling | <table>
+Config.Build.Plantables.PineTreeSapling.growthSeconds | 90
+Config.Build.Plantables.PineTreeSapling.node | Pine
+Config.Build.Plantables.TreeSapling | <table>
+Config.Build.Plantables.TreeSapling.growthSeconds | 90
+Config.Build.Plantables.TreeSapling.node | Tree
+Config.Build.Placement.AllowDiagonal | true
+Config.Build.Placement.ArrivalSlackSeconds | 0.03
+Config.Build.Placement.BoundaryAlertSeconds | 2
+Config.Build.Placement.BoundaryMessage | Boundary reached: visit the Landman to expand
+Config.Build.Placement.ClientPaceMarginSeconds | 0.04
+Config.Build.Placement.ConfirmedHoldSeconds | 5
+Config.Build.Placement.CooldownSeconds | 0.2
+Config.Build.Placement.EdgeMarginFraction | 0.12
+Config.Build.Placement.HubMessage | You can't build at the Hub: build on an island
+Config.Build.Placement.MaxQueuedSeconds | 1
+Config.Build.Placement.PlaneLockEnabled | true
+Config.Build.Placement.PredictSeconds | 30
+Config.Build.Placement.RequireAdjacency | true
+Config.Build.Placement.SeedCooldownSeconds | 0.15
+Config.Build.Placement.ServerBacklogSeconds | 10
+Config.Build.Placement.SnapRadiusCells | 2
+Config.Build.Pickup.AimConeDegrees | 22
+Config.Build.Pickup.CountLabelMax | 12
+Config.Build.Pickup.CountLabelStuds | 8
+Config.Build.Pickup.RadiusStuds | 14
+Config.Build.Pickup.RepeatSeconds | 0.16666666666666666
+Config.Build.Pickup.RequestBurst | 20
+Config.Build.Pickup.RequestsPerSecond | 10
+Config.Build.Pickup.ScanIntervalSeconds | 0.25
+Config.Build.Pickup.TouchFrontBiasStuds | 3
+Config.Build.Pickup.TouchRadiusStuds | 7.5
+
+==================================================
+04. SEED RECOGNITION AND INVENTORY
+==================================================
+HOTBAR SLOT | 1 | WoodSword
+SEED CANDIDATE | WoodSword | Source: | Hotbar | Crop.isSeed: | false | Bush.isSeed: | false | Exact: | 0 | Carried: | 0
+HOTBAR SLOT | 2 | WoodPickaxe
+SEED CANDIDATE | WoodPickaxe | Source: | Hotbar | Crop.isSeed: | false | Bush.isSeed: | false | Exact: | 0 | Carried: | 0
+HOTBAR SLOT | 3 | WoodAxe
+SEED CANDIDATE | WoodAxe | Source: | Hotbar | Crop.isSeed: | false | Bush.isSeed: | false | Exact: | 0 | Carried: | 0
+HOTBAR SLOT | 4 | GrassBlock
+SEED CANDIDATE | GrassBlock | Source: | Hotbar | Crop.isSeed: | false | Bush.isSeed: | false | Exact: | 13 | Carried: | 13
+HOTBAR SLOT | 5 | WheatSeeds
+SEED CANDIDATE | WheatSeeds | Source: | Hotbar | Crop.isSeed: | true | Bush.isSeed: | false | Exact: | 18 | Carried: | 18
+HOTBAR SLOT | 6 | Plow
+SEED CANDIDATE | Plow | Source: | Hotbar | Crop.isSeed: | false | Bush.isSeed: | false | Exact: | 1 | Carried: | 1
+HOTBAR SLOT | 7 | Stone
+SEED CANDIDATE | Stone | Source: | Hotbar | Crop.isSeed: | false | Bush.isSeed: | false | Exact: | 4 | Carried: | 4
+HOTBAR SLOT | 8 | Wheat
+SEED CANDIDATE | Wheat | Source: | Hotbar | Crop.isSeed: | false | Bush.isSeed: | false | Exact: | 25 | Carried: | 25
+HOTBAR SLOT | 9 | CarrotSeeds
+SEED CANDIDATE | CarrotSeeds | Source: | Hotbar | Crop.isSeed: | true | Bush.isSeed: | false | Exact: | 2 | Carried: | 2
+CURRENT SELECTED ITEM.count | 0
+CURRENT SELECTED ITEM.index | 0
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	4	LINES	271	-	360
+11:07:25 -- CURRENT SELECTED ITEM.kind | Empty
+CURRENT SELECTED ITEM.placeable | false
+
+==================================================
+05. ISLAND DISCOVERY
+==================================================
+ISLAND | Workspace.Island_11991912831:1 | Nodes: | Workspace.Island_11991912831:1.Nodes | Blocks: | Workspace.Island_11991912831:1.Blocks
+ISLAND COUNT | 1
+
+==================================================
+06. CROP, BUSH, SOIL AND PICKUP CLASSIFICATION
+==================================================
+UNIQUE CROP CELLS | 10
+UNIQUE BUSH CELLS | 1
+UNIQUE SOIL CELLS | 32
+RIPE CROP TAGGED PARTS | 11
+PICKUP CANDIDATES | 0
+-- CROP IDS --
+CropIds.Berries | 1
+CropIds.Wheat | 10
+-- BLOCK IDS --
+BlockIds.DirtBlock | 109
+BlockIds.FarmSoil | 32
+BlockIds.GrassBlock | 535
+BlockIds.StoneBlock | 714
+BlockIds.WaterBlock | 4
+
+==================================================
+07. CROP READINESS
+==================================================
+CROP CELL | 8,0,6 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2097.00, 201.00, -2103.00
+ATTRIBUTE | CropCell | 8,0,6
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2097.02, 202.17, -2102.85
+ATTRIBUTE | CropCell | 8,0,6
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2096.87, 201.68, -2102.87
+ATTRIBUTE | CropCell | 8,0,6
+CROP TYPE IN CELL | 8,0,6 | Wheat
+CROP CELL | 5,0,8 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2106.00, 201.00, -2097.00
+ATTRIBUTE | CropCell | 5,0,8
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2105.87, 201.68, -2096.87
+ATTRIBUTE | CropCell | 5,0,8
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2106.02, 202.17, -2096.85
+ATTRIBUTE | CropCell | 5,0,8
+CROP TYPE IN CELL | 5,0,8 | Wheat
+CROP CELL | 7,0,5 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2100.02, 202.17, -2105.85
+ATTRIBUTE | CropCell | 7,0,5
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2099.87, 201.68, -2105.87
+ATTRIBUTE | CropCell | 7,0,5
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2100.00, 201.00, -2106.00
+ATTRIBUTE | CropCell | 7,0,5
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP TYPE IN CELL | 7,0,5 | Wheat
+CROP CELL | 6,0,6 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2102.87, 201.68, -2102.87
+ATTRIBUTE | CropCell | 6,0,6
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2103.00, 201.00, -2103.00
+ATTRIBUTE | CropCell | 6,0,6
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2103.02, 202.17, -2102.85
+ATTRIBUTE | CropCell | 6,0,6
+CROP TYPE IN CELL | 6,0,6 | Wheat
+CROP CELL | 8,0,7 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2097.00, 201.00, -2100.00
+ATTRIBUTE | CropCell | 8,0,7
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2097.02, 202.17, -2099.85
+ATTRIBUTE | CropCell | 8,0,7
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2096.87, 201.68, -2099.87
+ATTRIBUTE | CropCell | 8,0,7
+CROP TYPE IN CELL | 8,0,7 | Wheat
+CROP CELL | 8,0,9 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2096.87, 201.68, -2093.87
+ATTRIBUTE | CropCell | 8,0,9
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2097.02, 202.17, -2093.85
+ATTRIBUTE | CropCell | 8,0,9
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2097.00, 201.00, -2094.00
+ATTRIBUTE | CropCell | 8,0,9
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP TYPE IN CELL | 8,0,9 | Wheat
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	5	LINES	361	-	450
+11:07:25 -- CROP CELL | 6,0,10 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2103.02, 202.17, -2090.85
+ATTRIBUTE | CropCell | 6,0,10
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2103.00, 201.00, -2091.00
+ATTRIBUTE | CropCell | 6,0,10
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2102.87, 201.68, -2090.87
+ATTRIBUTE | CropCell | 6,0,10
+CROP TYPE IN CELL | 6,0,10 | Wheat
+CROP CELL | 8,0,8 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2097.00, 201.00, -2097.00
+ATTRIBUTE | CropCell | 8,0,8
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2096.87, 201.68, -2096.87
+ATTRIBUTE | CropCell | 8,0,8
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2097.02, 202.17, -2096.85
+ATTRIBUTE | CropCell | 8,0,8
+CROP TYPE IN CELL | 8,0,8 | Wheat
+CROP CELL | 9,0,8 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2093.87, 201.68, -2096.87
+ATTRIBUTE | CropCell | 9,0,8
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2094.00, 201.00, -2097.00
+ATTRIBUTE | CropCell | 9,0,8
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2094.02, 202.17, -2096.85
+ATTRIBUTE | CropCell | 9,0,8
+CROP TYPE IN CELL | 9,0,8 | Wheat
+CROP CELL | 6,0,9 | Parts: | 3 | RipeTaggedParts: | 1
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.4 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2103.02, 202.17, -2093.85
+ATTRIBUTE | CropCell | 6,0,9
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.Plane.011 | CropId: | nil | Ripe: | nil | Growth: | nil | Hydrated: | nil | Position: | -2102.87, 201.68, -2093.87
+ATTRIBUTE | CropCell | 6,0,9
+CROP PART | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | Ripe: | nil | Growth: | nil | Hydrated: | true | Position: | -2103.00, 201.00, -2094.00
+ATTRIBUTE | CropCell | 6,0,9
+ATTRIBUTE | CropId | Wheat
+ATTRIBUTE | Hydrated | true
+CROP TYPE IN CELL | 6,0,9 | Wheat
+TOTAL CROP PARTS | 30
+-- RIPE TAGGED OBJECTS --
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.BerryBush.HB | CropId: | Berries | CropCell: | nil | Position: | -2115.00, 201.00, -2094.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 6,0,6 | Position: | -2103.00, 201.00, -2103.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 8,0,6 | Position: | -2097.00, 201.00, -2103.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 5,0,8 | Position: | -2106.00, 201.00, -2097.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 6,0,9 | Position: | -2103.00, 201.00, -2094.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 9,0,8 | Position: | -2094.00, 201.00, -2097.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 7,0,5 | Position: | -2100.00, 201.00, -2106.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 8,0,7 | Position: | -2097.00, 201.00, -2100.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 6,0,10 | Position: | -2103.00, 201.00, -2091.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 8,0,9 | Position: | -2097.00, 201.00, -2094.00
+RIPE TAG | Workspace.Island_11991912831:1.Nodes.Wheat_4.HB | CropId: | Wheat | CropCell: | 8,0,8 | Position: | -2097.00, 201.00, -2097.00
+
+==================================================
+08. BERRY BUSH READINESS
+==================================================
+BUSH CELL | 2,0,9 | Parts: | 3
+BUSH PART | Workspace.Island_11991912831:1.Nodes.BerryBush.HB | CropId: | Berries | Ripe: | true | FruitTransparency: | nil | Position: | -2115.00, 201.00, -2094.00
+ATTRIBUTE | BushCell | 2,0,9
+ATTRIBUTE | CropId | Berries
+ATTRIBUTE | Ripe | true
+BUSH PART | Workspace.Island_11991912831:1.Nodes.BerryBush.Bush | CropId: | nil | Ripe: | nil | FruitTransparency: | nil | Position: | -2115.01, 200.74, -2094.00
+ATTRIBUTE | BushCell | 2,0,9
+BUSH PART | Workspace.Island_11991912831:1.Nodes.BerryBush.Berries | CropId: | nil | Ripe: | nil | FruitTransparency: | 0 | Position: | -2114.93, 200.89, -2093.86
+ATTRIBUTE | BushCell | 2,0,9
+ATTRIBUTE | BushFruitTransparency | 0
+
+==================================================
+09. SOIL AND PLANTING CELL ANALYSIS
+==================================================
+SOIL CELL | 8,-1,8 | X: | 8 | Y: | -1 | Z: | 8 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2097.00, 198.00, -2097.00
+SOIL CELL | 9,-1,8 | X: | 9 | Y: | -1 | Z: | 8 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2094.00, 198.00, -2097.00
+SOIL CELL | 7,-1,5 | X: | 7 | Y: | -1 | Z: | 5 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2100.00, 198.00, -2106.00
+SOIL CELL | 6,-1,5 | X: | 6 | Y: | -1 | Z: | 5 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2103.00, 198.00, -2106.00
+SOIL CELL | 9,-1,10 | X: | 9 | Y: | -1 | Z: | 10 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2094.00, 198.00, -2091.00
+SOIL CELL | 8,-1,9 | X: | 8 | Y: | -1 | Z: | 9 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2097.00, 198.00, -2094.00
+SOIL CELL | 6,-1,6 | X: | 6 | Y: | -1 | Z: | 6 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2103.00, 198.00, -2103.00
+SOIL CELL | 9,-1,5 | X: | 9 | Y: | -1 | Z: | 5 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2094.00, 198.00, -2106.00
+SOIL CELL | 5,-1,10 | X: | 5 | Y: | -1 | Z: | 10 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2106.00, 198.00, -2091.00
+SOIL CELL | 6,-1,10 | X: | 6 | Y: | -1 | Z: | 10 | Same-XZ crop/bush: | true
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	6	LINES	451	-	540
+11:07:25 -- SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2103.00, 198.00, -2091.00
+SOIL CELL | 7,-1,10 | X: | 7 | Y: | -1 | Z: | 10 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2100.00, 198.00, -2091.00
+SOIL CELL | 8,-1,10 | X: | 8 | Y: | -1 | Z: | 10 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2097.00, 198.00, -2091.00
+SOIL CELL | 4,-1,8 | X: | 4 | Y: | -1 | Z: | 8 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2109.00, 198.00, -2097.00
+SOIL CELL | 5,-1,8 | X: | 5 | Y: | -1 | Z: | 8 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2106.00, 198.00, -2097.00
+SOIL CELL | 9,-1,6 | X: | 9 | Y: | -1 | Z: | 6 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2094.00, 198.00, -2103.00
+SOIL CELL | 4,-1,10 | X: | 4 | Y: | -1 | Z: | 10 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2109.00, 198.00, -2091.00
+SOIL CELL | 7,-1,6 | X: | 7 | Y: | -1 | Z: | 6 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2100.00, 198.00, -2103.00
+SOIL CELL | 9,-1,9 | X: | 9 | Y: | -1 | Z: | 9 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2094.00, 198.00, -2094.00
+SOIL CELL | 8,-1,5 | X: | 8 | Y: | -1 | Z: | 5 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2097.00, 198.00, -2106.00
+SOIL CELL | 7,-1,9 | X: | 7 | Y: | -1 | Z: | 9 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2100.00, 198.00, -2094.00
+SOIL CELL | 6,-1,9 | X: | 6 | Y: | -1 | Z: | 9 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2103.00, 198.00, -2094.00
+SOIL CELL | 5,-1,9 | X: | 5 | Y: | -1 | Z: | 9 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2106.00, 198.00, -2094.00
+SOIL CELL | 4,-1,9 | X: | 4 | Y: | -1 | Z: | 9 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2109.00, 198.00, -2094.00
+SOIL CELL | 4,-1,5 | X: | 4 | Y: | -1 | Z: | 5 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2109.00, 198.00, -2106.00
+SOIL CELL | 8,-1,7 | X: | 8 | Y: | -1 | Z: | 7 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2097.00, 198.00, -2100.00
+SOIL CELL | 5,-1,5 | X: | 5 | Y: | -1 | Z: | 5 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2106.00, 198.00, -2106.00
+SOIL CELL | 4,-1,7 | X: | 4 | Y: | -1 | Z: | 7 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2109.00, 198.00, -2100.00
+SOIL CELL | 5,-1,7 | X: | 5 | Y: | -1 | Z: | 7 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2106.00, 198.00, -2100.00
+SOIL CELL | 8,-1,6 | X: | 8 | Y: | -1 | Z: | 6 | Same-XZ crop/bush: | true
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2097.00, 198.00, -2103.00
+SOIL CELL | 4,-1,6 | X: | 4 | Y: | -1 | Z: | 6 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2109.00, 198.00, -2103.00
+SOIL CELL | 5,-1,6 | X: | 5 | Y: | -1 | Z: | 6 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2106.00, 198.00, -2103.00
+SOIL CELL | 9,-1,7 | X: | 9 | Y: | -1 | Z: | 7 | Same-XZ crop/bush: | false
+SOIL PART | Workspace.Island_11991912831:1.Blocks.FarmSoil | BlockId: | FarmSoil | Hydrated: | true | Position: | -2094.00, 198.00, -2100.00
+SOIL CELLS | 32
+SOIL CELLS WITH CROP/BUSH SAME XZ | 10
+GEOMETRICALLY FREE SOIL CELLS | 22
+IMPORTANT | Geometrically free does NOT prove that BuildController accepts the cell.
+
+==================================================
+10. PICKUP CANDIDATES
+==================================================
+
+==================================================
+11. TARGET CONTROLLER LIVE STATE
+==================================================
+TARGET RESULT | harvestTarget | nil | Call succeeded: | true
+TARGET RESULT | flowerTarget | nil | Call succeeded: | true
+TARGET RESULT | hasPickupTarget | false | Call succeeded: | true
+TARGET RESULT | pickupEntityId | nil | Call succeeded: | true
+TARGET RESULT | pickupUnderAim | false | Call succeeded: | true
+TARGET RESULT | pointedPrompt | nil | Call succeeded: | true
+
+==================================================
+12. BUILD AND AIM LIVE STATE
+==================================================
+BUILD RESULT | aimedBlockId | GrassBlock | Call succeeded: | true
+BUILD RESULT | aimedBlockPart | Workspace.Island_11991912831:1.Blocks.GrassBlock | Call succeeded: | true
+BUILD INSTANCE | Workspace.Island_11991912831:1.Blocks.GrassBlock
+ATTRIBUTE | BlockId | GrassBlock
+ATTRIBUTE | CellKey | 1,0,1
+ATTRIBUTE | HP | 50
+ATTRIBUTE | MaxHP | 50
+ATTRIBUTE | Rotation | 0
+BUILD RESULT | aimedBlockCell | <table> | Call succeeded: | true
+BUILD RESULT | aimedBlockPartThroughCrops | Workspace.Island_11991912831:1.Blocks.GrassBlock | Call succeeded: | true
+BUILD INSTANCE | Workspace.Island_11991912831:1.Blocks.GrassBlock
+ATTRIBUTE | BlockId | GrassBlock
+ATTRIBUTE | CellKey | 1,0,1
+ATTRIBUTE | HP | 50
+ATTRIBUTE | MaxHP | 50
+ATTRIBUTE | Rotation | 0
+BUILD RESULT | aimedBlockCellThroughCrops | <table> | Call succeeded: | true
+BUILD RESULT | aimedInstance | Workspace.Island_11991912831:1.Blocks.GrassBlock | Call succeeded: | true
+BUILD INSTANCE | Workspace.Island_11991912831:1.Blocks.GrassBlock
+ATTRIBUTE | BlockId | GrassBlock
+ATTRIBUTE | CellKey | 1,0,1
+ATTRIBUTE | HP | 50
+ATTRIBUTE | MaxHP | 50
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	7	LINES	541	-	630
+11:07:25 -- ATTRIBUTE | Rotation | 0
+BUILD RESULT | aimedWaterPoint | nil | Call succeeded: | true
+BUILD RESULT | isUiOpen | false | Call succeeded: | true
+tryPlace available: | true
+NOTE: tryPlace was NOT called.
+AIM RESULT | isTouch | false | Success: | true
+AIM RESULT | isVR | false | Success: | true
+AIM RESULT | isFingerDown | false | Success: | true
+AIM RESULT | isCentre | false | Success: | true
+AIM RESULT | isCentred | false | Success: | true
+AIM RESULT | ray | {-2111.20483, 215.9039, -2124.78394}, {-0.362698168, -0.838905215, 0.405817717} | Success: | true
+AIM RESULT | handRay | nil | Success: | true
+AIM RESULT | touchPoint | nil | Success: | true
+TOUCH ONLY MODE | false | Success: | true
+
+==================================================
+13. EXISTING ACTION FUNCTION AVAILABILITY
+==================================================
+INPUT FUNCTION | actOnce | function
+INPUT FUNCTION | pickupOnce | function
+INPUT FUNCTION | handEmpty | function
+INPUT FUNCTION | setActionHeld | function
+INPUT FUNCTION | setPickupHeld | function
+INPUT FUNCTION | setSprintInput | function
+HOTBAR FUNCTION | itemAt | function
+HOTBAR FUNCTION | selected | function
+HOTBAR FUNCTION | count | function
+HOTBAR FUNCTION | carried | function
+HOTBAR FUNCTION | select | function
+HOTBAR FUNCTION | selectLoose | function
+HOTBAR FUNCTION | pickBlock | function
+BUILD FUNCTION | tryPlace | function
+BUILD FUNCTION | setSelectedBlock | function
+BUILD FUNCTION | ghostModel | function
+BUILD FUNCTION | aimedBlockCell | function
+BUILD FUNCTION | aimedBlockId | function
+NO ACTION FUNCTION WAS EXECUTED.
+
+==================================================
+14. PLACEMENT AND COOLDOWN SUMMARY
+==================================================
+PLACEMENT SETTING | AllowDiagonal | true
+PLACEMENT SETTING | ArrivalSlackSeconds | 0.03
+PLACEMENT SETTING | BoundaryAlertSeconds | 2
+PLACEMENT SETTING | BoundaryMessage | Boundary reached: visit the Landman to expand
+PLACEMENT SETTING | ClientPaceMarginSeconds | 0.04
+PLACEMENT SETTING | ConfirmedHoldSeconds | 5
+PLACEMENT SETTING | CooldownSeconds | 0.2
+PLACEMENT SETTING | EdgeMarginFraction | 0.12
+PLACEMENT SETTING | HubMessage | You can't build at the Hub: build on an island
+PLACEMENT SETTING | MaxQueuedSeconds | 1
+PLACEMENT SETTING | PlaneLockEnabled | true
+PLACEMENT SETTING | PredictSeconds | 30
+PLACEMENT SETTING | RequireAdjacency | true
+PLACEMENT SETTING | SeedCooldownSeconds | 0.15
+PLACEMENT SETTING | ServerBacklogSeconds | 10
+PLACEMENT SETTING | SnapRadiusCells | 2
+PICKUP SETTING | AimConeDegrees | 22
+PICKUP SETTING | CountLabelMax | 12
+PICKUP SETTING | CountLabelStuds | 8
+PICKUP SETTING | RadiusStuds | 14
+PICKUP SETTING | RepeatSeconds | 0.16666666666666666
+PICKUP SETTING | RequestBurst | 20
+PICKUP SETTING | RequestsPerSecond | 10
+PICKUP SETTING | ScanIntervalSeconds | 0.25
+PICKUP SETTING | TouchFrontBiasStuds | 3
+PICKUP SETTING | TouchRadiusStuds | 7.5
+
+==================================================
+15. BACKPACK GUI
+==================================================
+GUI MATCH | Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Hotbar.Content.Shelf5.Content.Picture.Icon.WheatSeeds | Model
+GUI MATCH | Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Hotbar.Content.Shelf8.Content.Picture.Icon.Wheat | Model
+GUI MATCH | Players.LutherDexz.PlayerGui.AboveBackpackRevamp.Backpack.Content.BackpackPage.Hotbar.Content.Shelf9.Content.Picture.Icon.CarrotSeeds | Model
+GUI MATCH | Players.LutherDexz.PlayerGui.AboveHotbar.Hotbar.Slot5.IconHolder.Icon.WheatSeeds | Model
+GUI MATCH | Players.LutherDexz.PlayerGui.AboveHotbar.Hotbar.Slot8.IconHolder.Icon.Wheat | Model
+GUI MATCH | Players.LutherDexz.PlayerGui.AboveHotbar.Hotbar.Slot9.IconHolder.Icon.CarrotSeeds | Model
+GUI MATCH COUNT | 6
+
+==================================================
+16. ERRORS
+==================================================
+ERROR COUNT | 0
+
+==================================================
+17. FINAL SUMMARY
+==================================================
+Island count | 1
+Seed candidates | 9
+Crop cells | 10
+11:07:25 -- [ABOVE-ACTION-DIAG]	CHUNK	8	LINES	631	-	638
+11:07:25 -- Bush cells | 1
+Soil cells | 32
+RipeCrop tagged parts | 11
+Pickup candidates | 0
+Geometrically free soil | 22
+Errors | 0
+
+========== DIAGNOSTIC COMPLETE ==========
+11:07:25 -- [ABOVE-ACTION-DIAG]	END
