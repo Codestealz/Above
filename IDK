@@ -1,0 +1,4960 @@
+-- Script Path: game:GetService("Players").LutherDexz.PlayerScripts.Client
+-- Took 0s to decompile.
+-- Executor: Real (3.2.2)
+
+-- Script path: game:GetService("Players").LutherDexz.PlayerScripts.Client
+-- Decompile time: 3.61 ms
+
+local Shared = game:GetService("ReplicatedStorage"):WaitForChild("Shared")
+local v1 = require(Shared.Config)
+local Players = game:GetService("Players")
+local PlayerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
+local LandscapeSensor = Enum.ScreenOrientation.LandscapeSensor
+
+local function holdLandscape() -- Line: 21; upvalues: PlayerGui (val), LandscapeSensor (val)
+    if PlayerGui.ScreenOrientation ~= LandscapeSensor then
+        PlayerGui.ScreenOrientation = LandscapeSensor
+    end
+end
+
+if PlayerGui.ScreenOrientation ~= LandscapeSensor then
+    PlayerGui.ScreenOrientation = LandscapeSensor
+end
+
+;(PlayerGui:GetPropertyChangedSignal("ScreenOrientation")):Connect(holdLandscape)
+
+Players.LocalPlayer.CharacterAdded:Connect(function() -- Line: 28; upvalues: holdLandscape (val)
+    task.defer(holdLandscape)
+end)
+
+task.delay(
+    5,
+    function() -- Line: 32; upvalues: PlayerGui (val)
+        if game:GetService("UserInputService").TouchEnabled then
+            print((("[ABOVE] orientation: asked %*, device is %*"):format(PlayerGui.ScreenOrientation.Name, PlayerGui.CurrentScreenOrientation.Name)))
+        end
+    end
+)
+
+local Controllers = script.Controllers
+require(Controllers.LoadChoiceController).start()
+require(Controllers.DiagnosticsController).start()
+require(Controllers.SettingsController).start()
+
+local DeviceMode = require(Controllers.DeviceMode)
+DeviceMode.resolve()
+
+local Ui = require(script.Ui)
+Ui.TouchOnly = DeviceMode.touchOnly()
+
+require(Controllers.ThemeController).start()
+require(Controllers.TextSizeController).start()
+require(Controllers.GuiScaleController).start()
+require(Controllers.HintController).start()
+require(Controllers.AudioController).start()
+require(Controllers.AmbienceController).start()
+require(Controllers.TimeController).start()
+require(Controllers.WeatherFxController).start()
+require(Controllers.NoticeController).start()
+require(Controllers.ChatLineController).start()
+require(Controllers.BeeController).start()
+require(Controllers.BuilderLightController).start()
+require(Controllers.PortalMoveController).start()
+require(Controllers.SlimeController).start()
+require(Controllers.ScreenshotModeController).start()
+require(Controllers.FreecamController).start()
+require(Controllers.HudController).start()
+require(Controllers.NewBadges).start()
+require(Controllers.BackpackController).start()
+require(Controllers.HotbarController).start()
+require(Controllers.BuildController).start()
+require(Controllers.WaterZoneController).start()
+require(Controllers.LooseCountController).start()
+require(Controllers.BoostController).start()
+require(Controllers.PumpController).start()
+require(Controllers.MachineStatusController).start()
+require(Controllers.CraftingController).start()
+require(Controllers.CraftPinController).start()
+require(Controllers.StorageController).start()
+require(Controllers.VendingController).start()
+require(Controllers.ComposterController).start()
+require(Controllers.IncubatorController).start()
+require(Controllers.FeederController).start()
+require(Controllers.ChickenController).start()
+require(Controllers.WaitingIcon).start()
+require(Controllers.AnimalManageController).start()
+require(Controllers.HorseCoatController).start()
+require(Controllers.LumberMillController).start()
+require(Controllers.ArcaneTableController).start()
+require(Controllers.SlimeFarmController).start()
+require(Controllers.PipeController).start()
+require(Controllers.SetAbilityController).start()
+require(Controllers.MountController).start()
+require(Controllers.GuestBookController).start()
+require(Controllers.PromptController).start()
+require(Controllers.FlutterController).start()
+require(Controllers.ShopController).start()
+require(Controllers.DialogueController).start()
+require(Controllers.TargetController).start()
+require(Controllers.AdminFxController).start()
+require(Controllers.FoodFxController).start()
+require(Controllers.LeaderboardYouController).start()
+require(Controllers.PressStrokeController).start()
+require(Controllers.ScrollBarController).start()
+require(Controllers.ServerEventController).start()
+require(Controllers.IslandInviteController).start()
+require(Controllers.RestartNoticeController).start()
+require(Controllers.SaleStatusController).start()
+require(Controllers.BoundaryController).start()
+require(Controllers.CameraController).start()
+require(Controllers.ShiftLockController).start()
+require(Controllers.RangedController).start()
+require(Controllers.CursorController).start()
+require(Controllers.SettingsPanelController).start()
+require(Controllers.NewsController).start()
+require(Controllers.BankController).start()
+require(Controllers.IslandPermissionsController).start()
+require(Controllers.FavoritePromptController).start()
+require(Controllers.FloaterController).start()
+require(Controllers.AnnouncementController).start()
+require(Controllers.ObjectiveController).start()
+require(Controllers.TutorialController).start()
+require(Controllers.OreLabelController).start()
+require(Controllers.GrowTimeController).start()
+require(Controllers.VersionController).start()
+require(Controllers.WelcomeController).start()
+require(Controllers.ShowcaseController).start()
+require(Controllers.GuideController).start()
+require(Controllers.JournalController).start()
+require(Controllers.ShowroomController).start()
+require(Controllers.TravelController).start()
+require(Controllers.WorldLabelsController).start()
+require(Controllers.FaceCameraController).start()
+require(Controllers.CollectionController).start()
+require(Controllers.AchievementsController).start()
+require(Controllers.SpinningArtController).start()
+require(Controllers.SunflowerController).start()
+require(Controllers.EnemyViewController).start()
+require(Controllers.BossBarController).start()
+require(Controllers.BossGrabController).start()
+require(Controllers.RuinsGateController).start()
+require(Controllers.RuinsShardController).start()
+require(Controllers.MortenTimerController).start()
+require(Controllers.MortenOddsController).start()
+require(Controllers.RuinsMoodController).start()
+require(Controllers.PortalSkinController).start()
+require(Controllers.PremiumShopController).start()
+require(Controllers.GiftController).start()
+require(Controllers.CustomerController).start()
+require(Controllers.FriendsController).start()
+require(Controllers.FlightController).start()
+require(Controllers.SwimController).start()
+require(Controllers.AnimationController).start()
+require(Controllers.ViewmodelController).start()
+require(Controllers.HitFeedbackController).start()
+require(Controllers.GatherFxController).start()
+require(Controllers.ToastController).start()
+require(Controllers.SpecialDropController).start()
+require(Controllers.CelebrationController).start()
+require(Controllers.DevConsoleController).start()
+require(Controllers.SignController).start()
+require(Controllers.RadioController).start()
+require(Controllers.FriendTotemController).start()
+require(Controllers.TipJarController).start()
+require(Controllers.CartController).start()
+require(Controllers.SaveViewBannerController).start()
+require(Controllers.IslandResetController).start()
+require(Controllers.IslandsController).start()
+require(Controllers.MenuBarController).start()
+require(Controllers.InputController).start()
+require(Controllers.GamepadController).start()
+require(Controllers.TouchController).start()
+require(Controllers.TapDebugController).start()
+
+local Remotes = require(Shared.Remotes)
+Remotes.get(Remotes.RequestSync):FireServer()
+print((("[ABOVE] client ready (v%*)"):format(v1.Version)))
+
+
+-- Script Path: game:GetService("Players").LutherDexz.PlayerScripts.Client.Controllers.BuildController
+-- Took 0.06s to decompile.
+-- Executor: Real (3.2.2)
+
+-- Script path: game:GetService("Players").LutherDexz.PlayerScripts.Client.Controllers.BuildController
+-- Decompile time: 66.32 ms
+
+local CollectionService = game:GetService("CollectionService")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local DeviceMode = require(script.Parent.DeviceMode)
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Shared = ReplicatedStorage:WaitForChild("Shared")
+local BuildFlags = require(Shared.BuildFlags)
+local Config = require(Shared.Config)
+local Grid = require(Shared.Grid)
+local Palette = require(Shared.Palette)
+local Pipes = require(Shared.Pipes)
+local ArcanePipes = require(Shared.ArcanePipes)
+local TutorialArrow = require(script.Parent.TutorialArrow)
+local Prefabs = require(Shared.Prefabs)
+local PlantLook = require(Shared.PlantLook)
+local Remotes = require(Shared.Remotes)
+local u66 = require(script.Parent.Aim)
+local ControlGlyphs = require(script.Parent.ControlGlyphs)
+local HudController = require(script.Parent.HudController)
+local Ui = require(script.Parent.Parent.Ui)
+local u83 = {}
+local LocalPlayer = Players.LocalPlayer
+local u88 = Remotes.get(Remotes.RequestPlace)
+local u91 = Remotes.get(Remotes.IslandReady)
+local u92 = nil
+local u93 = nil
+local u94 = false
+local u95 = nil
+local u96 = nil
+local u97 = {}
+local u98 = nil
+local u102 = Config.Build.boundsForTier(0)
+local IslandRadiusCells = Config.Build.IslandRadiusCells
+local u105 = false
+local u106 = false
+local u107 = {}
+local u112 = Color3.fromRGB(90, 220, 120)
+local u117 = Color3.fromRGB(230, 80, 80)
+
+local function setGhostValid(a1) -- Line: 80; upvalues: u95 (ref), u112 (val), u117 (val); types: a1: boolean
+    local v1 = u95
+
+    if not v1 then
+        return
+    end
+
+    v1.Color3 = if not a1 then u117 else u112
+    v1.SurfaceColor3 = u117
+    v1.SurfaceTransparency = if not a1 then 0.7 else 1
+    v1.LineThickness = if not a1 then 0.06 else 0.03
+end
+
+local u119 = nil
+local u120 = nil
+
+local function arrowFor(a1, a2)
+    -- Line: 119
+    -- upvalues: ArcanePipes (val), Prefabs (val), TutorialArrow (val), Grid (val), u120 (ref)
+    -- types: a1: userdata, a2: string
+    local Attribute = a1:GetAttribute("OutputFace")
+    local v1 = if typeof(Attribute) ~= "Vector3" then nil else Attribute
+    local v2 = if not ArcanePipes.isPipe(a2) then nil else a2
+
+    if not v1 and not v2 then
+        return
+    end
+
+    local v3 = Prefabs.clone(Prefabs.EffectsCategory, "TutorialArrow")
+    local BasePart = if not v3 then
+        nil
+    else
+        if not v3:IsA("BasePart") then v3:FindFirstChildWhichIsA("BasePart", true) else v3
+
+    if v3 and BasePart then
+        for i, j in if not v3:IsA("BasePart") then v3:GetDescendants() else {v3} do
+            if j:IsA("BasePart") then
+                j.Anchored = true
+                j.CanCollide = false
+                j.CanQuery = false
+                j.CanTouch = false
+                j.CastShadow = false
+            end
+        end
+
+        BasePart.Color = TutorialArrow.Color
+        BasePart.Material = Enum.Material.Neon
+        local v4 = math.max(BasePart.Size.X, BasePart.Size.Y, BasePart.Size.Z)
+
+        if v4 > 0 then
+            if not v3:IsA("Model") then
+                BasePart.Size = BasePart.Size * (1.6 / v4)
+            else
+                v3:ScaleTo((v3:GetScale()) * 1.6 / v4)
+            end
+        end
+
+        local BasePart_2 = if not v1 then nil else a1:FindFirstChildWhichIsA("BasePart")
+        local Part = Instance.new("Part")
+        Part.Name = "GhostArrowAnchor"
+        local Size_4 = if not BasePart_2 then
+            Vector3.new(Grid.CellSize, Grid.CellSize, Grid.CellSize)
+        else
+            BasePart_2.Size
+        Part.Size = Size_4
+        local CFrame_2 = if not BasePart_2 then a1:GetPivot() else BasePart_2.CFrame
+        Part.CFrame = CFrame_2
+        Part.Transparency = 1
+        Part.Anchored = true
+        Part.CanCollide = false
+        Part.CanQuery = false
+        Part.CanTouch = false
+        Part.Parent = a1
+
+        v3:SetAttribute("GhostArrow", true)
+
+        v3.Parent = a1
+        u120 = {
+            anchor = Part,
+            art = v3,
+            part = BasePart,
+            length = math.max(BasePart.Size.X, BasePart.Size.Y, BasePart.Size.Z),
+            fixed = v1,
+            pipe = v2,
+        }
+
+        return
+    end
+
+    if v3 then
+        v3:Destroy()
+    end
+end
+
+local u123 = OverlapParams.new()
+u123.FilterType = Enum.RaycastFilterType.Exclude
+
+local function touches(a1, a2)
+    -- Line: 184
+    -- upvalues: Grid (val), u123 (val), ArcanePipes (val)
+    -- types: a1: userdata, a2: vector
+    local Parent
+    local v1 = a1.Position + a2 * Grid.CellSize
+    u123.FilterDescendantsInstances = {a1.Parent}
+
+    for i, j in workspace:GetPartBoundsInBox(CFrame.new(v1), Vector3.new(1, 1, 1) * (Grid.CellSize * 0.6), u123) do
+        Parent = j
+
+        while Parent do
+            if Parent == workspace then
+                break
+            end
+
+            if Parent:GetAttribute("MachineId") == nil
+                and not ArcanePipes.isPipe((Parent:GetAttribute("BlockId"))) then
+                Parent = Parent.Parent
+                continue
+            end
+
+            return true
+        end
+    end
+
+    return false
+end
+
+local function placeArrow(a1, a2)
+    -- Line: 205
+    -- upvalues: u120 (ref), ArcanePipes (val), touches (val), Grid (val)
+    -- types: a1: number, a2: boolean
+    local v1 = u120
+
+    if v1 and v1.anchor.Parent then
+        local v2, v3, v4
+        local anchor = v1.anchor
+
+        if not v1.pipe then
+            local fixed = v1.fixed
+
+            if not fixed then
+                return
+            end
+
+            local Unit = fixed.Unit
+            v3 = (math.abs(Unit.X)) * anchor.Size.X / 2
+                + (math.abs(Unit.Y)) * anchor.Size.Y / 2
+                + (math.abs(Unit.Z)) * anchor.Size.Z / 2
+            v4 = anchor.Position
+                + (anchor.CFrame:VectorToWorldSpace(Unit)) * (v3 + 0.15 + v1.length / 2)
+            v3 = if not (0.9 < (math.abs(v2.Y))) then
+                Vector3.new(0, 1, 0)
+            else
+                Vector3.new(1, 0, 0)
+            v1.part.CFrame = CFrame.lookAt(v4, v4 - v2, v3)
+
+            return
+        end
+
+        v4 = ArcanePipes.openings(v1.pipe, a1, a2)
+
+        if #v4 < 2 then
+            return
+        end
+
+        local v5 = Vector3.new(v4[1].x, v4[1].y, v4[1].z)
+        local v6 = Vector3.new(v4[2].x, v4[2].y, v4[2].z)
+        v2 = if not touches(anchor, v6) then v6 else if touches(anchor, v5) then v6 else v5
+        v3 = Grid.CellSize / 2
+        v4 = anchor.Position + v2 * (v3 + 0.15 + v1.length / 2)
+        v3 = if not (0.9 < (math.abs(v2.Y))) then
+            Vector3.new(0, 1, 0)
+        else
+            Vector3.new(1, 0, 0)
+        v1.part.CFrame = CFrame.lookAt(v4, v4 - v2, v3)
+    end
+end
+
+local function setGhostVisible(a1)
+    -- Line: 240
+    -- upvalues: u94 (ref), u119 (ref), u120 (ref), u97 (ref), u95 (ref)
+    -- types: a1: boolean
+    local v1
+    u94 = a1
+
+    if not a1 then
+        u119()
+    end
+
+    if u120 then
+        v1 = if not a1 then 1 else 0
+        u120.part.LocalTransparencyModifier = v1
+    end
+
+    v1 = nil
+    local v2 = nil
+    local v3 = a1
+
+    for i, j in u97, v1, v2 do
+        j.part.Transparency = if not v3 then 1 else j.transparency
+    end
+
+    if u95 then
+        u95.Visible = v3
+    end
+end
+
+local u128 = {}
+
+function u83.onUiOpenChanged(a1) -- Line: 262; upvalues: u128 (val); types: a1: function
+    table.insert(u128, a1)
+end
+
+function u83.isUiOpen() -- Line: 267; upvalues: u107 (val)
+    return next(u107) ~= nil
+end
+
+function u83.isPanelOpen(a1) -- Line: 272; upvalues: u107 (val); types: a1: string
+    return u107[a1] == true
+end
+
+local function applyLock()
+    -- Line: 276
+    -- upvalues: u106 (ref), u107 (val), u94 (ref), u119 (ref), u120 (ref), u97 (ref), u95 (ref), u128 (val)
+    local v1 = u106
+    u106 = next(u107) ~= nil
+
+    if u106 then
+        u94 = false
+        u119()
+
+        if u120 then
+            u120.part.LocalTransparencyModifier = 1
+        end
+
+        for i, j in u97 do
+            j.part.Transparency = 1
+        end
+
+        if u95 then
+            u95.Visible = false
+        end
+    end
+
+    if u106 ~= v1 then
+        for k, n in u128 do
+            n(u106)
+        end
+    end
+end
+
+local u133 = {
+    selectedBlockId = "GrassBlock",
+    available = 0,
+    rotations = {},
+    tilted = {},
+    flipped = {},
+}
+
+local function isPlanting() -- Line: 315; upvalues: u133 (val), Config (val)
+    local selectedBlockId = u133.selectedBlockId
+
+    if not selectedBlockId then
+        return false
+    end
+
+    local v1 = true
+
+    if Config.Build.Plantables[selectedBlockId] == nil then
+        v1 = Config.Crop.isSeed(selectedBlockId)
+            or Config.Bush.isSeed(selectedBlockId)
+    end
+
+    return v1
+end
+
+local u139 = RaycastParams.new()
+u139.FilterType = Enum.RaycastFilterType.Exclude
+
+local function machineTemplate(a1) -- Line: 337; upvalues: ReplicatedStorage (val); types: a1: string
+    local MachinePreviews = ReplicatedStorage:FindFirstChild("MachinePreviews")
+    local v1 = MachinePreviews and MachinePreviews:FindFirstChild(a1)
+
+    if v1 and v1:IsA("Model") then
+        return v1
+    end
+
+    return nil
+end
+
+local function buildBlockGhost(a1)
+    -- Line: 351
+    -- upvalues: Prefabs (val), Grid (val), Config (val), Palette (val)
+    -- types: a1: string
+    local v1, v2, v3, v4
+    local v5 = Prefabs.forItem(a1)
+
+    if v5 then
+        local v6
+        Prefabs.seatIn(v5, CFrame.identity, Grid.CellSize)
+
+        if not v5:IsA("Model") then
+            v5.Parent = (Instance.new("Model"))
+        else
+            v6 = v5
+        end
+
+        v6.PrimaryPart = nil
+        v6.WorldPivot = CFrame.identity
+
+        return v6
+    end
+
+    local Model = Instance.new("Model")
+    local Part = Instance.new("Part")
+    Part.Name = a1
+    local v7 = Config.Build.footprintOf(a1)
+    Part.Size = (Vector3.new(v7.x, v7.y, v7.z)) * Grid.CellSize
+    Part.Color = Palette.colorFor(a1)
+    Part.Material = Palette.materialFor(a1)
+    Part.MaterialVariant = Palette.variantFor(a1)
+    Part.Transparency = Palette.transparencyFor(a1)
+    Part.CFrame = CFrame.identity
+    v7 = Config.Build.Blocks[a1]
+    local Shapes = Config.Build.Shapes
+    local shape = if not v7 then nil else v7.shape
+
+    if shape and shape ~= "Stairs" then
+        local v8 = Config.Build.shapeSize(shape, Grid.CellSize)
+        Part.Size = Vector3.new(v8.x, v8.y, v8.z)
+    end
+
+    if shape == "Slab" then
+        Part.CFrame = CFrame.new(0, -Grid.CellSize / 4, 0)
+        v1 = a1
+    elseif shape == "Trapdoor" then
+        Part.CFrame = CFrame.new(0, -Grid.CellSize / 2 + Shapes.TrapdoorThicknessStuds / 2, 0)
+        v1 = a1
+    elseif shape == "Door" then
+        Part.CFrame = CFrame.new(0, 0, -(Grid.CellSize / 2 - Shapes.DoorThicknessStuds / 2))
+        v1 = a1
+    elseif shape == "Sign" then
+        Part.CFrame = CFrame.new(0, Grid.CellSize / 2 - Shapes.SignBoardStuds.y / 2 - 0.1, 0)
+        v1 = a1
+    elseif shape == "Rail" then
+        Part.CFrame = CFrame.new(0, -Grid.CellSize / 2 + Shapes.RailPlateStuds / 2, 0)
+        v1 = a1
+    elseif shape == "Tile" then
+        Part.CFrame = CFrame.new(0, -Grid.CellSize / 2 + Shapes.TileThicknessStuds / 2, 0)
+        v1 = a1
+    elseif shape == "PipeCorner" then
+        local v9
+        local PipeStuds = Shapes.PipeStuds
+        v3 = Grid.CellSize / 2 - PipeStuds / 2
+        v4 = {Vector3.new(0, 0, 1), (Vector3.new(1, 0, 0))}
+
+        if v7 and v7.pipeArms then
+            for k, n in v7.pipeArms do
+                table.insert(
+                    {},
+                    (Vector3.new(n.x, n.y, n.z))
+                )
+            end
+        end
+
+        local v10 = nil
+        local v11 = nil
+        v1 = a1
+
+        for m, i5 in v4, v10, v11 do
+            v9 = Part:Clone()
+            v2 = if i5.Z == 0 then
+                Vector3.new(v3, PipeStuds, PipeStuds)
+            else
+                Vector3.new(PipeStuds, PipeStuds, v3)
+            v9.Size = v2
+            v9.CFrame = CFrame.new(i5 * (PipeStuds / 2 + v3 / 2))
+            v9.Parent = Model
+        end
+    elseif not Config.Build.shapePieces(shape, Grid.CellSize) then
+        v1 = a1
+    else
+        local v12
+        v3 = Config.Build.shapePieces(shape, Grid.CellSize) or {}
+        v4 = nil
+        local v13 = nil
+        v1 = a1
+
+        for i, j in v3, v4, v13 do
+            v12 = if i ~= 1 then Part:Clone() else Part
+            v12.Size = Vector3.new(j.size.x, j.size.y, j.size.z)
+            v12.CFrame = CFrame.new(j.offset.x, j.offset.y, j.offset.z)
+            v12.Parent = Model
+        end
+    end
+
+    Part.Parent = Model
+    local v14 = Palette.capFor(v1)
+
+    if v14 then
+        local new_8
+        local v15 = if not v14.bothEnds then {1} else {1, -1}
+        v3 = nil
+        v4 = nil
+
+        for i6, i7 in v15, v3, v4 do
+            v7 = Instance.new("Part")
+            v7.Name = if i7 ~= 1 then "CapUnder" else "Cap"
+            v7.Size = Vector3.new(Grid.CellSize, v14.heightStuds, Grid.CellSize)
+            new_8 = CFrame.new
+            v2 = Grid.CellSize / 2
+            v7.CFrame = new_8(0, i7 * (v2 - v14.heightStuds / 2), 0)
+            v7.Color = v14.color
+            v7.Material = v14.material
+            v7.MaterialVariant = v14.variant
+            v7.Parent = Model
+        end
+    end
+
+    Model.WorldPivot = CFrame.identity
+
+    return Model
+end
+
+local function destroyGhost()
+    -- Line: 493
+    -- upvalues: u93 (ref), u120 (ref), u94 (ref), u95 (ref), u96 (ref), u97 (ref)
+    if u93 then
+        u93:Destroy()
+    end
+
+    u120 = nil
+    u93 = nil
+    u94 = false
+    u95 = nil
+    u96 = nil
+
+    table.clear(u97)
+end
+
+function u83.ghostModel(a1)
+    -- Line: 515
+    -- upvalues: Config (val), PlantLook (val), Prefabs (val), Grid (val), ReplicatedStorage (val)
+    -- upvalues: buildBlockGhost (val), u112 (val)
+    -- types: a1: string
+    local Transparency, v1, v2
+    local v3 = {}
+    local v4 = Config.Build.Containers[a1]
+    v4 = PlantLook.of(if not v4 then a1 else v4.places)
+
+    if not v4 then
+        local places
+        local MachinePreviews = ReplicatedStorage:FindFirstChild("MachinePreviews")
+        local v5 = MachinePreviews and MachinePreviews:FindFirstChild(places)
+        v2 = if not v5 then nil else if not v5:IsA("Model") then nil else v5
+        v1 = if not v2 then buildBlockGhost(places) else v2:Clone()
+    else
+        v2 = PlantLook.model(v4)
+        Prefabs.seatIn(v2, CFrame.identity, Grid.CellSize)
+
+        if not v2:IsA("Model") then
+            v2.Parent = (Instance.new("Model"))
+        else
+            v1 = v2
+        end
+
+        v1.PrimaryPart = nil
+        v1.WorldPivot = CFrame.identity
+    end
+
+    v1.Name = "PlacementGhost"
+    local v6 = {}
+    local v7 = a1
+
+    for i, j in v1:GetDescendants() do
+        if j:IsA("Light")
+            or j:IsA("ParticleEmitter")
+            or j:IsA("Fire")
+            or j:IsA("Smoke")
+            or j:IsA("Sparkles")
+            or j:IsA("Beam")
+            or j:IsA("Trail")
+            or j:IsA("LayerCollector")
+            or j:IsA("ProximityPrompt")
+            or j:IsA("Sound") then
+            table.insert(v6, j)
+        end
+    end
+
+    for k, n in v6 do
+        n:Destroy()
+    end
+
+    for m, i5 in v1:GetDescendants() do
+        if i5:IsA("Decal") or i5:IsA("BasePart") then
+            Transparency = i5.Transparency
+            i5:SetAttribute("AuthoredTransparency", Transparency)
+        end
+
+        if i5:IsA("Decal") then
+            v6 = math.max(i5.Transparency, 0.5)
+            i5.Transparency = v6
+
+            table.insert(
+                v3,
+                {part = i5, transparency = v6}
+            )
+        elseif i5:IsA("BasePart") then
+            i5.Anchored = true
+            i5.CanCollide = false
+            i5.CanQuery = false
+            i5.CanTouch = false
+            i5.CastShadow = false
+            v4 = math.max(i5.Transparency, 0.5)
+            i5.Transparency = v4
+
+            table.insert(
+                v3,
+                {part = i5, transparency = v4}
+            )
+        end
+    end
+
+    v2 = v1:FindFirstChild(v7)
+
+    if v2 and v2:IsA("BasePart") then
+        local SelectionBox = Instance.new("SelectionBox")
+        SelectionBox.Adornee = v2
+        SelectionBox.Color3 = u112
+        SelectionBox.LineThickness = 0.03
+        SelectionBox.SurfaceTransparency = 1
+        SelectionBox.Parent = v1
+
+        return v1, v3, SelectionBox
+    end
+
+    v2 = Config.Build.footprintOf(v7)
+    local CellSize = Grid.CellSize
+    local Part = Instance.new("Part")
+    Part.Name = "FootprintBox"
+    Part.Size = Vector3.new(v2.x * CellSize, v2.y * CellSize, v2.z * CellSize)
+    Part.CFrame = CFrame.new((v2.x - 1) * CellSize / 2, (v2.y - 1) * CellSize / 2, (v2.z - 1) * CellSize / 2)
+    Part.Transparency = 1
+    Part.Anchored = true
+    Part.CanCollide = false
+    Part.CanQuery = false
+    Part.CanTouch = false
+    Part.Massless = true
+    Part.Parent = v1
+    local v8 = Instance.new("SelectionBox")
+    v8.Adornee = Part
+    v8.Color3 = u112
+    v8.LineThickness = 0.03
+    v8.SurfaceTransparency = 1
+    v8.Parent = v1
+
+    return v1, v3, v8
+end
+
+function u83.ghostAt() -- Line: 667; upvalues: u93 (ref), u94 (ref), u96 (ref)
+    local v1 = u93
+
+    if v1 and v1.Parent and u94 then
+        return u96, v1:GetPivot().Position
+    end
+
+    return nil, nil
+end
+
+local function ensureGhost(a1)
+    -- Line: 675
+    -- upvalues: u93 (ref), u96 (ref), u120 (ref), u94 (ref), u95 (ref), u97 (ref), u83 (val), arrowFor (val)
+    -- types: a1: string
+    local v1 = u93
+
+    if v1 and v1.Parent and u96 == a1 then
+        return v1
+    end
+
+    if u93 then
+        u93:Destroy()
+    end
+
+    u120 = nil
+    u93 = nil
+    u94 = false
+    u95 = nil
+    u96 = nil
+
+    table.clear(u97)
+
+    local v2, v3, v4 = u83.ghostModel(a1)
+    v2.Parent = workspace
+    u93 = v2
+    u97 = v3
+    u95 = v4
+    u96 = a1
+
+    arrowFor(v2, a1)
+
+    return v2
+end
+
+local function refreshRayFilter() -- Line: 692; upvalues: u93 (ref), LocalPlayer (val), u139 (val)
+    local v1 = {}
+
+    if u93 then
+        table.insert(v1, u93)
+    end
+
+    local Character = LocalPlayer.Character
+
+    if Character then
+        table.insert(v1, Character)
+    end
+
+    u139.FilterDescendantsInstances = v1
+end
+
+local function rootPart() -- Line: 706; upvalues: LocalPlayer (val)
+    local Character = LocalPlayer.Character
+    return Character and Character:FindFirstChild("HumanoidRootPart")
+end
+
+local function feetPosition() -- Line: 713; upvalues: LocalPlayer (val)
+    local Character = LocalPlayer.Character
+    local v1 = Character and Character:FindFirstChild("HumanoidRootPart")
+
+    if not v1 then
+        return nil
+    end
+
+    local Humanoid = v1.Parent:FindFirstChildOfClass("Humanoid")
+    local Position = v1.Position
+
+    return Position
+        - Vector3.new(0, (if not Humanoid then 0 else Humanoid.HipHeight) + v1.Size.Y / 2, 0)
+end
+
+local u150 = {
+    Stairs = true,
+    Door = true,
+    Gate = true,
+    Trapdoor = true,
+    Pane = true,
+    Sign = true,
+    PipeCorner = true,
+    Rail = true,
+    RailRamp = true,
+}
+
+local function canRotate(a1)
+    -- Line: 747
+    -- upvalues: ReplicatedStorage (val), Config (val), u150 (val)
+    -- types: a1: string
+    local MachinePreviews = ReplicatedStorage:FindFirstChild("MachinePreviews")
+    local v1 = MachinePreviews and MachinePreviews:FindFirstChild(a1)
+    local v2 = if not v1 then nil else if not v1:IsA("Model") then nil else v1
+
+    if v2 then
+        return v2:GetAttribute("Directional") == true
+    end
+
+    v2 = Config.Build.Blocks[a1]
+
+    if v2 and v2.shape and u150[v2.shape] then
+        return true
+    end
+
+    local v3 = Config.Appearance.of(a1)
+
+    if v2 and Config.Appearance.isPrefabKind(v3.kind) then
+        return true
+    end
+
+    if not v2 then
+        if Config.Build.tilts(a1) or Config.Flower.isFlower(a1) then
+            return true
+        end
+
+        v3 = Config.Build.footprintOf(a1)
+
+        return v3.x ~= v3.z
+    end
+
+    if v3.variant == nil and v3.cap == nil then
+        if Config.Build.tilts(a1) or Config.Flower.isFlower(a1) then
+            return true
+        end
+
+        v3 = Config.Build.footprintOf(a1)
+
+        return v3.x ~= v3.z
+    end
+
+    return true
+end
+
+u83.canRotate = canRotate
+
+local function effectiveRotation() -- Line: 785; upvalues: u133 (val), canRotate (val)
+    local selectedBlockId = u133.selectedBlockId
+
+    if selectedBlockId and canRotate(selectedBlockId) then
+        return (u133.rotations[selectedBlockId] or 0) % 360
+    end
+
+    return 0
+end
+
+local function aimLength(a1) -- Line: 804; upvalues: LocalPlayer (val), u66 (val), Grid (val); types: a1: number
+    local Character = LocalPlayer.Character
+    local v1 = Character and Character:FindFirstChild("HumanoidRootPart")
+    local Origin = (u66.ray()).Origin
+
+    return (if not v1 then 0 else (v1.Position - Origin).Magnitude) + a1 + Grid.CellSize
+end
+
+function u83.islandOrigin() -- Line: 838; upvalues: u92 (ref)
+    return u92
+end
+
+function u83.aimedInstance()
+    -- Line: 842
+    -- upvalues: u93 (ref), LocalPlayer (val), u139 (val), u66 (val), Config (val), Grid (val)
+    local Parent
+    local v1 = {}
+
+    if u93 then
+        table.insert(v1, u93)
+    end
+
+    local Character = LocalPlayer.Character
+
+    if Character then
+        table.insert(v1, Character)
+    end
+
+    u139.FilterDescendantsInstances = v1
+    v1 = u66.ray()
+    local v2 = Config.Player.BuildReachCells * Grid.CellSize
+    local _workspace = workspace
+    local Origin = v1.Origin
+    local Unit = v1.Direction.Unit
+    local Character_2 = LocalPlayer.Character
+    local v3 = Character_2 and Character_2:FindFirstChild("HumanoidRootPart")
+    local Origin_2 = (u66.ray()).Origin
+    local v4 = _workspace:Raycast(Origin, Unit * ((if not v3 then 0 else (v3.Position - Origin_2).Magnitude) + v2 + Grid.CellSize), u139)
+
+    if not v4 then
+        return nil
+    end
+
+    local Instance_2 = v4.Instance
+    local Parent_2 = Instance_2
+
+    while Parent_2 do
+        if Parent_2 == workspace then
+            break
+        end
+
+        if Parent_2:IsA("BasePart") and Parent_2:GetAttribute("CellKey") then
+            v1 = Parent_2
+            Parent = v1.Parent
+
+            while Parent do
+                if not Parent:IsA("BasePart")
+                    or (Parent:GetAttribute("CellKey")) ~= v1:GetAttribute("CellKey") then
+                    break
+                end
+
+                Parent = Parent.Parent
+            end
+
+            return v1
+        end
+
+        Parent_2 = Parent_2.Parent
+    end
+
+    local Parent_3 = Instance_2.Parent
+
+    if Parent_3 and Parent_3:IsA("Model") then
+        for i, j in Parent_3:GetChildren() do
+            if j:IsA("BasePart") and j:GetAttribute("CellKey") then
+                return j
+            end
+        end
+    end
+
+    return Instance_2
+end
+
+function u83.aimedBlockPart() -- Line: 899; upvalues: u83 (val)
+    local v1 = u83.aimedInstance()
+
+    if not v1 then
+        return nil
+    end
+
+    local Parent = v1
+
+    while Parent do
+        if Parent == workspace then
+            break
+        end
+
+        if Parent:IsA("BasePart") and type((Parent:GetAttribute("CellKey"))) == "string" then
+            return Parent
+        end
+
+        Parent = Parent.Parent
+    end
+
+    return nil
+end
+
+function u83.aimedBlockId() -- Line: 917; upvalues: u83 (val)
+    local v1 = u83.aimedBlockPart()
+
+    if v1 then
+        return (v1:GetAttribute("BlockId"))
+    end
+
+    return nil
+end
+
+function u83.aimedBlockCell() -- Line: 922; upvalues: u83 (val), Grid (val)
+    local v1 = u83.aimedBlockPart()
+
+    if not v1 then
+        return nil
+    end
+
+    return Grid.fromKey((v1:GetAttribute("CellKey")))
+end
+
+function u83.aimedBlockPartThroughCrops()
+    -- Line: 935
+    -- upvalues: u93 (ref), LocalPlayer (val), u139 (val), u66 (val), Config (val), Grid (val)
+    local Character_2, Instance_2, Origin, Origin_2, Unit, _workspace, v1, v2, v3
+    local v4 = {}
+
+    if u93 then
+        table.insert(v4, u93)
+    end
+
+    local Character = LocalPlayer.Character
+
+    if Character then
+        table.insert(v4, Character)
+    end
+
+    u139.FilterDescendantsInstances = v4
+    v4 = RaycastParams.new()
+    v4.FilterType = Enum.RaycastFilterType.Exclude
+    local v5 = table.clone(u139.FilterDescendantsInstances)
+    local v6 = u66.ray()
+    local v7 = Config.Player.BuildReachCells * Grid.CellSize
+
+    for i = 1, 6 do
+        v4.FilterDescendantsInstances = v5
+        _workspace = workspace
+        Origin = v6.Origin
+        Unit = v6.Direction.Unit
+        Character_2 = LocalPlayer.Character
+        v1 = Character_2 and Character_2:FindFirstChild("HumanoidRootPart")
+        Origin_2 = (u66.ray()).Origin
+        v2 = _workspace:Raycast(Origin, Unit * ((if not v1 then 0 else (v1.Position - Origin_2).Magnitude) + v7 + Grid.CellSize), v4)
+
+        if not v2 then
+            return nil
+        end
+
+        Instance_2 = v2.Instance
+        v2 = nil
+        v3 = nil
+
+        while Instance_2 do
+            if Instance_2 == workspace then
+                break
+            end
+
+            if Instance_2:GetAttribute("CropCell") ~= nil then
+                v2 = Instance_2
+            end
+
+            if not v3
+                and Instance_2:IsA("BasePart")
+                and type((Instance_2:GetAttribute("CellKey"))) == "string" then
+                v3 = Instance_2
+            end
+
+            Instance_2 = Instance_2.Parent
+        end
+
+        if not v2 then
+            return v3
+        end
+
+        table.insert(v5, v2)
+    end
+
+    return nil
+end
+
+function u83.aimedBlockCellThroughCrops() -- Line: 968; upvalues: u83 (val), Grid (val)
+    local v1 = u83.aimedBlockPartThroughCrops()
+
+    if v1 then
+        return (Grid.fromKey((v1:GetAttribute("CellKey"))))
+    end
+
+    return nil
+end
+
+function u83.aimedWaterPoint()
+    -- Line: 982
+    -- upvalues: u93 (ref), LocalPlayer (val), u139 (val), u66 (val), Config (val), Grid (val)
+    local v1 = {}
+
+    if u93 then
+        table.insert(v1, u93)
+    end
+
+    local Character = LocalPlayer.Character
+
+    if Character then
+        table.insert(v1, Character)
+    end
+
+    u139.FilterDescendantsInstances = v1
+    v1 = RaycastParams.new()
+    v1.FilterType = Enum.RaycastFilterType.Exclude
+    v1.FilterDescendantsInstances = u139.FilterDescendantsInstances
+    v1.IgnoreWater = false
+    local v2 = u66.ray()
+    local InteractReachStuds = Config.Player.InteractReachStuds
+    local _workspace = workspace
+    local Origin = v2.Origin
+    local Unit = v2.Direction.Unit
+    local Character_2 = LocalPlayer.Character
+    local v3 = Character_2 and Character_2:FindFirstChild("HumanoidRootPart")
+    local Origin_2 = (u66.ray()).Origin
+    local v4 = _workspace:Raycast(Origin, Unit * ((if not v3 then 0 else (v3.Position - Origin_2).Magnitude) + InteractReachStuds + Grid.CellSize), v1)
+
+    if not v4 then
+        return nil
+    end
+
+    if v4.Instance == workspace.Terrain and v4.Material == Enum.Material.Water then
+        return v4.Position
+    end
+
+    return nil
+end
+
+local function supportCellY() -- Line: 1005; upvalues: LocalPlayer (val), u139 (val), Grid (val)
+    local Character = LocalPlayer.Character
+    local v1 = Character and Character:FindFirstChild("HumanoidRootPart")
+
+    if not v1 then
+        return nil
+    end
+
+    local v2 = workspace:Raycast(v1.Position, Vector3.new(0, -12, 0), u139)
+
+    if not v2 then
+        return nil
+    end
+
+    v1 = v2.Instance:GetAttribute("CellKey")
+
+    if v1 then
+        v2 = Grid.fromKey(v1)
+
+        if v2 then
+            return v2.y
+        end
+    end
+
+    return 0
+end
+
+local u163 = nil
+
+local function cellFromHit(a1, a2, a3)
+    -- Line: 1028
+    -- upvalues: Grid (val), u163 (ref), Config (val), u133 (val), u66 (val)
+    -- types: a1: vector, a2: userdata, a3: number?
+    local Normal = a2.Normal
+    local Position = a2.Position
+    local v1 = Grid.surfaceCell(a1, Position, Normal)
+    u163 = Grid.offsetByNormal(v1, Normal)
+    local Placement = Config.Build.Placement
+    local v2 = 0.9 < Normal.Y
+
+    if Placement.PlaneLockEnabled and v2 and a3 and v1.y == a3 then
+        local v3
+        local selectedBlockId = u133.selectedBlockId
+
+        if selectedBlockId then
+            v3 = true
+
+            if Config.Build.Plantables[selectedBlockId] == nil then
+                v3 = Config.Crop.isSeed(selectedBlockId)
+                    or Config.Bush.isSeed(selectedBlockId)
+            end
+        else
+            v3 = false
+        end
+
+        if not v3 and not u66.isTouch() then
+            local v4
+            v3, v4 = Grid.rimOffset(a1, v1, Position, Placement.EdgeMarginFraction, Placement.AllowDiagonal)
+
+            if v3 == 0 and v4 == 0 then
+                return Grid.offsetByNormal(v1, Normal)
+            end
+
+            return Grid.cell(v1.x + v3, v1.y, v1.z + v4)
+        end
+    end
+
+    return Grid.offsetByNormal(v1, Normal)
+end
+
+local u165 = nil
+local u166 = false
+
+local function flipFor(a1, a2, a3) -- Line: 1081; upvalues: Grid (val); types: a1: vector, a2: userdata
+    local Normal = a2.Normal
+
+    if Normal.Y < -0.5 then
+        return true
+    end
+
+    if not ((math.abs(Normal.Y)) < 0.5) then
+        return false
+    end
+
+    local Y_2 = a2.Position.Y
+
+    return Grid.cellToWorld(a1, a3).Y < Y_2
+end
+
+local function tilting() -- Line: 1095; upvalues: u133 (val), Config (val)
+    local v1 = false
+
+    if u133.tilted[u133.selectedBlockId] == true then
+        v1 = Config.Build.tilts(u133.selectedBlockId)
+    end
+
+    return v1
+end
+
+local function hasUpsideDown(a1) -- Line: 1101; upvalues: Config (val); types: a1: string?
+    local v1 = if not a1 then nil else Config.Build.Blocks[a1]
+    local v2 = false
+
+    if v1 ~= nil then
+        v2 = Config.Build.flipsShape(v1.shape)
+    end
+
+    return v2
+end
+
+local function flipsShape() -- Line: 1106; upvalues: u133 (val), Config (val)
+    local selectedBlockId = u133.selectedBlockId
+    local v1 = if not selectedBlockId then nil else Config.Build.Blocks[selectedBlockId]
+    local v2 = false
+
+    if v1 ~= nil then
+        v2 = Config.Build.flipsShape(v1.shape)
+    end
+
+    if v2 then
+        local v3 = false
+
+        if u133.tilted[u133.selectedBlockId] == true then
+            v3 = Config.Build.tilts(u133.selectedBlockId)
+        end
+
+        v2 = not v3
+    end
+
+    return v2
+end
+
+local function wantsFlip() -- Line: 1111; upvalues: u133 (val), Config (val), u166 (ref)
+    local v1
+    local selectedBlockId = u133.selectedBlockId
+    local v2 = if not selectedBlockId then nil else Config.Build.Blocks[selectedBlockId]
+    local v3 = false
+
+    if v2 ~= nil then
+        v3 = Config.Build.flipsShape(v2.shape)
+    end
+
+    if v3 then
+        v1 = false
+
+        if u133.tilted[u133.selectedBlockId] == true then
+            v1 = Config.Build.tilts(u133.selectedBlockId)
+        end
+
+        v3 = not v1
+    end
+
+    if v3 then
+        v1 = u166
+        v3 = v1 ~= (u133.flipped[u133.selectedBlockId] == true)
+    end
+
+    return v3
+end
+
+local function plantingLayerOf(a1) -- Line: 1130; types: a1: userdata
+    local Parent = a1
+
+    while Parent do
+        if Parent == workspace then
+            break
+        end
+
+        if Parent:IsA("Folder") and Parent.Name == "Nodes" then
+            return Parent
+        end
+
+        Parent = Parent.Parent
+    end
+
+    return nil
+end
+
+local function targetCell()
+    -- Line: 1141
+    -- upvalues: u92 (ref), LocalPlayer (val), u93 (ref), u139 (val), u66 (val), Config (val), Grid (val)
+    -- upvalues: PlantLook (val), u133 (val), plantingLayerOf (val), supportCellY (val), u165 (ref), u166 (ref)
+    -- upvalues: u163 (ref), cellFromHit (val)
+    local v1, v2
+    local v3 = u92
+
+    if not v3 then
+        return nil, false
+    end
+
+    local Character = LocalPlayer.Character
+
+    if not (Character and Character:FindFirstChild("HumanoidRootPart")) then
+        return nil, false
+    end
+
+    local v4 = {}
+
+    if u93 then
+        table.insert(v4, u93)
+    end
+
+    local Character_2 = LocalPlayer.Character
+
+    if Character_2 then
+        table.insert(v4, Character_2)
+    end
+
+    u139.FilterDescendantsInstances = v4
+    local v5 = u66.ray()
+    local v6 = Config.Player.BuildReachCells * Grid.CellSize
+    local _workspace = workspace
+    local Origin = v5.Origin
+    local Unit = v5.Direction.Unit
+    local v7 = v6 * 2
+    local Character_3 = LocalPlayer.Character
+    local v8 = Character_3 and Character_3:FindFirstChild("HumanoidRootPart")
+    local Origin_2 = (u66.ray()).Origin
+    local v9 = _workspace:Raycast(Origin, Unit * ((if not v8 then 0 else (v8.Position - Origin_2).Magnitude) + v7 + Grid.CellSize), u139)
+
+    if v9 and PlantLook.of(u133.selectedBlockId) then
+        v1 = plantingLayerOf(v9.Instance)
+
+        if v1 then
+            v2 = table.clone(u139.FilterDescendantsInstances)
+            table.insert(v2, v1)
+
+            u139.FilterDescendantsInstances = v2
+            local _workspace_2 = workspace
+            local Origin_3 = v5.Origin
+            local Unit_2 = v5.Direction.Unit
+            local v10 = v6 * 2
+            local Character_4 = LocalPlayer.Character
+            v2 = Character_4 and Character_4:FindFirstChild("HumanoidRootPart")
+            local Origin_4 = (u66.ray()).Origin
+            v9 = _workspace_2:Raycast(Origin_3, Unit_2 * ((if not v2 then 0 else (v2.Position - Origin_4).Magnitude) + v10 + Grid.CellSize), u139)
+        end
+    end
+
+    v6 = supportCellY()
+    v1 = nil
+    u165 = if not v9 then nil else v9.Normal
+    u166 = false
+    u163 = nil
+
+    if not v9 then
+        if Config.Build.Placement.PlaneLockEnabled and v6 then
+            v1 = Grid.cellFromPlane(v3, v5.Origin, v5.Direction, v6)
+        end
+
+        return v1, false
+    end
+
+    v1 = cellFromHit(v3, v9, v6)
+    local Normal_2 = v9.Normal
+
+    if Normal_2.Y < -0.5 then
+        v2 = true
+    elseif not ((math.abs(Normal_2.Y)) < 0.5) then
+        v2 = false
+    else
+        local Y_2 = v9.Position.Y
+        v2 = Grid.cellToWorld(v3, v1).Y < Y_2
+    end
+
+    u166 = v2
+
+    return v1, true
+end
+
+function u83.aimReport()
+    -- Line: 1205
+    -- upvalues: targetCell (val), u163 (ref), u93 (ref), LocalPlayer (val), u139 (val), u66 (val), Config (val)
+    -- upvalues: Grid (val), u92 (ref), u83 (val)
+    local v1, v2 = targetCell()
+    local v3 = u163
+    local v4 = {}
+
+    if u93 then
+        table.insert(v4, u93)
+    end
+
+    local Character = LocalPlayer.Character
+
+    if Character then
+        table.insert(v4, Character)
+    end
+
+    u139.FilterDescendantsInstances = v4
+    v4 = u66.ray()
+    local v5 = Config.Player.BuildReachCells * Grid.CellSize * 2
+    local Character_2 = LocalPlayer.Character
+    local v6 = Character_2 and Character_2:FindFirstChild("HumanoidRootPart")
+    local Origin = (u66.ray()).Origin
+    local v7 = (if not v6 then 0 else (v6.Position - Origin).Magnitude) + v5
+        + Grid.CellSize
+    local v8 = workspace:Raycast(v4.Origin, v4.Direction.Unit * v7, u139)
+
+    return {
+        ray = v4,
+        hit = if not v8 then nil else v8.Instance,
+        position = if not v8 then nil else v8.Position,
+        normal = if not v8 then nil else v8.Normal,
+        cell = v1,
+        struck = v2,
+        faceCell = v3,
+        origin = u92,
+        breakPart = u83.aimedInstance(),
+    }
+end
+
+local u176 = OverlapParams.new()
+u176.FilterType = Enum.RaycastFilterType.Exclude
+local u178 = {}
+local u179 = {}
+local u181 = Config.keepClearReach()
+
+local function occupiedCellsNear(a1, a2, a3)
+    -- Line: 1244
+    -- upvalues: LocalPlayer (val), u176 (val), u93 (ref), Grid (val), u178 (val), u179 (val), u181 (val), Config (val)
+    -- types: a1: vector, a3: number
+    local Attribute, Attribute_2, Attribute_3, Attribute_4, Attribute_5, Attribute_6, v1, v2, v3
+    local Character = LocalPlayer.Character
+    u176.FilterDescendantsInstances = if not Character then
+        if not u93 then {} else {u93}
+    else
+        if u93 then {Character, u93} else if not u93 then {} else {u93}
+    local v4 = Grid.CellSize * (a3 * 2 + 3)
+    local v5 = Grid.cellToWorld(a1, a2)
+
+    table.clear(u178)
+    table.clear(u179)
+
+    local v6 = {}
+    local v7 = {}
+    local v8 = {}
+    local v9 = {}
+    local v10 = v4 + 2 * u181 * Grid.CellSize
+
+    for i, j in workspace:GetPartBoundsInBox(CFrame.new(v5), Vector3.new(v4, v10, v4), u176) do
+        Attribute = j:GetAttribute("NodeCell")
+
+        if not Attribute then
+            Attribute_2 = j:GetAttribute("CropCell") or j:GetAttribute("BushCell")
+
+            if type(Attribute_2) ~= "string" then
+                Attribute_3 = j:GetAttribute("MachineId")
+                v2 = Attribute_3 ~= nil
+                v3 = if type(Attribute_3) ~= "string" then
+                    0
+                else
+                    Config.keepClearAboveOf(Attribute_3)
+                v1 = j:GetAttribute("Cells")
+
+                if not v1 then
+                    Attribute_4 = j:GetAttribute("CellKey")
+
+                    if Attribute_4 then
+                        v6[Attribute_4] = true
+                        v7[Attribute_4] = v2
+                        Attribute_5 = j:GetAttribute("BlockId")
+
+                        if type(Attribute_5) == "string" then
+                            v9[Attribute_4] = Attribute_5
+                        end
+
+                        Attribute_6 = j:GetAttribute("WaterUses")
+
+                        if Attribute_5 == "WaterBlock"
+                            and type(Attribute_6) == "number"
+                            and Attribute_6 < Config.Build.Farm.WaterUses then
+                            u178[Attribute_4] = true
+                        end
+                    end
+                else
+                    for k, n in string.split(v1, ";") do
+                        v6[n] = true
+                        v7[n] = v2
+
+                        if v3 > 0 then
+                            u179[n] = v3
+                        end
+                    end
+                end
+            else
+                v6[Attribute_2] = true
+            end
+        else
+            v8[Attribute] = true
+        end
+    end
+
+    return v6, v7, v8, v9
+end
+
+local function rotationAt(a1)
+    -- Line: 1327
+    -- upvalues: u133 (val), canRotate (val), Config (val), u92 (ref), occupiedCellsNear (val), Grid (val)
+    local selectedBlockId = u133.selectedBlockId
+    local v1 = if not selectedBlockId then
+        0
+    else
+        if canRotate(selectedBlockId) then (u133.rotations[selectedBlockId] or 0) % 360 else 0
+    local v2 = if not u133.selectedBlockId then
+        nil
+    else
+        Config.Build.Blocks[u133.selectedBlockId]
+
+    if a1 and u92 and v2 then
+        if v2.shape ~= "Door" and v2.shape ~= "Gate" then
+            return v1
+        end
+
+        local u33 = occupiedCellsNear(u92, a1, 1)
+
+        local function taken(a1_2, a2)
+            -- Line: 1334
+            -- upvalues: u33 (val), Grid (upval), a1 (val)
+            -- types: a1_2: number, a2: number
+            return u33[Grid.key(Grid.cell(a1.x + a1_2, a1.y, a1.z + a2))]
+                == true
+        end
+
+        local v3 = u33[Grid.key(Grid.cell(a1.x + 1, a1.y, a1.z + 0))]
+            == true
+            or u33[Grid.key(Grid.cell(a1.x + -1, a1.y, a1.z + 0))]
+                == true
+
+        return ((if not (u33[Grid.key(Grid.cell(a1.x + 0, a1.y, a1.z + 1))]
+            == true
+            or u33[Grid.key(Grid.cell(a1.x + 0, a1.y, a1.z + -1))]
+                == true) then
+            0
+        else
+            if v3 then 0 else 90)
+            + v1)
+            % 360
+    end
+
+    return v1
+end
+
+local function footprintFor(a1) -- Line: 1346; upvalues: Grid (val), Config (val), u133 (val), canRotate (val)
+    local footprintCells = Grid.footprintCells
+    local v1 = Config.Build.footprintOf(u133.selectedBlockId)
+    local selectedBlockId = u133.selectedBlockId
+
+    return footprintCells(a1, v1, if not selectedBlockId then 0 else if canRotate(selectedBlockId) then (u133.rotations[selectedBlockId] or 0) % 360 else 0)
+end
+
+local function looksPlaceable(a1, a2, a3, a4, a5, a6)
+    -- Line: 1351
+    -- upvalues: u92 (ref), LocalPlayer (val), u133 (val), IslandRadiusCells (ref), Config (val), BuildFlags (val)
+    -- upvalues: Grid (val), canRotate (val), u102 (ref), u181 (val), u179 (val), u178 (val), ReplicatedStorage (val)
+    -- types: a2: table, a3: table, a4: table, a5: table, a6: number
+    local v1 = u92
+    local Character = LocalPlayer.Character
+    local v2 = Character and Character:FindFirstChild("HumanoidRootPart")
+
+    if v1 and v2 then
+        local placementRuleFor, selectedBlockId_3, selectedBlockId_4, u305, v3
+        local Character_2 = LocalPlayer.Character
+        local v4 = Character_2 and Character_2:FindFirstChild("HumanoidRootPart")
+
+        if v4 then
+            local Humanoid = v4.Parent:FindFirstChildOfClass("Humanoid")
+            local Position = v4.Position
+            v2 = Position
+                - Vector3.new(0, (if not Humanoid then 0 else Humanoid.HipHeight) + v4.Size.Y / 2, 0)
+        else
+            v2 = nil
+        end
+
+        if u133.available <= 0 then
+            return false
+        end
+
+        local u565 = IslandRadiusCells
+        local IslandTopCellY = Config.Build.IslandTopCellY
+        local v5 = BuildFlags.protectionEnabled()
+        local footprintCells = Grid.footprintCells
+        local v6 = Config.Build.footprintOf(u133.selectedBlockId)
+        local selectedBlockId = u133.selectedBlockId
+        local v7 = footprintCells(a1, v6, if not selectedBlockId then 0 else if canRotate(selectedBlockId) then (u133.rotations[selectedBlockId] or 0) % 360 else 0)
+        local u663 = {}
+
+        for i, j in v7 do
+            u663[(Grid.key(j))] = true
+        end
+
+        v6 = (1 / 0)
+        local v8 = nil
+        local v9 = nil
+        local v10, v11, v12, v13 = a6, a1, a4, a5
+
+        for k, n in v7, v8, v9 do
+            if not Grid.isInBounds(n, u102) then
+                return false
+            end
+
+            if not a2[Grid.key(n)] and not Grid.isSolidIsland(n, u565, IslandTopCellY) then
+                if v5 and Config.Build.isProtectedCell(n.x, n.y, n.z) then
+                    return false
+                end
+
+                v6 = math.min(v6, ((Grid.cellToWorld(v1, n)) - v2).Magnitude)
+                continue
+            end
+
+            return false
+        end
+
+        if v10 < v6 then
+            return false
+        end
+
+        v8 = nil
+        v9 = nil
+
+        for m, i5 in v7, v8, v9 do
+            for i6 = 1, u181 do
+                v6 = Grid.key(Grid.cell(i5.x, i5.y - i6, i5.z))
+
+                if a2[v6] and not u663[v6] then
+                    v5 = u179[v6]
+
+                    if not v5 or not (i6 <= v5) then
+                        break
+                    end
+
+                    return false
+                end
+            end
+        end
+
+        local selectedBlockId_2 = u133.selectedBlockId
+        v1 = Grid.key(Grid.cell(v11.x, v11.y - 1, v11.z))
+        local v14 = v13[v1]
+        v8 = Config.Build.Containers[selectedBlockId_2 or ""]
+
+        if selectedBlockId_2 == "WaterBlock" then
+            if u178[v1] then
+                return false
+            end
+
+            if Config.Crop.isSeed(selectedBlockId_2)
+                and v14 ~= Config.Crop.RequiredGround then
+                return false
+            end
+
+            if Config.Bush.isSeed(selectedBlockId_2)
+                and not Config.Bush.GroundBlocks[v14 or ""] then
+                return false
+            end
+
+            v8 = Config.Build.Plantables[u133.selectedBlockId]
+
+            if v8 then
+                v14 = Config.Tool.clearanceOf(v8.node)
+
+                for i15 = -v14, v14 do
+                    for i16 = -v14, v14 do
+                        if i15 == 0 and i16 == 0 then
+                            continue
+                        end
+
+                        if v12[Grid.key(Grid.cell(v11.x + i15, v11.y, v11.z + i16))] then
+                            return false
+                        end
+                    end
+                end
+            end
+
+            placementRuleFor = Config.Build.placementRuleFor
+            selectedBlockId_3 = u133.selectedBlockId
+            selectedBlockId_4 = u133.selectedBlockId
+            v1 = ReplicatedStorage:FindFirstChild("MachinePreviews")
+            v3 = v1 and v1:FindFirstChild(selectedBlockId_4)
+            u305 = placementRuleFor(selectedBlockId_3, (if not v3 then nil else if not v3:IsA("Model") then nil else v3) ~= nil)
+
+            if u305.requiresSupport then
+                v9 = (1 / 0)
+
+                for i17, i18 in v7 do
+                    v9 = math.min(v9, i18.y)
+                end
+
+                for i19, i20 in v7 do
+                    if i20.y == v9
+                        and not Grid.isSupported(
+                            i20,
+                            function(a1)
+                                -- Line: 1467
+                                -- upvalues: Grid (upval), u663 (val), a2 (val), u305 (val), a3 (val), u565 (val)
+                                -- upvalues: IslandTopCellY (val)
+                                local v1 = Grid.key(a1)
+
+                                if not u663[v1] then
+                                    if not a2[v1] then
+                                        return Grid.isSolidIsland(a1, u565, IslandTopCellY)
+                                    else
+                                        local supportMustBeStructural = u305.supportMustBeStructural
+
+                                        if supportMustBeStructural then
+                                            if a3[v1] == true then
+                                                supportMustBeStructural = true
+                                            else
+                                                supportMustBeStructural = false
+                                            end
+                                        end
+
+                                        return not supportMustBeStructural
+                                    end
+                                else
+                                    return true
+                                end
+                            end
+                        ) then
+                        return false
+                    end
+                end
+            end
+
+            if not Config.Build.Placement.RequireAdjacency then
+                return true
+            end
+
+            for i21, i22 in v7 do
+                if Grid.forEachNeighbor(
+                    i22,
+                    function(a1)
+                        -- Line: 1489
+                        -- upvalues: Grid (upval), u663 (val), a2 (val), u565 (val), IslandTopCellY (val)
+                        local v1 = Grid.key(a1)
+
+                        if not u663[v1] then
+                            if not a2[v1] then
+                                return Grid.isSolidIsland(a1, u565, IslandTopCellY) or nil
+                            else
+                                return true
+                            end
+                        else
+                            return nil
+                        end
+                    end
+                ) then
+                    return true
+                end
+            end
+
+            return false
+        end
+
+        if v8 and v8.places == "WaterBlock" and u178[v1] then
+            return false
+        end
+
+        if Config.Crop.isSeed(selectedBlockId_2) and v14 ~= Config.Crop.RequiredGround then
+            return false
+        end
+
+        if Config.Bush.isSeed(selectedBlockId_2)
+            and not Config.Bush.GroundBlocks[v14 or ""] then
+            return false
+        end
+
+        v8 = Config.Build.Plantables[u133.selectedBlockId]
+
+        if v8 then
+            v14 = Config.Tool.clearanceOf(v8.node)
+
+            for i7 = -v14, v14 do
+                for i8 = -v14, v14 do
+                    if i7 == 0 and i8 == 0 then
+                        continue
+                    end
+
+                    if v12[Grid.key(Grid.cell(v11.x + i7, v11.y, v11.z + i8))] then
+                        return false
+                    end
+                end
+            end
+        end
+
+        placementRuleFor = Config.Build.placementRuleFor
+        selectedBlockId_3 = u133.selectedBlockId
+        selectedBlockId_4 = u133.selectedBlockId
+        v1 = ReplicatedStorage:FindFirstChild("MachinePreviews")
+        v3 = v1 and v1:FindFirstChild(selectedBlockId_4)
+        u305 = placementRuleFor(selectedBlockId_3, (if not v3 then nil else if not v3:IsA("Model") then nil else v3) ~= nil)
+
+        if u305.requiresSupport then
+            v9 = (1 / 0)
+
+            for i9, i10 in v7 do
+                v9 = math.min(v9, i10.y)
+            end
+
+            for i11, i12 in v7 do
+                if i12.y == v9
+                    and not Grid.isSupported(
+                        i12,
+                        function(a1)
+                            -- Line: 1467
+                            -- upvalues: Grid (upval), u663 (val), a2 (val), u305 (val), a3 (val), u565 (val)
+                            -- upvalues: IslandTopCellY (val)
+                            local v1 = Grid.key(a1)
+
+                            if not u663[v1] then
+                                if not a2[v1] then
+                                    return Grid.isSolidIsland(a1, u565, IslandTopCellY)
+                                else
+                                    local supportMustBeStructural = u305.supportMustBeStructural
+
+                                    if supportMustBeStructural then
+                                        if a3[v1] == true then
+                                            supportMustBeStructural = true
+                                        else
+                                            supportMustBeStructural = false
+                                        end
+                                    end
+
+                                    return not supportMustBeStructural
+                                end
+                            else
+                                return true
+                            end
+                        end
+                    ) then
+                    return false
+                end
+            end
+        end
+
+        if not Config.Build.Placement.RequireAdjacency then
+            return true
+        end
+
+        for i13, i14 in v7 do
+            if Grid.forEachNeighbor(
+                i14,
+                function(a1)
+                    -- Line: 1489
+                    -- upvalues: Grid (upval), u663 (val), a2 (val), u565 (val), IslandTopCellY (val)
+                    local v1 = Grid.key(a1)
+
+                    if not u663[v1] then
+                        if not a2[v1] then
+                            return Grid.isSolidIsland(a1, u565, IslandTopCellY) or nil
+                        else
+                            return true
+                        end
+                    else
+                        return nil
+                    end
+                end
+            ) then
+                return true
+            end
+        end
+
+        return false
+    end
+
+    return false
+end
+
+local u186 = nil
+local u187 = false
+local u188 = (-1 / 0)
+local u189 = false
+
+local function pastBoundary(a1)
+    -- Line: 1536
+    -- upvalues: Grid (val), Config (val), u133 (val), canRotate (val), u102 (ref)
+    local v1, v2
+    local footprintCells = Grid.footprintCells
+    local v3 = Config.Build.footprintOf(u133.selectedBlockId)
+    local selectedBlockId = u133.selectedBlockId
+    v1, v2, v3 = footprintCells(a1, v3, if not selectedBlockId then 0 else if canRotate(selectedBlockId) then (u133.rotations[selectedBlockId] or 0) % 360 else 0)
+
+    for i, j in v1, v2, v3 do
+        if not Grid.isInBounds(j, u102) then
+            return true
+        end
+    end
+
+    return false
+end
+
+local function pipeLineAt(a1) -- Line: 1554; upvalues: Grid (val), CollectionService (val), Pipes (val)
+    local v1 = Grid.key(a1)
+
+    for i, j in CollectionService:GetTagged("WaterPump") do
+        if j:GetAttribute("PipeNext") == v1 then
+            return Pipes.dirFromKey(j:GetAttribute("PipeFlow"))
+        end
+    end
+
+    return nil
+end
+
+local function pipeTurnsRight() -- Line: 1565; upvalues: u133 (val)
+    return (u133.rotations[u133.selectedBlockId] or 0) // 90 % 2 == 0
+end
+
+local u193 = nil
+local u194 = nil
+local u195 = nil
+local u200 = Color3.fromRGB(90, 160, 235)
+
+local function ensurePipePreview() -- Line: 1576; upvalues: u193 (ref), u194 (ref), u195 (ref), u200 (val)
+    if u193 and u193.Parent and u194 and u195 then
+        return u194, u195
+    end
+
+    local Folder = Instance.new("Folder")
+    Folder.Name = "PipePreview"
+    Folder.Parent = workspace
+    local Part = Instance.new("Part")
+    Part.Name = "StreamHolder"
+    Part.Size = Vector3.new(0.10000000149011612, 0.10000000149011612, 0.10000000149011612)
+    Part.Transparency = 1
+    Part.Anchored = true
+    Part.CanCollide = false
+    Part.CanQuery = false
+    Part.CanTouch = false
+    Part.Parent = Folder
+    local Attachment = Instance.new("Attachment")
+    Attachment.Parent = Part
+    local Attachment_2 = Instance.new("Attachment")
+    Attachment_2.Parent = Part
+    local v1 = Instance.new("Beam")
+    v1.Attachment0 = Attachment
+    v1.Attachment1 = Attachment_2
+    v1.Color = ColorSequence.new(u200)
+    v1.Transparency = NumberSequence.new(0.3)
+    v1.Width0 = 0.5
+    v1.Width1 = 0.7
+    v1.LightEmission = 0.4
+    v1.FaceCamera = true
+    v1.Texture = "rbxasset://textures/particles/sparkles_main.dds"
+    v1.TextureMode = Enum.TextureMode.Wrap
+    v1.TextureLength = 1.5
+    v1.TextureSpeed = -2
+    v1.Parent = Folder
+    u193 = Folder
+    u194 = Attachment
+    u195 = Attachment_2
+
+    return Attachment, Attachment_2
+end
+
+function u119() -- Line: 1616; upvalues: u193 (ref), u194 (ref), u195 (ref)
+    local v1 = u193
+
+    if v1 then
+        u193 = nil
+        u194 = nil
+        u195 = nil
+
+        v1:Destroy()
+    end
+end
+
+local function showPipePreview(a1, a2)
+    -- Line: 1624
+    -- upvalues: Grid (val), Config (val), u93 (ref), LocalPlayer (val), u119 (ref), ensurePipePreview (val)
+    -- types: a1: vector
+    local CellSize = Grid.CellSize
+    local v1 = Config.Factory.Pump.DepthCells * CellSize
+    local v2 = (Grid.cellToWorld(a1, a2)) - Vector3.new(0, CellSize / 2, 0)
+    local v3 = RaycastParams.new()
+    v3.FilterType = Enum.RaycastFilterType.Exclude
+    local v4 = {}
+
+    if u93 then
+        table.insert(v4, u93)
+    end
+
+    if LocalPlayer.Character then
+        table.insert(v4, LocalPlayer.Character)
+    end
+
+    v3.FilterDescendantsInstances = v4
+    v4 = workspace:Raycast(v2, Vector3.new(0, -v1, 0), v3)
+
+    if v4 and (v2 - v4.Position).Magnitude < CellSize - 0.05 then
+        u119()
+        return
+    end
+
+    local v5, v6 = ensurePipePreview()
+    v5.WorldPosition = v2
+    local Position = if not v4 then v2 - Vector3.new(0, v1, 0) else v4.Position
+    v6.WorldPosition = Position
+end
+
+local function resolveTarget()
+    -- Line: 1651
+    -- upvalues: u92 (ref), targetCell (val), u189 (ref), u187 (ref), Grid (val), u133 (val), canRotate (val)
+    -- upvalues: Config (val), u166 (ref), u186 (ref), pastBoundary (val), LocalPlayer (val), occupiedCellsNear (val)
+    -- upvalues: looksPlaceable (val), u163 (ref)
+    local v1 = u92
+    local v2, v3 = targetCell()
+
+    if v1 and v2 then
+        local Character_2, Humanoid, Position, SnapRadiusCells, footprintCells, selectedBlockId_4, selectedBlockId_5,
+            v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15
+
+        if u189 then
+            u187 = false
+            return nil, false
+        end
+
+        local v16 = Grid.key(v2)
+        local selectedBlockId = u133.selectedBlockId
+        local selectedBlockId_2 = u133.selectedBlockId
+        local v17 = if not selectedBlockId_2 then
+            0
+        else
+            if canRotate(selectedBlockId_2) then
+                (u133.rotations[selectedBlockId_2] or 0) % 360
+            else
+                0
+        local available = u133.available
+        local v18 = tostring(v3)
+        local selectedBlockId_3 = u133.selectedBlockId
+        local v19 = if not selectedBlockId_3 then nil else Config.Build.Blocks[selectedBlockId_3]
+        local v20 = false
+
+        if v19 ~= nil then
+            v20 = Config.Build.flipsShape(v19.shape)
+        end
+
+        if v20 then
+            v5 = false
+
+            if u133.tilted[u133.selectedBlockId] == true then
+                v5 = Config.Build.tilts(u133.selectedBlockId)
+            end
+
+            v20 = not v5
+        end
+
+        if v20 then
+            v5 = u166
+            v20 = v5 ~= (u133.flipped[u133.selectedBlockId] == true)
+        end
+
+        local u124 = ("%*|%*|%*|%*|%*|%*"):format(v16, selectedBlockId, v17, available, v18, (tostring(v20)))
+        local v21 = u186
+        local u127 = os.clock()
+
+        if v21 and v21.key == u124 and u127 - v21.at < 0.2 then
+            u187 = v21.boundary
+            return v21.cell, v21.placeable
+        end
+
+        local function answer(a1, a2, a3)
+            -- Line: 1673
+            -- upvalues: u186 (upval), u124 (val), u127 (val), u187 (upval)
+            -- types: a2: boolean, a3: boolean?
+            u186 = {
+                key = u124,
+                cell = a1,
+                placeable = a2,
+                boundary = a3 == true,
+                at = u127,
+            }
+            u187 = a3 == true
+
+            return a1, a2
+        end
+
+        if not pastBoundary(v2) then
+            if v3 then
+                Character_2 = LocalPlayer.Character
+                v17 = Character_2 and Character_2:FindFirstChild("HumanoidRootPart")
+
+                if v17 then
+                    Humanoid = v17.Parent:FindFirstChildOfClass("Humanoid")
+                    Position = v17.Position
+                    v14 = Position
+                        - Vector3.new(0, (if not Humanoid then 0 else Humanoid.HipHeight) + v17.Size.Y / 2, 0)
+                else
+                    v14 = nil
+                end
+
+                if v14 then
+                    v17 = (1 / 0)
+                    footprintCells = Grid.footprintCells
+                    v19 = Config.Build.footprintOf(u133.selectedBlockId)
+                    selectedBlockId_4 = u133.selectedBlockId
+                    v20, v5, v19 = footprintCells(v2, v19, if not selectedBlockId_4 then 0 else if canRotate(selectedBlockId_4) then (u133.rotations[selectedBlockId_4] or 0) % 360 else 0)
+
+                    for i6, i7 in v20, v5, v19 do
+                        v17 = math.min(v17, ((Grid.cellToWorld(v1, i7)) - v14).Magnitude)
+                    end
+
+                    if Config.Player.BuildReachCells * Grid.CellSize < v17 then
+                        return answer(v2, false)
+                    end
+                end
+            end
+
+            SnapRadiusCells = Config.Build.Placement.SnapRadiusCells
+            v17 = Config.Player.BuildReachCells * Grid.CellSize
+            v15, v18, v4, v20 = occupiedCellsNear(v1, v2, SnapRadiusCells)
+
+            if looksPlaceable(v2, v15, v18, v4, v20, v17) then
+                return answer(v2, true)
+            end
+
+            v1 = u163
+
+            if v3
+                and v1
+                and (Grid.key(v1)) ~= Grid.key(v2)
+                and looksPlaceable(v1, v15, v18, v4, v20, v17) then
+                return answer(v1, true)
+            end
+
+            selectedBlockId_5 = u133.selectedBlockId
+
+            if selectedBlockId_5 then
+                v5 = true
+
+                if Config.Build.Plantables[selectedBlockId_5] == nil then
+                    v5 = Config.Crop.isSeed(selectedBlockId_5)
+                        or Config.Bush.isSeed(selectedBlockId_5)
+                end
+            else
+                v5 = false
+            end
+
+            if v5 then
+                return answer(if not v3 then nil else v2, false)
+            end
+
+            for i8 = 1, SnapRadiusCells do
+                v6 = nil
+                v7 = (1 / 0)
+                v8 = i8
+
+                for i9 = -i8, v8 do
+                    v9 = i8
+
+                    for i10 = -i8, v9 do
+                        v10 = i8
+
+                        for i11 = -i8, v10 do
+                            v12 = math.abs(i9)
+                            v13 = math.abs(i10)
+
+                            if math.max(v12, v13, (math.abs(i11))) == i8 then
+                                v11 = Grid.cell(v2.x + i9, v2.y + i10, v2.z + i11)
+
+                                if looksPlaceable(v11, v15, v18, v4, v20, v17) then
+                                    v12 = i9 * i9 + i10 * i10 + i11 * i11
+                                    v13 = true
+
+                                    if not (v12 < v7) then
+                                        v13 = false
+
+                                        if v12 == v7 then
+                                            v13 = false
+
+                                            if v6 ~= nil then
+                                                v13 = v6.y < v11.y
+                                            end
+                                        end
+                                    end
+
+                                    if v13 then
+                                        v7 = v12
+                                        v6 = v11
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+
+                if v6 then
+                    return answer(v6, true)
+                end
+            end
+
+            return answer(if not v3 then nil else v2, false)
+        end
+
+        local Character = LocalPlayer.Character
+        v14 = Character and Character:FindFirstChild("HumanoidRootPart")
+        v17 = Config.Player.BuildReachCells * Grid.CellSize + Grid.CellSize
+        v15 = false
+
+        if v14 ~= nil then
+            v15 = ((Grid.cellToWorld(v1, v2)) - v14.Position).Magnitude <= v17
+        end
+
+        if not v3 and not v15 then
+            if v3 then
+                Character_2 = LocalPlayer.Character
+                v17 = Character_2 and Character_2:FindFirstChild("HumanoidRootPart")
+
+                if v17 then
+                    Humanoid = v17.Parent:FindFirstChildOfClass("Humanoid")
+                    Position = v17.Position
+                    v14 = Position
+                        - Vector3.new(0, (if not Humanoid then 0 else Humanoid.HipHeight) + v17.Size.Y / 2, 0)
+                else
+                    v14 = nil
+                end
+
+                if v14 then
+                    v17 = (1 / 0)
+                    footprintCells = Grid.footprintCells
+                    v19 = Config.Build.footprintOf(u133.selectedBlockId)
+                    selectedBlockId_4 = u133.selectedBlockId
+                    v20, v5, v19 = footprintCells(v2, v19, if not selectedBlockId_4 then 0 else if canRotate(selectedBlockId_4) then (u133.rotations[selectedBlockId_4] or 0) % 360 else 0)
+
+                    for i, j in v20, v5, v19 do
+                        v17 = math.min(v17, ((Grid.cellToWorld(v1, j)) - v14).Magnitude)
+                    end
+
+                    if Config.Player.BuildReachCells * Grid.CellSize < v17 then
+                        return answer(v2, false)
+                    end
+                end
+            end
+
+            SnapRadiusCells = Config.Build.Placement.SnapRadiusCells
+            v17 = Config.Player.BuildReachCells * Grid.CellSize
+            v15, v18, v4, v20 = occupiedCellsNear(v1, v2, SnapRadiusCells)
+
+            if looksPlaceable(v2, v15, v18, v4, v20, v17) then
+                return answer(v2, true)
+            end
+
+            v1 = u163
+
+            if v3
+                and v1
+                and (Grid.key(v1)) ~= Grid.key(v2)
+                and looksPlaceable(v1, v15, v18, v4, v20, v17) then
+                return answer(v1, true)
+            end
+
+            selectedBlockId_5 = u133.selectedBlockId
+
+            if selectedBlockId_5 then
+                v5 = true
+
+                if Config.Build.Plantables[selectedBlockId_5] == nil then
+                    v5 = Config.Crop.isSeed(selectedBlockId_5)
+                        or Config.Bush.isSeed(selectedBlockId_5)
+                end
+            else
+                v5 = false
+            end
+
+            if v5 then
+                return answer(if not v3 then nil else v2, false)
+            end
+
+            for k = 1, SnapRadiusCells do
+                v6 = nil
+                v7 = (1 / 0)
+                v8 = k
+
+                for n = -k, v8 do
+                    v9 = k
+
+                    for m = -k, v9 do
+                        v10 = k
+
+                        for i5 = -k, v10 do
+                            v12 = math.abs(n)
+                            v13 = math.abs(m)
+
+                            if math.max(v12, v13, (math.abs(i5))) == k then
+                                v11 = Grid.cell(v2.x + n, v2.y + m, v2.z + i5)
+
+                                if looksPlaceable(v11, v15, v18, v4, v20, v17) then
+                                    v12 = n * n + m * m + i5 * i5
+                                    v13 = true
+
+                                    if not (v12 < v7) then
+                                        v13 = false
+
+                                        if v12 == v7 then
+                                            v13 = false
+
+                                            if v6 ~= nil then
+                                                v13 = v6.y < v11.y
+                                            end
+                                        end
+                                    end
+
+                                    if v13 then
+                                        v7 = v12
+                                        v6 = v11
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+
+                if v6 then
+                    return answer(v6, true)
+                end
+            end
+
+            return answer(if not v3 then nil else v2, false)
+        end
+
+        return answer(v2, false, true)
+    end
+
+    return nil, false
+end
+
+function u83.setSelectedBlock(a1, a2, a3)
+    -- Line: 1789
+    -- upvalues: u133 (val)
+    -- types: a1: string, a2: number, a3: string?
+    u133.selectedBlockId = a1
+    u133.available = a2
+    u133.selectedRoll = a3
+end
+
+function u83.setBuildMode(a1)
+    -- Line: 1795
+    -- upvalues: u105 (ref), u94 (ref), u119 (ref), u120 (ref), u97 (ref), u95 (ref)
+    -- types: a1: boolean
+    u105 = a1
+
+    if not a1 then
+        u94 = false
+        u119()
+
+        if u120 then
+            u120.part.LocalTransparencyModifier = 1
+        end
+
+        for i, j in u97 do
+            j.part.Transparency = 1
+        end
+
+        if u95 then
+            u95.Visible = false
+        end
+    end
+end
+
+local u207 = {}
+local u208 = {}
+
+function u83.registerMenu(a1, a2) -- Line: 1815; upvalues: u207 (val), u208 (val); types: a1: string, a2: function
+    u207[a1] = a2
+    u208[a1] = a2
+end
+
+function u83.registerClose(a1, a2) -- Line: 1822; upvalues: u208 (val); types: a1: string, a2: function
+    u208[a1] = a2
+end
+
+function u83.closeIfOpen(a1) -- Line: 1827; upvalues: u208 (val), u107 (val); types: a1: string
+    local v1 = u208[a1]
+
+    if u107[a1] and v1 then
+        v1()
+        return true
+    end
+
+    return false
+end
+
+function u83.closeOpen() -- Line: 1837; upvalues: u208 (val), u107 (val)
+    local v1 = {}
+
+    for i, j in u208 do
+        if u107[i] then
+            table.insert(v1, j)
+        end
+    end
+
+    for k, n in v1 do
+        n()
+    end
+
+    return #v1 > 0
+end
+
+function u83.setUiOpen(a1, a2)
+    -- Line: 1850
+    -- upvalues: u207 (val), u107 (val), applyLock (val)
+    -- types: a1: string, a2: boolean
+    if a2 and u207[a1] then
+        for i, j in u207 do
+            if i ~= a1 and u107[i] then
+                j()
+            end
+        end
+    end
+
+    if not a2 then
+        u107[a1] = nil
+    else
+        u107[a1] = true
+    end
+
+    applyLock()
+end
+
+local u214 = {}
+local u215 = 0
+local u216 = {}
+local u217 = 0
+local u218 = nil
+
+local function clearPrediction(a1) -- Line: 1885; upvalues: u214 (val); types: a1: string
+    local v1 = u214[a1]
+
+    if v1 then
+        u214[a1] = nil
+        v1:Destroy()
+    end
+end
+
+local function growsAfterPlanting(a1) -- Line: 1900; upvalues: Config (val), PlantLook (val); types: a1: string
+    local v1 = Config.Crop.isSeed(a1)
+
+    if not v1 then
+        v1 = Config.Bush.isSeed(a1)
+
+        if not v1 then
+            v1 = Config.Flower.isFlower(a1)
+
+            if not v1 then
+                v1 = true
+
+                if Config.Build.Plantables[a1] == nil then
+                    v1 = PlantLook.of(a1) ~= nil
+                end
+            end
+        end
+    end
+
+    return v1
+end
+
+local function predictPlacement(a1, a2)
+    -- Line: 1909
+    -- upvalues: u93 (ref), Grid (val), u98 (ref), u96 (ref), growsAfterPlanting (val), u214 (val), Config (val)
+    -- types: a2: number
+    local v1 = u93
+    local u132 = Grid.key(a1)
+
+    if v1 and v1.Parent and u98 == u132 then
+        if u96 and growsAfterPlanting(u96) then
+            return
+        end
+
+        local v2 = u214[u132]
+
+        if v2 then
+            u214[u132] = nil
+            v2:Destroy()
+        end
+
+        local u112 = v1:Clone()
+        u112.Name = "PlacedAtOnce"
+
+        for i, j in u112:GetChildren() do
+            if j.Name == "GhostArrowAnchor" or j:GetAttribute("GhostArrow") then
+                j:Destroy()
+            end
+        end
+
+        for k, n in u112:GetDescendants() do
+            if n:IsA("SelectionBox") then
+                n:Destroy()
+            elseif n:IsA("BasePart") or n:IsA("Decal") then
+                v1 = n:GetAttribute("AuthoredTransparency")
+
+                if type(v1) == "number" then
+                    n.Transparency = v1
+                end
+
+                if n:IsA("BasePart") then
+                    n.CanQuery = true
+                    n:SetAttribute("CellKey", u132)
+                    n:SetAttribute("PlacedAtOnce", true)
+                end
+            end
+        end
+
+        u112.Parent = workspace
+        u214[u132] = u112
+
+        task.delay(
+            a2 + Config.Build.Placement.PredictSeconds,
+            function() -- Line: 1947; upvalues: u214 (upval), u132 (val), u112 (val)
+                if u214[u132] == u112 then
+                    local v1 = u214[u132]
+
+                    if v1 then
+                        u214[u132] = nil
+                        v1:Destroy()
+                    end
+                end
+            end
+        )
+    end
+end
+
+function u83.tryPlace()
+    -- Line: 1954
+    -- upvalues: u106 (ref), u105 (ref), u92 (ref), u133 (val), resolveTarget (val), Config (val), u188 (ref)
+    -- upvalues: u189 (ref), HudController (val), u187 (ref), rotationAt (val), Pipes (val), pipeLineAt (val)
+    -- upvalues: u217 (ref), u214 (val), u165 (ref), u166 (ref), u215 (ref), u88 (val), u98 (ref), Grid (val)
+    -- upvalues: u218 (ref), predictPlacement (val), u216 (val)
+    if not u106 and u105 and u92 and not (u133.available <= 0) then
+        local u7, v1 = resolveTarget()
+
+        if u7 and v1 then
+            local v2, v3
+            local u44 = rotationAt(u7)
+
+            if Pipes.isPipe(u133.selectedBlockId) then
+                local v4
+                v1 = pipeLineAt(u7)
+
+                if not (if not v1 then
+                    nil
+                else
+                    Pipes.yawFor(u133.selectedBlockId, v1, (u133.rotations[u133.selectedBlockId] or 0) // 90 % 2 == 0)) then
+                    return false
+                end
+
+                u44 = v4
+            end
+
+            local selectedBlockId = u133.selectedBlockId
+            local Placement = Config.Build.Placement
+            local v5 = os.clock()
+
+            if selectedBlockId == Config.Build.Tnt.ItemId and v5 < u217 then
+                return false
+            end
+
+            local v6 = math.max(v5, u217)
+
+            if Placement.MaxQueuedSeconds < v6 - v5 then
+                return false
+            end
+
+            local v7 = 0
+
+            for i in u214 do
+                v7 = v7 + 1
+            end
+
+            if u133.available <= v7 then
+                return false
+            end
+
+            local CooldownSeconds = if not v3 then
+                if Config.Crop.isSeed(selectedBlockId) then
+                    Placement.SeedCooldownSeconds
+                else
+                    if not Config.Bush.isSeed(selectedBlockId) then
+                        Placement.CooldownSeconds
+                    else
+                        Placement.SeedCooldownSeconds
+            else
+                Config.Build.Tnt.CooldownSeconds
+            u217 = v6 + CooldownSeconds + Placement.ClientPaceMarginSeconds
+            local u114 = u165
+            local selectedBlockId_3 = u133.selectedBlockId
+            v7 = if not selectedBlockId_3 then nil else Config.Build.Blocks[selectedBlockId_3]
+            local u157 = false
+
+            if v7 ~= nil then
+                u157 = Config.Build.flipsShape(v7.shape)
+            end
+
+            if u157 then
+                v2 = false
+
+                if u133.tilted[u133.selectedBlockId] == true then
+                    v2 = Config.Build.tilts(u133.selectedBlockId)
+                end
+
+                u157 = not v2
+            end
+
+            if u157 then
+                v2 = u166
+                u157 = v2 ~= (u133.flipped[u133.selectedBlockId] == true)
+            end
+
+            local selectedRoll = u133.selectedRoll
+            local u172 = false
+
+            if u133.tilted[u133.selectedBlockId] == true then
+                u172 = Config.Build.tilts(u133.selectedBlockId)
+            end
+
+            u215 = u215 + 1
+            local u175 = u215
+
+            if not (v6 <= v5) then
+                task.delay(
+                    v6 - v5,
+                    function()
+                        -- Line: 2021
+                        -- upvalues: u88 (upval), u7 (val), selectedBlockId (val), u44 (ref), u114 (val), u157 (val)
+                        -- upvalues: selectedRoll (val), u172 (val), u175 (val)
+                        u88:FireServer(u7, selectedBlockId, u44, u114, u157, selectedRoll, u172, u175)
+                    end
+                )
+            else
+                u88:FireServer(u7, selectedBlockId, u44, u114, u157, selectedRoll, u172, u175)
+            end
+
+            if u98 ~= Grid.key(u7) then
+                u218()
+            end
+
+            if not v3 then
+                predictPlacement(u7, v6 - v5)
+            end
+
+            local v8 = Grid.key(u7)
+            u216[u175] = {key = v8, copy = if not v3 then u214[v8] else nil}
+
+            return true
+        end
+
+        local Placement_2 = Config.Build.Placement
+
+        if Placement_2.BoundaryAlertSeconds < os.clock() - u188 then
+            if u189 then
+                u188 = os.clock()
+                HudController.showAlert(Placement_2.HubMessage)
+            elseif u7 and u187 then
+                u188 = os.clock()
+                HudController.showAlert(Placement_2.BoundaryMessage)
+            end
+        end
+
+        return false
+    end
+
+    return false
+end
+
+local u223 = nil
+local u224 = nil
+
+local function setHint(a1)
+    -- Line: 2047
+    -- upvalues: u223 (ref), u224 (ref), ControlGlyphs (val), u66 (val), canRotate (val), Config (val)
+    -- types: a1: string?
+    local v1 = u223
+
+    if not v1 then
+        return
+    end
+
+    if not a1 then
+        v1.Visible = false
+        u224 = nil
+
+        return
+    end
+
+    local v2 = ControlGlyphs.usingGamepad() and not u66.isTouch()
+    local v3 = ("%*|%*"):format(a1, v2)
+
+    if v3 ~= u224 then
+        u224 = v3
+
+        if not v2 then
+            ControlGlyphs.clear(v1)
+
+            v1.Text = (if not u66.isTouch() then "<b>LEFT CLICK</b>  Place" else "<b>TAP</b>  Place")
+                .. (if not canRotate(a1) then
+                    ""
+                else
+                    if u66.isTouch() then "" else "     <b>R</b>  Rotate")
+                    .. (if not Config.Build.tilts(a1) then
+                        ""
+                    else
+                        if u66.isTouch() then "" else "     <b>Y</b>  Tilt")
+        else
+            local v4 = {{text = "Place", key = Enum.KeyCode.ButtonR2}}
+
+            if canRotate(a1) then
+                table.insert(
+                    v4,
+                    {text = "Rotate", key = Enum.KeyCode.DPadLeft}
+                )
+            end
+
+            local v5 = if not a1 then nil else Config.Build.Blocks[a1]
+            local v6 = false
+
+            if v5 ~= nil then
+                v6 = Config.Build.flipsShape(v5.shape)
+            end
+
+            if not v6 or not Config.Build.tilts(a1) then
+                v5 = if not a1 then nil else Config.Build.Blocks[a1]
+                v6 = false
+
+                if v5 ~= nil then
+                    v6 = Config.Build.flipsShape(v5.shape)
+                end
+
+                if v6 then
+                    table.insert(
+                        v4,
+                        {text = "Flip", key = Enum.KeyCode.ButtonL2}
+                    )
+                elseif Config.Build.tilts(a1) then
+                    table.insert(
+                        v4,
+                        {text = "Tilt", key = Enum.KeyCode.ButtonL2}
+                    )
+                end
+            else
+                table.insert(
+                    v4,
+                    {text = "Flip / Tilt", key = Enum.KeyCode.ButtonL2}
+                )
+            end
+
+            v1.Text = ""
+            ControlGlyphs.row(v1, v4, v1)
+        end
+    end
+
+    v1.Visible = true
+end
+
+function u83.tilt() -- Line: 2093; upvalues: Config (val), u133 (val)
+    if Config.Build.tilts(u133.selectedBlockId) then
+        local selectedBlockId = u133.selectedBlockId
+        u133.tilted[selectedBlockId] = not u133.tilted[selectedBlockId]
+    end
+end
+
+function u83.canFlip(a1) -- Line: 2103; upvalues: Config (val); types: a1: string?
+    local v1 = if not a1 then nil else Config.Build.Blocks[a1]
+    local v2 = false
+
+    if v1 ~= nil then
+        v2 = Config.Build.flipsShape(v1.shape)
+    end
+
+    if not v2 then
+        v2 = Config.Build.tilts(a1)
+    end
+
+    return v2
+end
+
+function u83.flip() -- Line: 2115; upvalues: u133 (val), Config (val), u83 (val)
+    local selectedBlockId = u133.selectedBlockId
+
+    if not selectedBlockId then
+        return
+    end
+
+    local v1 = if not selectedBlockId then nil else Config.Build.Blocks[selectedBlockId]
+    local v2 = false
+
+    if v1 ~= nil then
+        v2 = Config.Build.flipsShape(v1.shape)
+    end
+
+    v1 = Config.Build.tilts(selectedBlockId)
+
+    if v2 and v1 then
+        if u133.tilted[selectedBlockId] then
+            u133.tilted[selectedBlockId] = nil
+            u133.flipped[selectedBlockId] = nil
+
+            return
+        end
+
+        if not u133.flipped[selectedBlockId] then
+            u133.flipped[selectedBlockId] = true
+            return
+        end
+
+        u133.flipped[selectedBlockId] = nil
+        u133.tilted[selectedBlockId] = true
+
+        return
+    end
+
+    if v2 then
+        u133.flipped[selectedBlockId] = not u133.flipped[selectedBlockId]
+        return
+    end
+
+    if v1 then
+        u83.tilt()
+    end
+end
+
+function u83.rotate() -- Line: 2140; upvalues: u133 (val)
+    local selectedBlockId = u133.selectedBlockId
+
+    if selectedBlockId then
+        u133.rotations[selectedBlockId] = ((u133.rotations[selectedBlockId] or 0) + 90) % 360
+    end
+end
+
+local function onRenderStep()
+    -- Line: 2147
+    -- upvalues: u92 (ref), u105 (ref), u106 (ref), u94 (ref), u119 (ref), u120 (ref), u97 (ref), u95 (ref), u223 (ref)
+    -- upvalues: u224 (ref), LocalPlayer (val), Config (val), setHint (val), u133 (val), resolveTarget (val), u93 (ref)
+    -- upvalues: u96 (ref), u83 (val), arrowFor (val), Grid (val), footprintFor (val), rotationAt (val), Pipes (val)
+    -- upvalues: pipeLineAt (val), u166 (ref), placeArrow (val), u98 (ref), u217 (ref), u112 (val), u117 (val)
+    -- upvalues: showPipePreview (val)
+    local v1
+
+    if u92 and u105 and not u106 then
+        local identity, v2, v3, v4, v5, v6, v7, v8
+        local Character = LocalPlayer.Character
+        local HumanoidRootPart = Character and Character:FindFirstChild("HumanoidRootPart")
+
+        if HumanoidRootPart and HumanoidRootPart:IsA("BasePart") then
+            v1 = Config.Hub.SizeStuds / 2
+            v4 = HumanoidRootPart.Position - Config.Hub.Origin
+            v5 = math.abs(v4.X)
+
+            if v5 <= v1.X then
+                v5 = math.abs(v4.Z)
+
+                if v5 <= v1.Z then
+                    u94 = false
+                    u119()
+
+                    if u120 then
+                        u120.part.LocalTransparencyModifier = 1
+                    end
+
+                    for i, j in u97 do
+                        j.part.Transparency = 1
+                    end
+
+                    if u95 then
+                        u95.Visible = false
+                    end
+
+                    v5 = u223
+
+                    if not v5 then
+                        return
+                    end
+
+                    v5.Visible = false
+                    u224 = nil
+
+                    return
+                end
+            end
+        end
+
+        setHint(u133.selectedBlockId)
+
+        v4, v5 = resolveTarget()
+
+        if not v4 then
+            u94 = false
+            u119()
+
+            if u120 then
+                u120.part.LocalTransparencyModifier = 1
+            end
+
+            for m, i5 in u97 do
+                i5.part.Transparency = 1
+            end
+
+            if u95 then
+                u95.Visible = false
+            end
+
+            return
+        end
+
+        local selectedBlockId = u133.selectedBlockId
+        local v9 = u93
+
+        if not v9 or not v9.Parent or u96 ~= selectedBlockId then
+            if u93 then
+                u93:Destroy()
+            end
+
+            u120 = nil
+            u93 = nil
+            u94 = false
+            u95 = nil
+            u96 = nil
+
+            table.clear(u97)
+
+            v6, v7, v8 = u83.ghostModel(selectedBlockId)
+            v6.Parent = workspace
+            u93 = v6
+            u97 = v7
+            u95 = v8
+            u96 = selectedBlockId
+
+            arrowFor(v6, selectedBlockId)
+
+            v2 = v6
+        else
+            v2 = v9
+        end
+
+        local v10 = Grid.footprintCenter(u92, footprintFor(v4))
+        v9 = Config.Build.Blocks[u133.selectedBlockId]
+
+        if v9
+            and not v9.shape
+            and Config.Appearance.of(u133.selectedBlockId).kind == "Model" then
+            v10 = Vector3.new(v10.X, (Grid.cellToWorld(u92, v4)).Y, v10.Z)
+        end
+
+        v9 = if v2:GetAttribute("Directional") ~= false then rotationAt(v4) else 0
+        v6 = nil
+
+        if Pipes.isPipe(u133.selectedBlockId) then
+            v7 = pipeLineAt(v4)
+            v8 = if not v7 then
+                nil
+            else
+                Pipes.yawFor(u133.selectedBlockId, v7, (u133.rotations[u133.selectedBlockId] or 0) // 90 % 2 == 0)
+            v5 = v5 and v8 ~= nil
+            v9 = v8 or v9
+
+            if v5 and Pipes.isSpout(u133.selectedBlockId) then
+                v6 = v4
+            end
+        end
+
+        v8 = false
+
+        if u133.tilted[u133.selectedBlockId] == true then
+            v8 = Config.Build.tilts(u133.selectedBlockId)
+        end
+
+        if not v8 then
+            local v11
+            local selectedBlockId_3 = u133.selectedBlockId
+            v3 = if not selectedBlockId_3 then nil else Config.Build.Blocks[selectedBlockId_3]
+            v8 = false
+
+            if v3 ~= nil then
+                v8 = Config.Build.flipsShape(v3.shape)
+            end
+
+            if v8 then
+                v11 = false
+
+                if u133.tilted[u133.selectedBlockId] == true then
+                    v11 = Config.Build.tilts(u133.selectedBlockId)
+                end
+
+                v8 = not v11
+            end
+
+            if v8 then
+                v11 = u166
+                v8 = v11 ~= (u133.flipped[u133.selectedBlockId] == true)
+            end
+
+            identity = if not v8 then CFrame.identity else CFrame.Angles(0, 0, 3.141592653589793)
+        else
+            identity = CFrame.Angles(Config.Build.TiltRadians, 0, 0)
+        end
+
+        v2:PivotTo((CFrame.new(v10)) * (CFrame.Angles(0, math.rad(v9), 0)) * identity)
+
+        v3 = false
+
+        if u133.tilted[u133.selectedBlockId] == true then
+            v3 = Config.Build.tilts(u133.selectedBlockId)
+        end
+
+        placeArrow(v9, v3)
+
+        u98 = Grid.key(v4)
+
+        if u133.selectedBlockId == Config.Build.Tnt.ItemId and os.clock() < u217 then
+            v5 = false
+        end
+
+        v7 = u95
+
+        if v7 then
+            v7.Color3 = if not v5 then u117 else u112
+            v7.SurfaceColor3 = u117
+            v7.SurfaceTransparency = if not v5 then 0.7 else 1
+            v7.LineThickness = if not v5 then 0.06 else 0.03
+        end
+
+        u94 = true
+
+        if u120 then
+            u120.part.LocalTransparencyModifier = 0
+        end
+
+        for k, n in u97 do
+            n.part.Transparency = n.transparency
+        end
+
+        if u95 then
+            u95.Visible = true
+        end
+
+        if v6 then
+            showPipePreview(u92, v6)
+            return
+        end
+
+        u119()
+
+        return
+    end
+
+    u94 = false
+    u119()
+
+    if u120 then
+        u120.part.LocalTransparencyModifier = 1
+    end
+
+    for i6, i7 in u97 do
+        i7.part.Transparency = 1
+    end
+
+    if u95 then
+        u95.Visible = false
+    end
+
+    v1 = u223
+
+    if not v1 then
+        return
+    end
+
+    v1.Visible = false
+    u224 = nil
+end
+
+u218 = onRenderStep
+local u232 = nil
+local IslandRadiusCells_2 = Config.Build.IslandRadiusCells
+local u235 = 0
+local u236 = 0
+
+local function useGrid(a1, a2, a3)
+    -- Line: 2248
+    -- upvalues: u92 (ref), IslandRadiusCells (ref), u102 (ref), Config (val)
+    -- types: a1: vector?, a2: number, a3: number
+    u92 = a1
+    IslandRadiusCells = a2
+    u102 = Config.Build.boundsForTier(a3)
+end
+
+local function refreshIsland()
+    -- Line: 2254
+    -- upvalues: u236 (ref), LocalPlayer (val), u189 (ref), u232 (ref), Config (val), u92 (ref), IslandRadiusCells (ref)
+    -- upvalues: u102 (ref), IslandRadiusCells_2 (ref), u235 (ref)
+    local Attribute_3, Magnitude
+    local v1 = os.clock()
+
+    if v1 < u236 then
+        return
+    end
+
+    u236 = v1 + 0.5
+    local Character = LocalPlayer.Character
+    v1 = Character and Character:FindFirstChild("HumanoidRootPart")
+
+    if not v1 then
+        return
+    end
+
+    local v2 = nil
+    local v3 = 1500
+
+    for i, j in workspace:GetChildren() do
+        Attribute_3 = j:GetAttribute("IslandOrigin")
+
+        if typeof(Attribute_3) == "Vector3" then
+            Magnitude = Vector3.new(Attribute_3.X - v1.Position.X, 0, Attribute_3.Z - v1.Position.Z).Magnitude
+
+            if Magnitude < v3 then
+                v2 = j
+                v3 = Magnitude
+            end
+        end
+    end
+
+    local v4 = false
+
+    if v2 == nil then
+        v4 = true
+
+        if u232 ~= nil then
+            v4 = 1500
+                < Vector3.new(u232.X - v1.Position.X, 0, u232.Z - v1.Position.Z).Magnitude
+        end
+    end
+
+    u189 = v4
+
+    if not v2 then
+        local v5 = IslandRadiusCells_2
+        local v6 = u235
+        u92 = u232
+        IslandRadiusCells = v5
+        u102 = Config.Build.boundsForTier(v6)
+
+        return
+    end
+
+    local Attribute = v2:GetAttribute("IslandOrigin")
+    v1 = v2:GetAttribute("TerrainRadius")
+    local Attribute_2 = v2:GetAttribute("ExpansionTier")
+    local IslandRadiusCells_3 = if type(v1) ~= "number" then
+        Config.Build.IslandRadiusCells
+    else
+        v1
+    u92 = Attribute
+    IslandRadiusCells = IslandRadiusCells_3
+    u102 = Config.Build.boundsForTier(if type(Attribute_2) ~= "number" then 0 else Attribute_2)
+end
+
+function u83.start()
+    -- Line: 2299
+    -- upvalues: u214 (val), Remotes (val), u216 (val), Config (val), LocalPlayer (val), DeviceMode (val), Ui (val)
+    -- upvalues: u223 (ref), u91 (val), u232 (ref), IslandRadiusCells_2 (ref), u235 (ref), u92 (ref)
+    -- upvalues: IslandRadiusCells (ref), u102 (ref), u236 (ref), RunService (val), refreshIsland (val), u66 (val)
+    -- upvalues: onRenderStep (val)
+    workspace.DescendantAdded:Connect(function(a1) -- Line: 2302; upvalues: u214 (upval)
+        if next(u214) ~= nil and a1:IsA("BasePart") and not a1:GetAttribute("PlacedAtOnce") then
+            local Attribute = a1:GetAttribute("CellKey")
+
+            if type(Attribute) == "string" then
+                local v1 = u214[Attribute]
+
+                if v1 then
+                    u214[Attribute] = nil
+                    v1:Destroy()
+                end
+            end
+        end
+    end)
+
+    ;(Remotes.get(Remotes.PlaceResult)).OnClientEvent:Connect(function(a1, a2)
+        -- Line: 2313
+        -- upvalues: u216 (upval), u214 (upval), Config (upval)
+        local v1
+
+        if not (if type(a1) ~= "number" then nil else u216[a1]) then
+            return
+        end
+
+        u216[a1] = nil
+        local key = v1.key
+        local copy = v1.copy
+
+        if copy and u214[key] == copy then
+            if a2 == true then
+                task.delay(
+                    Config.Build.Placement.ConfirmedHoldSeconds,
+                    function() -- Line: 2327; upvalues: u214 (upval), key (val), copy (val)
+                        if u214[key] == copy then
+                            local v1 = u214[key]
+
+                            if v1 then
+                                u214[key] = nil
+                                v1:Destroy()
+                            end
+                        end
+                    end
+                )
+                return
+            end
+
+            v1 = u214[key]
+
+            if v1 then
+                u214[key] = nil
+                v1:Destroy()
+            end
+        end
+    end)
+
+    local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Name = "PlacementHint"
+    ScreenGui.ResetOnSpawn = false
+    ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+    local TextLabel = Instance.new("TextLabel")
+    TextLabel.Name = "Hint"
+    local v1 = DeviceMode.touchOnly()
+    local HotbarScale = Config.Touch.Hud.HotbarScale
+    local v2 = 18 + 62 * HotbarScale + 8 + 26 * HotbarScale + 6
+    local v3 = if not v1 then Vector2.new(1, 1) else Vector2.new(0.5, 1)
+    TextLabel.AnchorPoint = v3
+    v3 = if not v1 then UDim2.new(1, -16, 1, -96) else UDim2.new(0.5, 0, 1, -v2)
+    TextLabel.Position = v3
+    TextLabel.Size = UDim2.fromOffset(0, 28)
+    TextLabel.AutomaticSize = Enum.AutomaticSize.X
+    TextLabel.BackgroundColor3 = Color3.fromRGB(23, 30, 56)
+    TextLabel.BackgroundTransparency = 0.2
+    TextLabel.BorderSizePixel = 0
+    TextLabel.RichText = true
+    TextLabel.Text = ""
+    TextLabel.TextColor3 = Ui.Tone.Info
+    TextLabel.TextSize = 13
+    TextLabel.FontFace = Font.new(Config.Appearance.FontFamily, Enum.FontWeight.Medium)
+    TextLabel.Visible = false
+    TextLabel.Parent = ScreenGui
+    local UIPadding = Instance.new("UIPadding")
+    UIPadding.PaddingLeft = UDim.new(0, 12)
+    UIPadding.PaddingRight = UDim.new(0, 12)
+    UIPadding.Parent = TextLabel
+    local UICorner = Instance.new("UICorner")
+    UICorner.CornerRadius = UDim.new(0, 6)
+    UICorner.Parent = TextLabel
+    u223 = TextLabel
+
+    u91.OnClientEvent:Connect(function(a1, a2, a3)
+        -- Line: 2370
+        -- upvalues: u232 (upval), IslandRadiusCells_2 (upval), Config (upval), u235 (upval), u92 (upval)
+        -- upvalues: IslandRadiusCells (upval), u102 (upval), u236 (upval)
+        -- types: a1: vector, a2: number, a3: number?
+        IslandRadiusCells_2 = if type(a2) ~= "number" then Config.Build.IslandRadiusCells else a2
+        u235 = a3 or 0
+        local v1 = IslandRadiusCells_2
+        local v2 = u235
+        u92 = a1
+        IslandRadiusCells = v1
+        u102 = Config.Build.boundsForTier(v2)
+        u236 = 0
+    end)
+
+    local u123 = 0
+    RunService.RenderStepped:Connect(function(a1)
+        -- Line: 2388
+        -- upvalues: refreshIsland (upval), u66 (upval), onRenderStep (upval), u123 (ref), Config (upval)
+        refreshIsland()
+
+        if not u66.isTouch() then
+            onRenderStep()
+            return
+        end
+
+        u123 = u123 + a1
+
+        if u123 < Config.Touch.Reduced.GhostIntervalSeconds then
+            return
+        end
+
+        u123 = 0
+        onRenderStep()
+    end)
+end
+
+return u83
+
+-- Script Path: game:GetService("Players").LutherDexz.PlayerScripts.Client.Controllers.InputController
+-- Took 0.03s to decompile.
+-- Executor: Real (3.2.2)
+
+-- Script path: game:GetService("Players").LutherDexz.PlayerScripts.Client.Controllers.InputController
+-- Decompile time: 31.47 ms
+
+local v1
+local Players = game:GetService("Players")
+local GuiService = game:GetService("GuiService")
+local UserInputService = game:GetService("UserInputService")
+local ContextActionService = game:GetService("ContextActionService")
+local RunService = game:GetService("RunService")
+local StarterGui = game:GetService("StarterGui")
+local Shared = (game:GetService("ReplicatedStorage")):WaitForChild("Shared")
+local Config = require(Shared.Config)
+local Grid = require(Shared.Grid)
+local Rails = require(Shared.Rails)
+local Remotes = require(Shared.Remotes)
+local u56 = require(script.Parent.AnimationController)
+local AudioController = require(script.Parent.AudioController)
+local BackpackController = require(script.Parent.BackpackController)
+local Aim = require(script.Parent.Aim)
+local BuildController = require(script.Parent.BuildController)
+local CraftingController = require(script.Parent.CraftingController)
+local DialogueController = require(script.Parent.DialogueController)
+local FriendsController = require(script.Parent.FriendsController)
+local AchievementsController = require(script.Parent.AchievementsController)
+local CollectionController = require(script.Parent.CollectionController)
+local GuestBookController = require(script.Parent.GuestBookController)
+local IslandResetController = require(script.Parent.IslandResetController)
+local PortalMoveController = require(script.Parent.PortalMoveController)
+local PortalSkinController = require(script.Parent.PortalSkinController)
+local PremiumShopController = require(script.Parent.PremiumShopController)
+local SettingsPanelController = require(script.Parent.SettingsPanelController)
+local HotbarController = require(script.Parent.HotbarController)
+local MountController = require(script.Parent.MountController)
+local Ui = require(script.Parent.Parent.Ui)
+local StorageController = require(script.Parent.StorageController)
+local ShopController = require(script.Parent.ShopController)
+local QuickTeleportController = require(script.Parent.QuickTeleportController)
+local PromptController = require(script.Parent.PromptController)
+local TargetController = require(script.Parent.TargetController)
+local RangedController = require(script.Parent.RangedController)
+local u178 = {}
+local SettingsController = require(script.Parent.SettingsController)
+local KeyBinds = require(script.Parent.KeyBinds)
+local PanelTabs = require(script.Parent.PanelTabs)
+local u196 = Remotes.get(Remotes.RequestSprint)
+u178.sprinting = false
+local LocalPlayer = Players.LocalPlayer
+local u202 = Remotes.get(Remotes.RequestSwing)
+local u205 = Remotes.get(Remotes.RequestEquipSlot)
+local u208 = Remotes.get(Remotes.RequestDrop)
+local u211 = Remotes.get(Remotes.RequestUseItem)
+local u214 = Remotes.get(Remotes.RequestPollinate)
+local u217 = Remotes.get(Remotes.RequestPhone)
+local u220 = Remotes.get(Remotes.RequestFillWater)
+local u223 = Remotes.get(Remotes.RequestConsume)
+local u226 = Remotes.get(Remotes.RequestPickup)
+local u229 = Remotes.get(Remotes.RequestHarvest)
+local u232 = Remotes.get(Remotes.RequestHoldBlock)
+local u233 = {
+    [Enum.KeyCode.One] = 1,
+    [Enum.KeyCode.Two] = 2,
+    [Enum.KeyCode.Three] = 3,
+    [Enum.KeyCode.Four] = 4,
+    [Enum.KeyCode.Five] = 5,
+    [Enum.KeyCode.Six] = 6,
+    [Enum.KeyCode.Seven] = 7,
+    [Enum.KeyCode.Eight] = 8,
+    [Enum.KeyCode.Nine] = 9,
+}
+local v2 = {
+    [33] = 1,
+    [64] = 2,
+    [35] = 3,
+    [36] = 4,
+    [37] = 5,
+    [94] = 6,
+    [38] = 7,
+    [42] = 8,
+    [40] = 9,
+}
+local u262 = {}
+
+for i, j in Enum.KeyCode:GetEnumItems() do
+    v1 = v2[j.Value]
+
+    if v1 then
+        u262[j] = v1
+    end
+end
+
+local function slotForKey(a1) -- Line: 107; upvalues: u233 (val), u262 (val), UserInputService (val)
+    local v1 = u233[a1]
+
+    if v1 then
+        return v1
+    end
+
+    v1 = u262[a1]
+
+    if not v1 then
+        return nil
+    end
+
+    if not UserInputService:IsKeyDown(Enum.KeyCode.LeftShift)
+        and not UserInputService:IsKeyDown(Enum.KeyCode.RightShift) then
+        return nil
+    end
+
+    return v1
+end
+
+local u280 = 0
+
+local function holdInterval() -- Line: 136; upvalues: HotbarController (val), Config (val)
+    local v1 = HotbarController.selected()
+    local assignedItemId = v1.assignedItemId
+
+    if v1.kind ~= "Tool" and assignedItemId then
+        if not Config.Crop.isSeed(assignedItemId)
+            and not Config.Bush.isSeed(assignedItemId) then
+            return Config.Build.Placement.CooldownSeconds
+        end
+
+        return Config.Build.Placement.SeedCooldownSeconds
+    end
+
+    return 0.12
+end
+
+local function holdDue() -- Line: 152; upvalues: HotbarController (val), u56 (val), u280 (ref), holdInterval (val)
+    if HotbarController.selected().kind == "Tool" then
+        return u56.swingReady()
+    end
+
+    local v1 = os.clock() - u280
+
+    return holdInterval() <= v1
+end
+
+local u286 = nil
+local u287 = {}
+local u288 = {}
+local u289 = false
+local u290 = false
+
+local function selectionKey() -- Line: 183; upvalues: HotbarController (val)
+    local v1 = HotbarController.selected()
+    local index = v1.index
+    local assignedItemId = v1.assignedItemId or v1.itemId or ""
+
+    return (("%*:%*"):format(index, assignedItemId))
+end
+
+local u292 = nil
+
+local function handEmpty(a1) -- Line: 196
+    local v1 = false
+
+    if a1.kind ~= "Tool" then
+        v1 = a1.assignedItemId == nil
+    end
+
+    return v1
+end
+
+local u294 = "item:none"
+
+local function applySelection(a1)
+    -- Line: 219
+    -- upvalues: BuildController (val), u56 (val), u294 (ref), u205 (val), u232 (val)
+    if a1.kind == "Tool" and a1.toolSlot then
+        BuildController.setBuildMode(false)
+        u56.setToolInHand(true)
+
+        local v1 = ("tool:%*"):format(a1.toolSlot)
+
+        if v1 ~= u294 then
+            u294 = v1
+            u205:FireServer(a1.toolSlot)
+        end
+
+        return
+    end
+
+    u56.setToolInHand(false)
+
+    local itemId = a1.itemId
+    BuildController.setSelectedBlock(itemId or "", a1.count, a1.roll)
+    BuildController.setBuildMode(a1.placeable)
+
+    local v2 = ("item:%*"):format(itemId or "none")
+
+    if v2 ~= u294 then
+        u294 = v2
+        u232:FireServer(itemId)
+    end
+end
+
+local u302 = Config.Build.Pickup.RepeatSeconds * 0.9
+local u303 = (-1 / 0)
+
+local function tryPickup()
+    -- Line: 264
+    -- upvalues: u303 (ref), u302 (val), TargetController (val), u226 (val), u229 (val), AudioController (val)
+    local v1 = os.clock()
+
+    if v1 - u303 < u302 then
+        return
+    end
+
+    u303 = v1
+    v1 = TargetController.pickupEntityId()
+
+    if v1 then
+        u226:FireServer(v1)
+        return
+    end
+
+    v1 = TargetController.harvestTarget()
+
+    if v1 then
+        u229:FireServer(v1)
+        AudioController.play("Collect", v1.Position)
+    end
+end
+
+local function closeOpenPanels()
+    -- Line: 291
+    -- upvalues: DialogueController (val), ShopController (val), StorageController (val), GuestBookController (val)
+    -- upvalues: CollectionController (val), IslandResetController (val), AchievementsController (val)
+    -- upvalues: PortalSkinController (val), PremiumShopController (val), SettingsPanelController (val)
+    -- upvalues: FriendsController (val), CraftingController (val), BackpackController (val), BuildController (val)
+    -- upvalues: QuickTeleportController (val)
+    local v1 = false
+
+    if DialogueController.isOpen() then
+        DialogueController.close()
+
+        v1 = true
+    end
+
+    if ShopController.isOpen() then
+        ShopController.close()
+
+        v1 = true
+    end
+
+    if StorageController.isOpen() then
+        StorageController.close()
+
+        v1 = true
+    end
+
+    if GuestBookController.isOpen() then
+        GuestBookController.close()
+
+        v1 = true
+    end
+
+    if CollectionController.isOpen() then
+        CollectionController.close()
+
+        v1 = true
+    end
+
+    if IslandResetController.isOpen() then
+        IslandResetController.close()
+
+        v1 = true
+    end
+
+    if AchievementsController.isOpen() then
+        AchievementsController.close()
+
+        v1 = true
+    end
+
+    if PortalSkinController.isOpen() then
+        PortalSkinController.close()
+
+        v1 = true
+    end
+
+    if PremiumShopController.isOpen() then
+        PremiumShopController.close()
+
+        v1 = true
+    end
+
+    if SettingsPanelController.isOpen() then
+        SettingsPanelController.close()
+
+        v1 = true
+    end
+
+    if FriendsController.isOpen() then
+        FriendsController.close()
+
+        v1 = true
+    end
+
+    if CraftingController.isOpen() then
+        CraftingController.close()
+
+        v1 = true
+    end
+
+    if BackpackController.isOpen() then
+        BackpackController.close()
+
+        v1 = true
+    end
+
+    if BuildController.closeOpen() then
+        v1 = true
+    end
+
+    if QuickTeleportController.isOpen() then
+        QuickTeleportController.close()
+
+        v1 = true
+    end
+
+    return v1
+end
+
+local u324 = 0
+local u325 = false
+local act = nil
+
+local function bufferSwing() -- Line: 373; upvalues: u56 (val), u325 (ref), act (ref)
+    local v1 = u56.swingReadyIn()
+
+    if not u325 and not (v1 > 0.3) then
+        u325 = true
+        task.delay(
+            v1,
+            function() -- Line: 379; upvalues: u325 (upval), act (upval)
+                u325 = false
+                act(true)
+            end
+        )
+    end
+end
+
+function act(a1)
+    -- Line: 385
+    -- upvalues: LocalPlayer (val), PortalMoveController (val), HotbarController (val), RangedController (val)
+    -- upvalues: Config (val), TargetController (val), u214 (val), u217 (val), Rails (val), BuildController (val)
+    -- upvalues: u211 (val), u220 (val), u286 (ref), Grid (val), AudioController (val), u56 (val), u223 (val)
+    -- upvalues: u324 (ref), Aim (val), u202 (val), u325 (ref), act (ref)
+    -- types: a1: boolean?
+    local Character = LocalPlayer.Character
+    local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
+
+    if Humanoid and not (Humanoid.Health <= 0) then
+        local v1
+
+        if PortalMoveController.isActive() then
+            return
+        end
+
+        local u16 = HotbarController.selected()
+        local v2 = false
+
+        if u16.kind ~= "Tool" then
+            v2 = u16.assignedItemId == nil
+        end
+
+        if v2 or RangedController.active() then
+            return
+        end
+
+        local assignedItemId = u16.assignedItemId
+
+        if u16.kind ~= "Tool" and u16.count <= 0 then
+            return
+        end
+
+        if assignedItemId == Config.Flower.PollinatorItem then
+            if not a1 and 0 < u16.count then
+                v2 = TargetController.flowerTarget()
+
+                if v2 then
+                    u214:FireServer(v2, (TargetController.predictPollen(v2)))
+                end
+            end
+
+            return
+        end
+
+        v2 = if not assignedItemId then nil else Config.Weapon.Weapons[assignedItemId]
+
+        if v2 and v2.lasso then
+            return
+        end
+
+        if assignedItemId and Config.Tool.Novelties[assignedItemId] then
+            if not a1 and 0 < u16.count then
+                u217:FireServer()
+            end
+
+            return
+        end
+
+        if Rails.isCart(assignedItemId) then
+            if not a1 and 0 < u16.count then
+                v2 = BuildController.aimedBlockCell()
+
+                if v2 then
+                    u211:FireServer(assignedItemId, v2)
+                end
+            end
+
+            return
+        end
+
+        local v3 = if not (if not assignedItemId then
+            nil
+        else
+            Config.Build.Containers[assignedItemId]) then
+            nil
+        else
+            BuildController.aimedBlockPart()
+        local Attribute = v3 and v3:GetAttribute("WaterUses")
+        local v4 = false
+
+        if v1 ~= nil then
+            v4 = false
+
+            if v3 ~= nil then
+                v4 = false
+
+                if (v3:GetAttribute("BlockId")) == v1.places then
+                    v4 = false
+
+                    if type(Attribute) == "number" then
+                        v4 = Attribute < Config.Build.Farm.WaterUses
+                    end
+                end
+            end
+        end
+
+        if v1 and not v4 and 0 < u16.count then
+            local v5 = BuildController.aimedWaterPoint()
+
+            if v5 then
+                if not a1 then
+                    u220:FireServer(v5)
+                end
+
+                return
+            end
+        end
+
+        v3 = true
+
+        if assignedItemId ~= Config.Build.Farm.WateringCan.ItemId then
+            v3 = assignedItemId == Config.Recipe.Compost.Output
+        end
+
+        v1 = false
+
+        if assignedItemId ~= nil then
+            v1 = true
+
+            if Config.Build.Fillables[assignedItemId] == nil then
+                v1 = true
+
+                if Config.Build.Converters[assignedItemId] == nil then
+                    v1 = v3 or v4
+                end
+            end
+        end
+
+        if v1 and 0 < u16.count then
+            v4 = if not v3 then
+                BuildController.aimedBlockCell()
+            else
+                BuildController.aimedBlockCellThroughCrops()
+            local v6 = false
+
+            if v4 ~= nil then
+                v6 = false
+
+                if u286 ~= nil then
+                    v6 = (Grid.key(v4)) == Grid.key(u286)
+                end
+            end
+
+            if a1 and v6 then
+                return
+            end
+
+            if v4 then
+                u286 = v4
+                u211:FireServer(assignedItemId, v4)
+
+                if Config.Sound.Cues[assignedItemId] then
+                    AudioController.play(assignedItemId, Grid.cellToWorld(BuildController.islandOrigin() or Vector3.new(0, 0, 0), v4))
+                end
+
+                u56.playUse(assignedItemId)
+
+                return
+            end
+
+            v6 = if not a1 then BuildController.aimedWaterPoint() else nil
+
+            if v6 then
+                u220:FireServer(v6)
+                return
+            end
+        end
+
+        if v1 then
+            return
+        end
+
+        if assignedItemId ~= nil and Config.Food.isFood(assignedItemId) then
+            if 0 < u16.count and not a1 then
+                u223:FireServer(assignedItemId)
+                u56.playEat()
+
+                v3 = os.clock()
+
+                if u324 <= v3 then
+                    u324 = v3 + Config.Food.CooldownSeconds
+                    HotbarController.showCooldown(Config.Food.CooldownSeconds)
+                end
+
+                local Character_2 = LocalPlayer.Character
+                    and LocalPlayer.Character:FindFirstChild("Head")
+                AudioController.play("Eat", if not Character_2 then nil else if not Character_2:IsA("BasePart") then nil else Character_2)
+            end
+
+            return
+        end
+
+        if assignedItemId ~= nil then
+            if u16.placeable then
+                if not a1 or not Aim.isTouch() then
+                    BuildController.tryPlace()
+                end
+            end
+
+            return
+        end
+
+        local u344 = BuildController.aimedInstance()
+
+        local function hit()
+            -- Line: 660
+            -- upvalues: u344 (ref), BuildController (upval), u202 (upval), LocalPlayer (upval), Config (upval)
+            -- upvalues: u16 (val), AudioController (upval)
+            if u344 == nil or u344.Parent == nil then
+                u344 = BuildController.aimedInstance()
+            end
+
+            u202:FireServer(u344)
+
+            local Character = LocalPlayer.Character
+                and LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+            local v1 = false
+
+            if Character ~= nil then
+                v1 = Character:IsA("BasePart")
+
+                if v1 then
+                    v1 = false
+
+                    if u344 ~= nil then
+                        v1 = (u344.Position - Character.Position).Magnitude
+                            <= Config.Player.InteractReachStuds
+                    end
+                end
+            end
+
+            if v1 and u344 and u344:GetAttribute("NodeType") and u16.toolClass ~= "Weapon" then
+                AudioController.play(if u16.toolClass ~= "Axe" then "PickaxeHit" else "AxeHit", u344.Position)
+            end
+        end
+
+        local v7 = u56.playSwing(hit)
+
+        if v7 ~= "Cooldown" then
+            HotbarController.showCooldown(u56.swingReadyIn())
+        end
+
+        if v7 == "Scheduled" then
+            return
+        end
+
+        if v7 ~= "Cooldown" then
+            hit()
+            return
+        end
+
+        if not a1 then
+            local v8 = u56.swingReadyIn()
+
+            if not u325 and not (v8 > 0.3) then
+                u325 = true
+                task.delay(
+                    v8,
+                    function() -- Line: 379; upvalues: u325 (upval), act (upval)
+                        u325 = false
+                        act(true)
+                    end
+                )
+            end
+        end
+    end
+end
+
+function u178.actOnce() -- Line: 732; upvalues: act (ref)
+    act()
+end
+
+function u178.handEmpty(a1) -- Line: 738
+    local v1 = false
+
+    if a1.kind ~= "Tool" then
+        v1 = a1.assignedItemId == nil
+    end
+
+    return v1
+end
+
+function u178.setActionHeld(a1, a2)
+    -- Line: 748
+    -- upvalues: u289 (ref), u287 (val), RangedController (val), HotbarController (val), u280 (ref), u292 (ref)
+    -- upvalues: act (ref), u286 (ref)
+    -- types: a1: boolean, a2: string?
+    local v1 = u289
+    u287[a2 or "button"] = if not a1 then nil else true
+    u289 = next(u287) ~= nil
+    local setHeld = RangedController.setHeld
+    local v2 = u289
+
+    if v2 then
+        local v3 = HotbarController.selected()
+        local v4 = false
+
+        if v3.kind ~= "Tool" then
+            v4 = v3.assignedItemId == nil
+        end
+
+        v2 = not v4
+    end
+
+    setHeld(v2)
+
+    if not a1 then
+        if not u289 then
+            u286 = nil
+        end
+
+        return
+    end
+
+    if v1 then
+        return
+    end
+
+    u280 = os.clock()
+    local v5 = HotbarController.selected()
+    u292 = ("%*:%*"):format(v5.index, v5.assignedItemId or v5.itemId or "")
+
+    act()
+end
+
+function u178.setPickupHeld(a1, a2)
+    -- Line: 776
+    -- upvalues: u290 (ref), u288 (val), tryPickup (val)
+    -- types: a1: boolean, a2: string?
+    local v1 = u290
+    u288[a2 or "button"] = if not a1 then nil else true
+    u290 = next(u288) ~= nil
+
+    if a1 and not v1 then
+        tryPickup()
+    end
+end
+
+function u178.pickupOnce() -- Line: 788; upvalues: tryPickup (val)
+    tryPickup()
+end
+
+local u347 = nil
+
+local function cancelToolDrop() -- Line: 800; upvalues: u347 (ref), HotbarController (val)
+    if u347 then
+        u347 = nil
+        HotbarController.setDropProgress(nil)
+    end
+end
+
+local function startDrop() -- Line: 807; upvalues: HotbarController (val), u208 (val), u347 (ref)
+    local v1 = HotbarController.selected()
+
+    if not v1.itemId then
+        return
+    end
+
+    if v1.kind ~= "Tool" then
+        u208:FireServer(v1.itemId, v1.roll)
+        return
+    end
+
+    if v1.count <= 0 then
+        return
+    end
+
+    u347 = {itemId = v1.itemId, index = v1.index, startedAt = os.clock()}
+    HotbarController.setDropProgress(0)
+end
+
+local function stepToolDrop() -- Line: 825; upvalues: u347 (ref), HotbarController (val), Config (val), u208 (val)
+    local v1 = u347
+
+    if not v1 then
+        return
+    end
+
+    local v2 = HotbarController.selected()
+
+    if v2.index == v1.index and v2.itemId == v1.itemId then
+        v2 = (os.clock() - v1.startedAt) / Config.Player.ToolDropHoldSeconds
+
+        if not (v2 >= 1) then
+            HotbarController.setDropProgress(v2)
+            return
+        end
+
+        if u347 then
+            u347 = nil
+            HotbarController.setDropProgress(nil)
+        end
+
+        u208:FireServer(v1.itemId)
+
+        return
+    end
+
+    if u347 then
+        u347 = nil
+        HotbarController.setDropProgress(nil)
+    end
+end
+
+function u178.setDropHeld(a1)
+    -- Line: 845
+    -- upvalues: startDrop (val), u347 (ref), HotbarController (val)
+    -- types: a1: boolean
+    if a1 then
+        startDrop()
+        return
+    end
+
+    if u347 then
+        u347 = nil
+        HotbarController.setDropProgress(nil)
+    end
+end
+
+local function sprintModeNow() -- Line: 853; upvalues: SettingsController (val)
+    return SettingsController.get("SprintMode")
+end
+
+local u355 = false
+local u356 = false
+local u357 = false
+
+local function publishSprint()
+    -- Line: 861
+    -- upvalues: SettingsController (val), u357 (ref), u356 (ref), u355 (ref), u178 (val), u196 (val)
+    local SprintMode = SettingsController.get("SprintMode")
+    local v1 = u357
+        or (if SprintMode ~= "Auto" then if SprintMode ~= "Toggle" then u355 else u356 else true)
+
+    if v1 ~= u178.sprinting then
+        u178.sprinting = v1
+        u196:FireServer(v1)
+    end
+end
+
+function u178.setSprintInput(a1)
+    -- Line: 873
+    -- upvalues: u355 (ref), SettingsController (val), u356 (ref), u357 (ref), u178 (val), u196 (val)
+    -- types: a1: boolean
+    if a1 and SettingsController.get("SprintMode") == "Toggle" then
+        u356 = not u356
+    end
+
+    local SprintMode = SettingsController.get("SprintMode")
+    local v1 = u357
+        or (if SprintMode ~= "Auto" then if SprintMode ~= "Toggle" then a1 else u356 else true)
+
+    if v1 ~= u178.sprinting then
+        u178.sprinting = v1
+        u196:FireServer(v1)
+    end
+end
+
+function u178.toggleSprintButton()
+    -- Line: 885
+    -- upvalues: u357 (ref), SettingsController (val), u356 (ref), u355 (ref), u178 (val), u196 (val)
+    u357 = not u357
+    local SprintMode = SettingsController.get("SprintMode")
+    local v1 = u357
+        or (if SprintMode ~= "Auto" then if SprintMode ~= "Toggle" then u355 else u356 else true)
+
+    if v1 ~= u178.sprinting then
+        u178.sprinting = v1
+        u196:FireServer(v1)
+    end
+
+    return u178.sprinting
+end
+
+local function onSprintModeChanged()
+    -- Line: 894
+    -- upvalues: u356 (ref), SettingsController (val), u357 (ref), u355 (ref), u178 (val), u196 (val)
+    u356 = false
+    local SprintMode = SettingsController.get("SprintMode")
+    local v1 = u357
+        or (if SprintMode ~= "Auto" then if SprintMode ~= "Toggle" then u355 else u356 else true)
+
+    if v1 ~= u178.sprinting then
+        u178.sprinting = v1
+        u196:FireServer(v1)
+    end
+end
+
+local function freecamFlying() -- Line: 905; upvalues: ContextActionService (val)
+    for i in ContextActionService:GetAllBoundActionInfo() do
+        if i ~= "AboveFreecam" and string.sub(i, 1, 7) ~= "Freecam" then
+            continue
+        end
+
+        return true
+    end
+
+    return false
+end
+
+local function backpackKey()
+    -- Line: 916
+    -- upvalues: ShopController (val), StorageController (val), CraftingController (val), BuildController (val)
+    -- upvalues: BackpackController (val)
+    if ShopController.isOpen() then
+        ShopController.close()
+        return
+    end
+
+    if StorageController.isOpen() then
+        StorageController.close()
+        return
+    end
+
+    if CraftingController.isOpen() then
+        CraftingController.close()
+        return
+    end
+
+    for i, j in {"Vending", "TipJar", "GuestBook"} do
+        if BuildController.closeIfOpen(j) then
+            return
+        end
+    end
+
+    BackpackController.toggle()
+end
+
+local function aimedFlowerId() -- Line: 942; upvalues: Aim (val), LocalPlayer (val), Config (val), Grid (val)
+    local Attribute
+    local v1 = Aim.ray()
+    local v2 = RaycastParams.new()
+    v2.FilterType = Enum.RaycastFilterType.Exclude
+    v2.FilterDescendantsInstances = if not LocalPlayer.Character then {} else {LocalPlayer.Character}
+    local v3 = workspace:Raycast(v1.Origin, v1.Direction.Unit * Config.Player.BuildReachCells * Grid.CellSize, v2)
+    local Instance = v3 and v3.Instance
+
+    while Instance do
+        if Instance == workspace then
+            break
+        end
+
+        Attribute = Instance:GetAttribute("FlowerId")
+
+        if type(Attribute) == "string" then
+            return Attribute
+        end
+
+        Instance = Instance.Parent
+    end
+
+    return nil
+end
+
+local function cycleHotbar(a1) -- Line: 961; upvalues: Config (val), HotbarController (val); types: a1: number
+    local Slots = Config.Player.Hotbar.Slots
+    local index = HotbarController.selected().index
+    local v1 = if type(index) ~= "number" then
+        if not (a1 > 0) then 1 else 0
+    else
+        if not (index >= 1) then if not (a1 > 0) then 1 else 0 else index
+
+    for i = 1, Slots do
+        v1 = (v1 - 1 + a1) % Slots + 1
+
+        if HotbarController.isSlotShown(v1) then
+            HotbarController.select(v1)
+            return
+        end
+    end
+end
+
+local u368 = {
+    [Enum.KeyCode.DPadUp] = true,
+    [Enum.KeyCode.DPadDown] = true,
+    [Enum.KeyCode.DPadLeft] = true,
+    [Enum.KeyCode.DPadRight] = true,
+}
+local u377 = nil
+
+local function gamepadBegan(a1)
+    -- Line: 996
+    -- upvalues: u368 (val), GuiService (val), PortalMoveController (val), BuildController (val), u178 (val)
+    -- upvalues: PanelTabs (val), cycleHotbar (val), MountController (val), u377 (ref), Config (val), backpackKey (val)
+    -- upvalues: startDrop (val), Aim (val), closeOpenPanels (val)
+    if u368[a1] and GuiService.SelectedObject ~= nil then
+        return false
+    end
+
+    if PortalMoveController.isActive() and a1 == Enum.KeyCode.ButtonR2 then
+        PortalMoveController.confirm()
+        return true
+    end
+
+    if a1 == Enum.KeyCode.ButtonR2 then
+        if not BuildController.isUiOpen() then
+            u178.setActionHeld(true, "gamepad")
+        end
+
+        return true
+    end
+
+    if a1 == Enum.KeyCode.ButtonY then
+        if not BuildController.isUiOpen() then
+            u178.setPickupHeld(true, "gamepad")
+        end
+
+        return true
+    end
+
+    if a1 ~= Enum.KeyCode.ButtonR1 and a1 ~= Enum.KeyCode.ButtonL1 then
+        if a1 == Enum.KeyCode.DPadUp then
+            if not MountController.available() or BuildController.isUiOpen() then
+                backpackKey()
+            else
+                local u46 = os.clock()
+                u377 = u46
+
+                task.delay(
+                    Config.Animal.Mount.PadHoldSeconds,
+                    function() -- Line: 1033; upvalues: u377 (upval), u46 (val), MountController (upval)
+                        if u377 == u46 then
+                            u377 = nil
+                            MountController.toggle()
+                        end
+                    end
+                )
+            end
+
+            return true
+        end
+
+        if a1 == Enum.KeyCode.DPadDown then
+            startDrop()
+            return true
+        end
+
+        if a1 == Enum.KeyCode.DPadLeft then
+            if not PortalMoveController.isActive() then
+                BuildController.rotate()
+            else
+                PortalMoveController.rotate()
+            end
+
+            return true
+        end
+
+        if a1 == Enum.KeyCode.ButtonR3 and Aim.isVR() then
+            if not PortalMoveController.isActive() then
+                BuildController.rotate()
+            else
+                PortalMoveController.rotate()
+            end
+
+            return true
+        end
+
+        if a1 == Enum.KeyCode.ButtonL2 then
+            if not BuildController.isUiOpen() then
+                BuildController.flip()
+            end
+
+            return true
+        end
+
+        if a1 == Enum.KeyCode.ButtonL3 then
+            u178.toggleSprintButton()
+            return true
+        end
+
+        if a1 ~= Enum.KeyCode.ButtonB then
+            return false
+        end
+
+        if PortalMoveController.isActive() then
+            PortalMoveController.cancel()
+            return true
+        end
+
+        closeOpenPanels()
+
+        return true
+    end
+
+    local v1 = if a1 ~= Enum.KeyCode.ButtonR1 then -1 else 1
+
+    if not BuildController.isUiOpen() or not PanelTabs.step(v1) then
+        cycleHotbar(v1)
+    end
+
+    return true
+end
+
+local function gamepadEnded(a1)
+    -- Line: 1077
+    -- upvalues: u178 (val), u347 (ref), HotbarController (val), u377 (ref), backpackKey (val)
+    if a1 == Enum.KeyCode.ButtonR2 then
+        u178.setActionHeld(false, "gamepad")
+        return
+    end
+
+    if a1 == Enum.KeyCode.ButtonY then
+        u178.setPickupHeld(false, "gamepad")
+        return
+    end
+
+    if a1 == Enum.KeyCode.DPadDown then
+        if not u347 then
+            return
+        end
+
+        u347 = nil
+        HotbarController.setDropProgress(nil)
+
+        return
+    end
+
+    if a1 == Enum.KeyCode.DPadUp and u377 then
+        u377 = nil
+        backpackKey()
+    end
+end
+
+function u178.start()
+    -- Line: 1091
+    -- upvalues: StarterGui (val), UserInputService (val), LocalPlayer (val), SettingsController (val), u356 (ref)
+    -- upvalues: u357 (ref), u355 (ref), u178 (val), u196 (val), HotbarController (val), applySelection (val)
+    -- upvalues: Remotes (val), u294 (ref), Config (val), ContextActionService (val), GuiService (val)
+    -- upvalues: closeOpenPanels (val), gamepadBegan (val), aimedFlowerId (val), BuildController (val), u233 (val)
+    -- upvalues: u262 (val), PortalMoveController (val), CraftingController (val), backpackKey (val)
+    -- upvalues: ShopController (val), StorageController (val), BackpackController (val), FriendsController (val)
+    -- upvalues: SettingsPanelController (val), PremiumShopController (val), PortalSkinController (val)
+    -- upvalues: CollectionController (val), AchievementsController (val), GuestBookController (val)
+    -- upvalues: IslandResetController (val), KeyBinds (val), startDrop (val), Aim (val), Ui (val)
+    -- upvalues: PromptController (val), gamepadEnded (val), u347 (ref), RunService (val), stepToolDrop (val)
+    -- upvalues: u289 (ref), u56 (val), u280 (ref), holdInterval (val), u292 (ref), act (ref), u290 (ref)
+    -- upvalues: tryPickup (val)
+    task.spawn(function() -- Line: 1100; upvalues: StarterGui (upval)
+        for i = 1, 10 do
+            if pcall(function() -- Line: 1102; upvalues: StarterGui (upval)
+                StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+                StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Health, false)
+            end) then
+                return
+            end
+
+            task.wait(0.5)
+        end
+    end)
+
+    task.spawn(function() -- Line: 1126; upvalues: UserInputService (upval), LocalPlayer (upval)
+        local FocusedTextBox, Parent, PlayerGui, v1
+
+        while true do
+            task.wait(0.25)
+
+            FocusedTextBox = UserInputService:GetFocusedTextBox()
+
+            if FocusedTextBox then
+                PlayerGui = LocalPlayer:FindFirstChildOfClass("PlayerGui") or game
+
+                if not FocusedTextBox:IsDescendantOf(PlayerGui) then
+                    FocusedTextBox:ReleaseFocus()
+                elseif FocusedTextBox then
+                    v1 = true
+                    Parent = FocusedTextBox
+
+                    while Parent do
+                        if Parent:IsA("ScreenGui") then
+                            break
+                        end
+
+                        if Parent:IsA("GuiObject") and not Parent.Visible then
+                            v1 = false
+                            break
+                        end
+
+                        Parent = Parent.Parent
+                    end
+
+                    if not v1 then
+                        FocusedTextBox:ReleaseFocus()
+                    end
+                end
+            elseif FocusedTextBox then
+                v1 = true
+                Parent = FocusedTextBox
+
+                while Parent do
+                    if Parent:IsA("ScreenGui") then
+                        break
+                    end
+
+                    if Parent:IsA("GuiObject") and not Parent.Visible then
+                        v1 = false
+                        break
+                    end
+
+                    Parent = Parent.Parent
+                end
+
+                if not v1 then
+                    FocusedTextBox:ReleaseFocus()
+                end
+            end
+        end
+    end)
+
+    SettingsController.onChanged(function(a1)
+        -- Line: 1151
+        -- upvalues: u356 (upval), SettingsController (upval), u357 (upval), u355 (upval), u178 (upval), u196 (upval)
+        if a1 == "SprintMode" then
+            u356 = false
+            local SprintMode = SettingsController.get("SprintMode")
+            local v1 = u357
+                or (if SprintMode ~= "Auto" then if SprintMode ~= "Toggle" then u355 else u356 else true)
+
+            if v1 ~= u178.sprinting then
+                u178.sprinting = v1
+                u196:FireServer(v1)
+            end
+        end
+    end)
+
+    HotbarController.onChanged(applySelection)
+    applySelection(HotbarController.selected())
+
+    ;(Remotes.get(Remotes.EquippedChanged)).OnClientEvent:Connect(function(a1, a2, a3, a4, a5)
+        -- Line: 1167
+        -- upvalues: u294 (upval)
+        -- types: a1: string, a2: string?, a3: number?, a4: boolean?, a5: string?
+        if a4 then
+            u294 = "item:none"
+            return
+        end
+
+        if type(a5) == "string" then
+            u294 = ("item:%*"):format(a5)
+            return
+        end
+
+        if type(a1) == "string" then
+            u294 = ("tool:%*"):format(a1)
+        end
+    end)
+
+    LocalPlayer.Idled:Connect(function(a1)
+        -- Line: 1185
+        -- upvalues: Config (upval), Remotes (upval)
+        -- types: a1: number
+        if Config.Player.IdleRejoinSeconds <= a1 then
+            Remotes.get(Remotes.RequestRejoin):FireServer()
+        end
+    end)
+
+    LocalPlayer.CharacterAdded:Connect(function()
+        -- Line: 1195
+        -- upvalues: u294 (upval), HotbarController (upval), applySelection (upval)
+        task.wait(0.3)
+
+        u294 = nil
+        HotbarController.render()
+        applySelection(HotbarController.selected())
+    end)
+
+    UserInputService.InputBegan:Connect(function(a1, a2)
+        -- Line: 1202
+        -- upvalues: ContextActionService (upval), GuiService (upval), closeOpenPanels (upval), gamepadBegan (upval)
+        -- upvalues: u178 (upval), aimedFlowerId (upval), HotbarController (upval), BuildController (upval)
+        -- upvalues: Config (upval), u233 (upval), u262 (upval), UserInputService (upval), PortalMoveController (upval)
+        -- upvalues: CraftingController (upval), backpackKey (upval), ShopController (upval), StorageController (upval)
+        -- upvalues: BackpackController (upval), FriendsController (upval), SettingsPanelController (upval)
+        -- upvalues: PremiumShopController (upval), PortalSkinController (upval), CollectionController (upval)
+        -- upvalues: AchievementsController (upval), GuestBookController (upval), IslandResetController (upval)
+        -- upvalues: KeyBinds (upval), startDrop (upval), Aim (upval), Ui (upval), PromptController (upval)
+        local KeyCode, v1, v2
+        local dispatch = 0
+
+        while true do
+            if dispatch < 40 then
+                if dispatch < 24 then
+                    if dispatch < 16 then
+                        if dispatch < 8 then
+                            if dispatch < 6 then
+                                if dispatch < 1 then
+                                    dispatch = if a1.KeyCode ~= Enum.KeyCode.ButtonB then 9 else 1
+                                else
+                                    local dispatchExit = nil
+
+                                    for n in ContextActionService:GetAllBoundActionInfo() do
+                                        local dispatch2 = 2
+
+                                        while true do
+                                            if dispatch2 < 3 then
+                                                dispatch2 = if n == "AboveFreecam" then 4 else 3
+                                            else
+                                                if not (dispatch2 < 4) then
+                                                    v1 = true
+                                                    dispatchExit = 7
+                                                    break
+                                                end
+
+                                                if string.sub(n, 1, 7) ~= "Freecam" then
+                                                    break
+                                                else
+                                                    dispatch2 = 4
+                                                end
+                                            end
+                                        end
+
+                                        if dispatchExit then
+                                            break
+                                        end
+                                    end
+
+                                    dispatch = if dispatchExit == 7 then 7 else 6
+                                end
+                            elseif dispatch < 7 then
+                                v1 = false
+                                dispatch = 7
+                            else
+                                dispatch = if v1 then 9 else 8
+                            end
+                        elseif dispatch < 10 then
+                            if dispatch < 9 then
+                                GuiService.SelectedObject = nil
+                                closeOpenPanels()
+
+                                return
+                            else
+                                dispatch = if a2 then 17 else 10
+                            end
+                        elseif dispatch < 15 then
+                            local dispatchExit2 = nil
+
+                            for m in ContextActionService:GetAllBoundActionInfo() do
+                                local dispatch3 = 11
+
+                                while true do
+                                    if dispatch3 < 12 then
+                                        dispatch3 = if m == "AboveFreecam" then 13 else 12
+                                    else
+                                        if not (dispatch3 < 13) then
+                                            v1 = true
+                                            dispatchExit2 = 16
+                                            break
+                                        end
+
+                                        if string.sub(m, 1, 7) ~= "Freecam" then
+                                            break
+                                        else
+                                            dispatch3 = 13
+                                        end
+                                    end
+                                end
+
+                                if dispatchExit2 then
+                                    break
+                                end
+                            end
+
+                            dispatch = if dispatchExit2 == 16 then 16 else 15
+                        else
+                            v1 = false
+                            dispatch = 16
+                        end
+                    elseif dispatch < 20 then
+                        if dispatch < 18 then
+                            if not (dispatch < 17) then
+                                return
+                            end
+
+                            dispatch = if not v1 then 18 else 17
+                        else
+                            if not (dispatch < 19) then
+                                return
+                            end
+
+                            dispatch = if not gamepadBegan(a1.KeyCode) then 20 else 19
+                        end
+                    elseif dispatch < 22 then
+                        dispatch = if dispatch < 21 then
+                            if a1.KeyCode == Enum.KeyCode.LeftShift then 22 else 21
+                        else
+                            if a1.KeyCode ~= Enum.KeyCode.RightShift then 23 else 22
+                    elseif dispatch < 23 then
+                        u178.setSprintInput(true)
+                        return
+                    else
+                        dispatch = if a1.UserInputType ~= Enum.UserInputType.MouseButton3 then
+                            29
+                        else
+                            24
+                    end
+                elseif dispatch < 32 then
+                    if dispatch < 28 then
+                        if dispatch < 26 then
+                            if not (dispatch < 25) then
+                                HotbarController.pickBlock(v1)
+                                return
+                            end
+
+                            v1 = aimedFlowerId()
+                            dispatch = if not v1 then 26 else 25
+                        elseif dispatch < 27 then
+                            v1 = BuildController.aimedBlockId()
+                            dispatch = if not v1 then 28 else 27
+                        else
+                            HotbarController.pickBlock(Config.Build.breakDropOf(v1))
+
+                            dispatch = 28
+                        end
+                    elseif dispatch < 30 then
+                        if dispatch < 29 then
+                            return
+                        else
+                            KeyCode = a1.KeyCode
+                            v2 = u233[KeyCode]
+                            dispatch = if not v2 then 31 else 30
+                        end
+                    elseif dispatch < 31 then
+                        v1 = v2
+                        dispatch = 36
+                    else
+                        v2 = u262[KeyCode]
+                        dispatch = if not v2 then 35 else 32
+                    end
+                elseif dispatch < 36 then
+                    if dispatch < 34 then
+                        dispatch = if dispatch < 33 then
+                            if UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then 34 else 33
+                        else
+                            if not UserInputService:IsKeyDown(Enum.KeyCode.RightShift) then
+                                35
+                            else
+                                34
+                    else
+                        v1 = if dispatch < 35 then v2 else nil
+                        dispatch = 36
+                    end
+                elseif dispatch < 38 then
+                    dispatch = if dispatch < 37 then
+                        if not v1 then 39 else 37
+                    else
+                        if not BuildController.isPanelOpen("Dialogue") then 39 else 38
+                elseif dispatch < 39 then
+                    return
+                else
+                    dispatch = if not v1 then 41 else 40
+                end
+            elseif dispatch < 56 then
+                if dispatch < 48 then
+                    if dispatch < 44 then
+                        if not (dispatch < 42) then
+                            if not (dispatch < 43) then
+                                PortalMoveController.rotate()
+                                return
+                            end
+
+                            dispatch = if not PortalMoveController.isActive() then 44 else 43
+                        elseif dispatch < 41 then
+                            HotbarController.toggle(v1)
+                            return
+                        else
+                            dispatch = if a1.KeyCode ~= Enum.KeyCode.R then 45 else 42
+                        end
+                    elseif dispatch < 46 then
+                        if dispatch < 45 then
+                            BuildController.rotate()
+                            return
+                        else
+                            dispatch = if a1.KeyCode ~= Enum.KeyCode.Y then 47 else 46
+                        end
+                    elseif dispatch < 47 then
+                        BuildController.tilt()
+                        return
+                    else
+                        dispatch = if a1.KeyCode ~= Enum.KeyCode.B then 49 else 48
+                    end
+                elseif dispatch < 52 then
+                    if not (dispatch < 50) then
+                        if not (dispatch < 51) then
+                            backpackKey()
+                            return
+                        end
+
+                        dispatch = if a1.KeyCode ~= Enum.KeyCode.Backquote then 52 else 51
+                    elseif dispatch < 49 then
+                        CraftingController.toggleHandCrafting()
+                        return
+                    else
+                        dispatch = if a1.KeyCode == Enum.KeyCode.E then 51 else 50
+                    end
+                elseif dispatch < 54 then
+                    dispatch = if dispatch < 53 then
+                        if a1.KeyCode ~= Enum.KeyCode.Escape then 55 else 53
+                    else
+                        if not PortalMoveController.isActive() then 55 else 54
+                elseif dispatch < 55 then
+                    PortalMoveController.cancel()
+                    return
+                else
+                    dispatch = if a1.KeyCode ~= Enum.KeyCode.Escape then 57 else 56
+                end
+            elseif dispatch < 64 then
+                if dispatch < 60 then
+                    if dispatch < 58 then
+                        if dispatch < 57 then
+                            ShopController.close()
+                            StorageController.close()
+                            CraftingController.close()
+                            BackpackController.close()
+                            FriendsController.close()
+                            SettingsPanelController.close()
+                            PremiumShopController.close()
+                            PortalSkinController.close()
+                            CollectionController.close()
+                            AchievementsController.close()
+                            GuestBookController.close()
+                            IslandResetController.close()
+
+                            return
+                        else
+                            dispatch = if a1.KeyCode ~= KeyBinds.pickup() then 59 else 58
+                        end
+                    elseif dispatch < 59 then
+                        u178.setPickupHeld(true, "key")
+                        return
+                    else
+                        dispatch = if a1.KeyCode ~= Enum.KeyCode.Q then 61 else 60
+                    end
+                elseif not (dispatch < 62) then
+                    dispatch = if dispatch < 63 then
+                        if a1.UserInputType ~= Enum.UserInputType.Touch then 72 else 63
+                    else
+                        if Aim.isTouch() then 72 else 64
+                elseif dispatch < 61 then
+                    startDrop()
+                    return
+                else
+                    dispatch = if a1.UserInputType == Enum.UserInputType.MouseButton1 then
+                        64
+                    else
+                        62
+                end
+            elseif dispatch < 68 then
+                if dispatch < 66 then
+                    dispatch = if dispatch < 65 then
+                        if Ui.pointerOverGui() then 66 else 65
+                    else
+                        if not PromptController.pointerOverPrompt() then 67 else 66
+                elseif dispatch < 67 then
+                    return
+                else
+                    dispatch = if not PortalMoveController.isActive() then 69 else 68
+                end
+            elseif dispatch < 70 then
+                if dispatch < 69 then
+                    PortalMoveController.confirm()
+                    return
+                else
+                    dispatch = if not closeOpenPanels() then 71 else 70
+                end
+            elseif dispatch < 71 then
+                return
+            else
+                if not (dispatch < 72) then
+                    return
+                end
+
+                u178.setActionHeld(true, "mouse")
+
+                dispatch = 72
+            end
+        end
+    end)
+
+    UserInputService.InputEnded:Connect(function(a1)
+        -- Line: 1362
+        -- upvalues: gamepadEnded (upval), Aim (upval), u178 (upval), KeyBinds (upval), u347 (upval)
+        -- upvalues: HotbarController (upval)
+        gamepadEnded(a1.KeyCode)
+
+        if a1.UserInputType == Enum.UserInputType.MouseButton1
+            or a1.UserInputType == Enum.UserInputType.Touch and not Aim.isTouch() then
+            u178.setActionHeld(false, "mouse")
+        end
+
+        if a1.KeyCode == KeyBinds.pickup() then
+            u178.setPickupHeld(false, "key")
+        end
+
+        if a1.KeyCode == Enum.KeyCode.Q and u347 then
+            u347 = nil
+            HotbarController.setDropProgress(nil)
+        end
+
+        if a1.KeyCode == Enum.KeyCode.LeftShift
+            or a1.KeyCode == Enum.KeyCode.RightShift then
+            u178.setSprintInput(false)
+        end
+    end)
+
+    RunService.Heartbeat:Connect(function()
+        -- Line: 1387
+        -- upvalues: stepToolDrop (upval), u289 (upval), HotbarController (upval), u56 (upval), u280 (upval)
+        -- upvalues: holdInterval (upval), u292 (upval), act (upval)
+        stepToolDrop()
+
+        if u289 then
+            local v1
+
+            if HotbarController.selected().kind ~= "Tool" then
+                local v2 = os.clock() - u280
+                v1 = holdInterval() <= v2
+            else
+                v1 = u56.swingReady()
+            end
+
+            if v1 then
+                u280 = os.clock()
+                local v3 = HotbarController.selected()
+                local index = v3.index
+                local assignedItemId = v3.assignedItemId or v3.itemId or ""
+
+                if ("%*:%*"):format(index, assignedItemId) == u292 then
+                    act(true)
+                end
+            end
+        end
+    end)
+
+    task.spawn(function() -- Line: 1397; upvalues: Config (upval), u290 (upval), tryPickup (upval)
+        while true do
+            task.wait(Config.Build.Pickup.RepeatSeconds)
+
+            if u290 then
+                tryPickup()
+            end
+        end
+    end)
+end
+
+return u178
